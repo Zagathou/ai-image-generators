@@ -8,6 +8,7 @@ Sprache: Deutsch (Schweizer Rechtschreibung)
 
 ## Abschnitte
 - RECHTLICHE HINWEISE: https://zagathou.github.io/ai-image-generators/#rechtliches
+- ABKÜRZUNGEN: https://zagathou.github.io/ai-image-generators/#abkuerzungen
 - WAS HEISST UNZENSIERT?: https://zagathou.github.io/ai-image-generators/#methodik
 - VERGLEICHSTABELLE: https://zagathou.github.io/ai-image-generators/#vergleich
 - STABLE-DIFFUSION-FAMILIE UND FOTOREALISTISCHE SDXL-FINETUNES: https://zagathou.github.io/ai-image-generators/#stable-diffusion

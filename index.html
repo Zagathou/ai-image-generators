@@ -302,6 +302,9 @@
     .facts dt{ color:var(--muted); font-weight:700; }
     .facts dd{ margin:0; min-width:0; overflow-wrap:anywhere; }
     .dl{ font-size:16px; color:var(--muted); }
+    .abbr{ margin:0; display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; }
+    .abbr dt{ font-weight:700; color:#fff; }
+    .abbr dd{ margin:0; min-width:0; overflow-wrap:anywhere; }
     .toc ol{ margin:0; padding-left:22px; columns:2; column-gap:28px; }
     .toc li{ break-inside:avoid; margin:0 0 4px; }
     ul.plain{ margin:0 0 12px; padding-left:22px; }
@@ -326,7 +329,7 @@
     ::-webkit-scrollbar-thumb:hover{ background:var(--scroll-thumb-hover); background-clip:padding-box; }
     *{ scrollbar-color:var(--scroll-thumb) var(--scroll-track); }
     @media (max-width:600px){
-      .contact dl, .facts{ grid-template-columns:1fr; } .contact dd, .facts dd{ margin-bottom:6px; }
+      .contact dl, .facts, .abbr{ grid-template-columns:1fr; } .contact dd, .facts dd, .abbr dd{ margin-bottom:6px; }
       .toc ol{ columns:1; }
       .page{ width:100%; padding:12px; } .card{ padding:14px; border-radius:14px; }
     }
@@ -340,7 +343,7 @@
 
       <p>Recherchierte Übersicht («Datenbank») über Bildgenerierungs-KI-Modelle mit <strong>offenen Gewichten</strong> (Open Weights), die sich <strong>lokal</strong> auf dem eigenen Rechner ausführen lassen – Stand: <strong>3. Oktober 2026</strong>. Schwerpunkt ist die Frage, wie gefiltert oder ungefiltert («unzensiert») die Modelle sind, und wofür sie sich stilistisch eignen: Airbrush-Look, CGI-/3D-Render-Look, Surrealismus, Figuren mit komplett weissen Augen, glänzendes schwarzes PVC/Lack/Latex, makellose helle Haut, detaillierte feminine Hände, ostasiatische Ästhetik sowie Anime im Vergleich zu Fotorealismus.</p>
       <p>Alle Fakten (Entwickler, Datum, Lizenz, Grösse, Hardware, Filter) stammen aus den offiziellen Model Cards, Lizenztexten und Ankündigungen, die bei jedem Modell verlinkt sind. Wo es keine offizielle Angabe gibt, steht das ausdrücklich da.</p>
-      <p>Stand: <time datetime="2026-10-03">03.10.2026</time></p>
+      <p>Stand: <time datetime="2026-10-03">03.10.2026</time> · <a href="#abkuerzungen">ABKÜRZUNGEN</a></p>
     </section>
     <section class="card legal" id="rechtliches" aria-labelledby="rechtliches-h">
       <h2 id="rechtliches-h">Rechtliche Hinweise – bitte zuerst lesen</h2>
@@ -350,6 +353,65 @@
       <p><strong>EU AI Act:</strong> Nach Art. 50 Abs. 4 der <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">KI-VERORDNUNG (EU) 2024/1689</a> müssen Betreiber, die Deepfakes erzeugen, seit dem 2. August 2026 offenlegen, dass der Inhalt künstlich erzeugt oder manipuliert wurde (<a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">FAQ DER EU-KOMMISSION</a>). Rein persönliche, nicht berufliche Nutzung durch Privatpersonen ist nach Art. 2 Abs. 10 ausgenommen. Pornographische Inhalte dürfen zudem Personen unter 18 Jahren nicht zugänglich gemacht werden (<a href="https://www.gesetze-im-internet.de/stgb/__184.html">§ 184 STGB</a>).</p>
       <p><strong>Modell-Lizenzen verbieten bestimmte Nutzungen.</strong> Die <a href="https://huggingface.co/spaces/CompVis/stable-diffusion-license">CREATIVEML OPENRAIL-M</a> (Stable Diffusion 1.5) untersagt u. a. jede Nutzung, die geltendes Recht verletzt, Minderjährige ausbeutet oder schädigt oder nachweislich falsche Inhalte mit Schädigungsabsicht verbreitet. Die <a href="https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev">FLUX.1 [DEV] NON-COMMERCIAL LICENSE</a> erlaubt die Gewichte nur nicht-kommerziell und verlangt Content-Filter oder eine Prüfung der Outputs auf rechtswidrige Inhalte vor jeder Weitergabe; die Outputs selbst dürfen kommerziell genutzt werden. Die Lizenzen von Krea 2 und Ideogram 4 verpflichten Betreiber zu Inhaltsfiltern. Die Tencent-Hunyuan-Lizenz gilt ausdrücklich nicht in der EU, im Vereinigten Königreich und in Südkorea.</p>
       <p><strong>«Unzensiert» heisst nicht «rechtsfrei».</strong> Wer lokal ohne Filter arbeitet, trägt die volle Verantwortung für jedes erzeugte und jedes geteilte Bild. Dieser Hinweis ist keine Rechtsberatung.</p>
+    </section>
+    <section class="card" id="abkuerzungen" aria-labelledby="abkuerzungen-h">
+      <h2 id="abkuerzungen-h">Abkürzungen</h2>
+      <dl class="abbr">
+        <dt>LoRA</dt><dd>kleines Zusatzmodell, das einem Basis-Modell einen Stil beibringt, zum Beispiel Latex-Glanz oder weisse Augen.</dd>
+        <dt>VRAM</dt><dd>Videospeicher der Grafikkarte. Entscheidet, ob das Modell lokal läuft.</dd>
+        <dt>BF16</dt><dd>16-Bit-Zahlenformat der Gewichte. Sehr gute Qualität, hoher Speicherbedarf.</dd>
+        <dt>4-Bit</dt><dd>komprimiertes Format. Läuft auf weniger Speicher, etwas Qualitätsverlust.</dd>
+        <dt>NSFW</dt><dd>nicht jugendfreie Inhalte.</dd>
+        <dt>SFW</dt><dd>jugendfreie Inhalte.</dd>
+        <dt>Checkpoint</dt><dd>die gespeicherte Modell-Datei.</dd>
+        <dt>Finetune</dt><dd>nachtrainierte Variante eines Basis-Modells.</dd>
+        <dt>Open Weights</dt><dd>die Modell-Datei ist herunterladbar, nicht nur über eine Website nutzbar.</dd>
+        <dt>Sampler</dt><dd>Verfahren, das aus Rauschen das Bild baut.</dd>
+        <dt>ControlNet</dt><dd>Zusatz, der Pose, Kanten oder Tiefe vorgibt.</dd>
+        <dt>Inpainting</dt><dd>nur einen Bildbereich neu erzeugen.</dd>
+        <dt>GGUF</dt><dd>gepacktes Dateiformat für quantisierte Modelle.</dd>
+        <dt>k. A.</dt><dd>keine offizielle Angabe.</dd>
+        <dt>SD / SDXL</dt><dd>Stable Diffusion und die XL-Version von 2023.</dd>
+        <dt>CGI</dt><dd>computergenerierter 3D-Look.</dd>
+        <dt>RAIL</dt><dd>Lizenzfamilie mit Nutzungsgrenzen, kommerziell nur innerhalb dieser Grenzen.</dd>
+        <dt>2,5D</dt><dd>Look zwischen flacher 2D-Zeichnung und räumlichem 3D-Rendering.</dd>
+        <dt>2K / 4K</dt><dd>Bildauflösung mit rund 2000 bzw. 4000 Pixeln an der langen Seite.</dd>
+        <dt>A1111</dt><dd>Kurzform für die Oberfläche AUTOMATIC1111.</dd>
+        <dt>AGPL-3.0 / GPL-3.0</dt><dd>Open-Source-Lizenzen: Wer das Programm oder eine veränderte Fassung weitergibt, muss den Quellcode unter derselben Lizenz mitliefern, bei AGPL auch beim Betrieb als Online-Dienst.</dd>
+        <dt>Apache 2.0</dt><dd>freizügige Open-Source-Lizenz, die auch kommerzielle Nutzung erlaubt.</dd>
+        <dt>API</dt><dd>Programmierschnittstelle, über die andere Software einen Dienst direkt ansprechen kann.</dd>
+        <dt>B</dt><dd>Milliarden Parameter (englisch «billion»), zum Beispiel 12B = 12 Milliarden Parameter.</dd>
+        <dt>CFG</dt><dd>«Classifier-Free Guidance»: Regler dafür, wie streng sich das Bild an den Prompt hält.</dd>
+        <dt>CLIP</dt><dd>von OpenAI entwickeltes Modell, das Text und Bilder vergleichbar macht und hier als Text-Encoder dient.</dd>
+        <dt>CUDA</dt><dd>Programmierplattform von NVIDIA, über die KI-Software deren Grafikkarten nutzt.</dd>
+        <dt>DiT</dt><dd>«Diffusion Transformer»: Bildmodell, das statt eines U-Net einen Transformer verwendet.</dd>
+        <dt>FAIPL</dt><dd>Fair AI Public License, eine Lizenz mehrerer Anime-Modelle; die genauen Bedingungen stehen beim jeweiligen Modell.</dd>
+        <dt>FP8</dt><dd>8-Bit-Zahlenformat der Gewichte; etwa halber Speicherbedarf gegenüber BF16, leichter Qualitätsverlust.</dd>
+        <dt>FP16</dt><dd>16-Bit-Zahlenformat der Gewichte, gleich gross wie BF16 und in der Qualität vergleichbar.</dd>
+        <dt>GB</dt><dd>Gigabyte, Masseinheit für Speicher (VRAM, RAM, Dateigrösse).</dd>
+        <dt>GPU</dt><dd>Grafikprozessor, also der Rechenchip der Grafikkarte.</dd>
+        <dt>IP-Adapter</dt><dd>Zusatz, der ein Referenzbild als Vorgabe verwendet (IP steht für «Image Prompt»).</dd>
+        <dt>JSON</dt><dd>strukturiertes Textformat; JSON-Prompts beschreiben ein Bild in festen Feldern statt als Fliesstext.</dd>
+        <dt>LAION</dt><dd>gemeinnütziger Verein aus Deutschland, der grosse Bild-Text-Datensätze aus dem Internet wie LAION-5B veröffentlicht hat.</dd>
+        <dt>LMU</dt><dd>Ludwig-Maximilians-Universität München.</dd>
+        <dt>MIT</dt><dd>sehr freizügige Open-Source-Lizenz: Fast jede Nutzung ist erlaubt, auch kommerziell, solange der Lizenzhinweis erhalten bleibt.</dd>
+        <dt>MPS</dt><dd>«Metal Performance Shaders»: Apple-Schnittstelle, über die PyTorch die Grafikeinheit von Apple-Silicon-Macs nutzt.</dd>
+        <dt>NC</dt><dd>«Non-Commercial»: Nutzung nur für nicht-kommerzielle Zwecke erlaubt.</dd>
+        <dt>NF4</dt><dd>4-Bit-Format («NormalFloat 4») für quantisierte Gewichte.</dd>
+        <dt>px</dt><dd>Pixel, also Bildpunkte.</dd>
+        <dt>Q8 / Q4</dt><dd>Quantisierungsstufen von GGUF-Dateien: Q8 speichert rund 8 Bit pro Gewicht mit kaum sichtbarem Verlust, Q4 rund 4 Bit mit mehr Verlust.</dd>
+        <dt>RAM</dt><dd>Arbeitsspeicher des Computers, getrennt vom VRAM der Grafikkarte.</dd>
+        <dt>ROCm</dt><dd>Software-Plattform von AMD für KI-Berechnungen auf AMD-Grafikkarten, das Gegenstück zu CUDA.</dd>
+        <dt>RTX</dt><dd>Grafikkarten-Reihe von NVIDIA für Endkunden, zum Beispiel RTX 4090.</dd>
+        <dt>SSD</dt><dd>schneller Datenspeicher ohne bewegliche Teile.</dd>
+        <dt>T2V / TI2V</dt><dd>Text-zu-Video bzw. Text-und-Bild-zu-Video; Kürzel in den Namen der Wan-Modelle.</dd>
+        <dt>T5 / T5-XXL</dt><dd>Sprachmodell von Google, das bei FLUX und anderen Modellen als Text-Encoder dient; XXL ist die grösste Variante.</dd>
+        <dt>UI / WebUI</dt><dd>Benutzeroberfläche bzw. eine Oberfläche, die im Webbrowser läuft, wie bei ComfyUI oder Stable Diffusion WebUI.</dd>
+        <dt>U-Net</dt><dd>U-förmig aufgebautes neuronales Netz, Kern älterer Bildmodelle wie SD 1.5 und SDXL.</dd>
+        <dt>VAE</dt><dd>«Variational Autoencoder»: Bauteil, das Bilder in eine kompakte Rechenform übersetzt und am Ende wieder in Pixel zurückwandelt.</dd>
+        <dt>ViT</dt><dd>«Vision Transformer»: Bauart von CLIP; Kürzel wie ViT-L oder ViT-bigG benennen die jeweilige CLIP-Variante und ihre Grösse.</dd>
+        <dt>V-Pred</dt><dd>«v-prediction»: Trainingsart, bei der das Modell beim Entrauschen eine andere Zielgrösse vorhersagt als klassische Epsilon-Modelle.</dd>
+      </dl>
     </section>
     <section class="card" id="methodik" aria-labelledby="methodik-h">
       <h2 id="methodik-h">Was heisst «unzensiert»?</h2>
@@ -362,6 +424,7 @@
       <h2 id="toc-h">Inhalt</h2>
       <ol>
         <li><a href="#rechtliches">RECHTLICHE HINWEISE</a></li>
+        <li><a href="#abkuerzungen">ABKÜRZUNGEN</a></li>
         <li><a href="#methodik">WAS HEISST UNZENSIERT?</a></li>
         <li><a href="#vergleich">VERGLEICHSTABELLE</a></li>
         <li><a href="#stable-diffusion">STABLE-DIFFUSION-FAMILIE UND FOTOREALISTISCHE SDXL-FINETUNES</a></li>

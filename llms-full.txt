@@ -24,6 +24,63 @@ Modell-Lizenzen verbieten bestimmte Nutzungen. Die CREATIVEML OPENRAIL-M (https:
 
 «Unzensiert» heisst nicht «rechtsfrei». Wer lokal ohne Filter arbeitet, trägt die volle Verantwortung für jedes erzeugte und jedes geteilte Bild. Dieser Hinweis ist keine Rechtsberatung.
 
+## Abkürzungen
+
+- LoRA: kleines Zusatzmodell, das einem Basis-Modell einen Stil beibringt, zum Beispiel Latex-Glanz oder weisse Augen.
+- VRAM: Videospeicher der Grafikkarte. Entscheidet, ob das Modell lokal läuft.
+- BF16: 16-Bit-Zahlenformat der Gewichte. Sehr gute Qualität, hoher Speicherbedarf.
+- 4-Bit: komprimiertes Format. Läuft auf weniger Speicher, etwas Qualitätsverlust.
+- NSFW: nicht jugendfreie Inhalte.
+- SFW: jugendfreie Inhalte.
+- Checkpoint: die gespeicherte Modell-Datei.
+- Finetune: nachtrainierte Variante eines Basis-Modells.
+- Open Weights: die Modell-Datei ist herunterladbar, nicht nur über eine Website nutzbar.
+- Sampler: Verfahren, das aus Rauschen das Bild baut.
+- ControlNet: Zusatz, der Pose, Kanten oder Tiefe vorgibt.
+- Inpainting: nur einen Bildbereich neu erzeugen.
+- GGUF: gepacktes Dateiformat für quantisierte Modelle.
+- k. A.: keine offizielle Angabe.
+- SD / SDXL: Stable Diffusion und die XL-Version von 2023.
+- CGI: computergenerierter 3D-Look.
+- RAIL: Lizenzfamilie mit Nutzungsgrenzen, kommerziell nur innerhalb dieser Grenzen.
+- 2,5D: Look zwischen flacher 2D-Zeichnung und räumlichem 3D-Rendering.
+- 2K / 4K: Bildauflösung mit rund 2000 bzw. 4000 Pixeln an der langen Seite.
+- A1111: Kurzform für die Oberfläche AUTOMATIC1111.
+- AGPL-3.0 / GPL-3.0: Open-Source-Lizenzen: Wer das Programm oder eine veränderte Fassung weitergibt, muss den Quellcode unter derselben Lizenz mitliefern, bei AGPL auch beim Betrieb als Online-Dienst.
+- Apache 2.0: freizügige Open-Source-Lizenz, die auch kommerzielle Nutzung erlaubt.
+- API: Programmierschnittstelle, über die andere Software einen Dienst direkt ansprechen kann.
+- B: Milliarden Parameter (englisch «billion»), zum Beispiel 12B = 12 Milliarden Parameter.
+- CFG: «Classifier-Free Guidance»: Regler dafür, wie streng sich das Bild an den Prompt hält.
+- CLIP: von OpenAI entwickeltes Modell, das Text und Bilder vergleichbar macht und hier als Text-Encoder dient.
+- CUDA: Programmierplattform von NVIDIA, über die KI-Software deren Grafikkarten nutzt.
+- DiT: «Diffusion Transformer»: Bildmodell, das statt eines U-Net einen Transformer verwendet.
+- FAIPL: Fair AI Public License, eine Lizenz mehrerer Anime-Modelle; die genauen Bedingungen stehen beim jeweiligen Modell.
+- FP8: 8-Bit-Zahlenformat der Gewichte; etwa halber Speicherbedarf gegenüber BF16, leichter Qualitätsverlust.
+- FP16: 16-Bit-Zahlenformat der Gewichte, gleich gross wie BF16 und in der Qualität vergleichbar.
+- GB: Gigabyte, Masseinheit für Speicher (VRAM, RAM, Dateigrösse).
+- GPU: Grafikprozessor, also der Rechenchip der Grafikkarte.
+- IP-Adapter: Zusatz, der ein Referenzbild als Vorgabe verwendet (IP steht für «Image Prompt»).
+- JSON: strukturiertes Textformat; JSON-Prompts beschreiben ein Bild in festen Feldern statt als Fliesstext.
+- LAION: gemeinnütziger Verein aus Deutschland, der grosse Bild-Text-Datensätze aus dem Internet wie LAION-5B veröffentlicht hat.
+- LMU: Ludwig-Maximilians-Universität München.
+- MIT: sehr freizügige Open-Source-Lizenz: Fast jede Nutzung ist erlaubt, auch kommerziell, solange der Lizenzhinweis erhalten bleibt.
+- MPS: «Metal Performance Shaders»: Apple-Schnittstelle, über die PyTorch die Grafikeinheit von Apple-Silicon-Macs nutzt.
+- NC: «Non-Commercial»: Nutzung nur für nicht-kommerzielle Zwecke erlaubt.
+- NF4: 4-Bit-Format («NormalFloat 4») für quantisierte Gewichte.
+- px: Pixel, also Bildpunkte.
+- Q8 / Q4: Quantisierungsstufen von GGUF-Dateien: Q8 speichert rund 8 Bit pro Gewicht mit kaum sichtbarem Verlust, Q4 rund 4 Bit mit mehr Verlust.
+- RAM: Arbeitsspeicher des Computers, getrennt vom VRAM der Grafikkarte.
+- ROCm: Software-Plattform von AMD für KI-Berechnungen auf AMD-Grafikkarten, das Gegenstück zu CUDA.
+- RTX: Grafikkarten-Reihe von NVIDIA für Endkunden, zum Beispiel RTX 4090.
+- SSD: schneller Datenspeicher ohne bewegliche Teile.
+- T2V / TI2V: Text-zu-Video bzw. Text-und-Bild-zu-Video; Kürzel in den Namen der Wan-Modelle.
+- T5 / T5-XXL: Sprachmodell von Google, das bei FLUX und anderen Modellen als Text-Encoder dient; XXL ist die grösste Variante.
+- UI / WebUI: Benutzeroberfläche bzw. eine Oberfläche, die im Webbrowser läuft, wie bei ComfyUI oder Stable Diffusion WebUI.
+- U-Net: U-förmig aufgebautes neuronales Netz, Kern älterer Bildmodelle wie SD 1.5 und SDXL.
+- VAE: «Variational Autoencoder»: Bauteil, das Bilder in eine kompakte Rechenform übersetzt und am Ende wieder in Pixel zurückwandelt.
+- ViT: «Vision Transformer»: Bauart von CLIP; Kürzel wie ViT-L oder ViT-bigG benennen die jeweilige CLIP-Variante und ihre Grösse.
+- V-Pred: «v-prediction»: Trainingsart, bei der das Modell beim Entrauschen eine andere Zielgrösse vorhersagt als klassische Epsilon-Modelle.
+
 ## Was heisst «unzensiert»?
 
 Lokal heisst: kein Server prüft mit. Online-Dienste filtern Prompts und Bilder auf ihren Servern. Bei lokal ausgeführten Modellen gibt es einen Filter nur dann, wenn (1) die Software einen optionalen Safety-Checker einschaltet, (2) die Modell-Lizenz Filter oder eine Prüfung verlangt oder (3) das Modell selbst durch gefilterte Trainingsdaten bzw. Safety-Finetuning bestimmte Inhalte kaum erzeugen kann. Punkt 3 ist die eigentliche «Zensur in den Gewichten»: Sie lässt sich nicht abschalten, sondern höchstens durch Community-Finetunes oder LoRAs teilweise ausgleichen.
