@@ -1,0 +1,68 @@
+# AI IMAGE GENERATORS
+
+> Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.
+
+Seite: https://zagathou.github.io/ai-image-generators/
+Volltext: https://zagathou.github.io/ai-image-generators/llms-full.txt
+Sprache: Deutsch (Schweizer Rechtschreibung)
+
+## Abschnitte
+- RECHTLICHE HINWEISE: https://zagathou.github.io/ai-image-generators/#rechtliches
+- WAS HEISST UNZENSIERT?: https://zagathou.github.io/ai-image-generators/#methodik
+- VERGLEICHSTABELLE: https://zagathou.github.io/ai-image-generators/#vergleich
+- STABLE-DIFFUSION-FAMILIE UND FOTOREALISTISCHE SDXL-FINETUNES: https://zagathou.github.io/ai-image-generators/#stable-diffusion
+- ANIME- UND ILLUSTRATIONSMODELLE: https://zagathou.github.io/ai-image-generators/#anime
+- FLUX-FAMILIE UND CHROMA: https://zagathou.github.io/ai-image-generators/#flux
+- NEUE GENERATION 2025–2026: GROSSE TRANSFORMER-MODELLE: https://zagathou.github.io/ai-image-generators/#neue-generation
+- WEITERE OFFENE MODELLE (KLEINER ODER ÄLTER): https://zagathou.github.io/ai-image-generators/#weitere
+- VIDEOMODELLE ALS BILDGENERATOR: https://zagathou.github.io/ai-image-generators/#video
+- ZUM VERGLEICH: NICHT LOKAL VERFÜGBAR: https://zagathou.github.io/ai-image-generators/#nicht-lokal
+- STIL-KOMPASS: https://zagathou.github.io/ai-image-generators/#stil-kompass
+- SOFTWARE & OBERFLÄCHEN: https://zagathou.github.io/ai-image-generators/#software
+- HARDWARE: https://zagathou.github.io/ai-image-generators/#hardware
+- QUELLEN: https://zagathou.github.io/ai-image-generators/#quellen
+
+## Modelle (lokal, offene Gewichte)
+- Stable Diffusion 1.5: https://zagathou.github.io/ai-image-generators/#sd15
+- Stable Diffusion XL (SDXL 1.0): https://zagathou.github.io/ai-image-generators/#sdxl
+- Stable Diffusion 3.5 (Large, Large Turbo, Medium): https://zagathou.github.io/ai-image-generators/#sd35
+- Juggernaut XL: https://zagathou.github.io/ai-image-generators/#juggernaut
+- RealVisXL V5.0: https://zagathou.github.io/ai-image-generators/#realvisxl
+- Pony Diffusion V6 XL: https://zagathou.github.io/ai-image-generators/#pony-v6
+- Pony V7: https://zagathou.github.io/ai-image-generators/#pony-v7
+- Illustrious XL: https://zagathou.github.io/ai-image-generators/#illustrious
+- NoobAI-XL (Epsilon und V-Pred): https://zagathou.github.io/ai-image-generators/#noobai
+- Anima: https://zagathou.github.io/ai-image-generators/#anima
+- Neta Lumina: https://zagathou.github.io/ai-image-generators/#neta-lumina
+- FLUX.1 [dev] und FLUX.1 [schnell]: https://zagathou.github.io/ai-image-generators/#flux1
+- FLUX.1 Kontext [dev] und FLUX.1 Krea [dev]: https://zagathou.github.io/ai-image-generators/#flux1-kontext-krea
+- FLUX.2 [dev]: https://zagathou.github.io/ai-image-generators/#flux2
+- FLUX.2 [klein] (4B und 9B): https://zagathou.github.io/ai-image-generators/#flux2-klein
+- Chroma (Chroma1-HD, -Base, -Flash): https://zagathou.github.io/ai-image-generators/#chroma
+- Qwen-Image und Qwen-Image-2512: https://zagathou.github.io/ai-image-generators/#qwen-image
+- Qwen-Image-2.1: https://zagathou.github.io/ai-image-generators/#qwen-image-21
+- Z-Image (Turbo und Base): https://zagathou.github.io/ai-image-generators/#z-image
+- HiDream-I1 (Full, Dev, Fast): https://zagathou.github.io/ai-image-generators/#hidream
+- HunyuanImage 2.1 und 3.0: https://zagathou.github.io/ai-image-generators/#hunyuanimage
+- Krea 2 (Raw und Turbo): https://zagathou.github.io/ai-image-generators/#krea2
+- Ideogram 4: https://zagathou.github.io/ai-image-generators/#ideogram4
+- ERNIE-Image (und Turbo): https://zagathou.github.io/ai-image-generators/#ernie-image
+- GLM-Image: https://zagathou.github.io/ai-image-generators/#glm-image
+- Lumina-Image 2.0: https://zagathou.github.io/ai-image-generators/#lumina2
+- PixArt-Σ (Sigma): https://zagathou.github.io/ai-image-generators/#pixart-sigma
+- Kolors: https://zagathou.github.io/ai-image-generators/#kolors
+- AuraFlow: https://zagathou.github.io/ai-image-generators/#auraflow
+- Wan 2.1 und Wan 2.2: https://zagathou.github.io/ai-image-generators/#wan
+
+## Siehe auch
+- ARTIFICIAL INTELLIGENCE: https://zagathou.github.io/artificial_intelligence/
+
+## Autor & Kontakt
+- Autor: Christian Grigoriadis (Zagathou)
+- Session-ID: 055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173
+- About: https://zagathou.github.io/zagathou/
+- GitHub: https://github.com/Zagathou
+
+These webpages are optimized for simple Non-Agentic Artificial Intelligence and easy to read.
+Last Updated: 03.10.2026
+Coded by GrokBot (https://x.ai/bot) / SpaceXAI (https://x.ai/)!

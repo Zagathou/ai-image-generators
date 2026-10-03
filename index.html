@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick – Zagathou</title>
+  <meta name="description" content="Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.">
+  <meta name="author" content="Christian Grigoriadis (Zagathou)">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <meta name="theme-color" content="#1f1f23">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://zagathou.github.io/ai-image-generators/">
+  <link rel="sitemap" type="application/xml" href="https://zagathou.github.io/ai-image-generators/sitemap.xml">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://zagathou.github.io/ai-image-generators/llms.txt">
+  <link rel="alternate" type="text/plain" title="llms-full.txt" href="https://zagathou.github.io/ai-image-generators/llms-full.txt">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="AI IMAGE GENERATORS – Zagathou">
+  <meta property="og:title" content="AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick – Zagathou">
+  <meta property="og:description" content="Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.">
+  <meta property="og:url" content="https://zagathou.github.io/ai-image-generators/">
+  <meta property="article:modified_time" content="2026-10-03">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick – Zagathou">
+  <meta name="twitter:description" content="Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://zagathou.github.io/ai-image-generators/#webpage",
+   "url": "https://zagathou.github.io/ai-image-generators/",
+   "name": "AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick – Zagathou",
+   "headline": "AI IMAGE GENERATORS",
+   "description": "Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.",
+   "inLanguage": "de-CH",
+   "datePublished": "2026-10-03",
+   "dateModified": "2026-10-03",
+   "author": {
+    "@id": "https://zagathou.github.io/ai-image-generators/#author"
+   },
+   "mainEntity": {
+    "@id": "https://zagathou.github.io/ai-image-generators/#article"
+   },
+   "relatedLink": [
+    "https://zagathou.github.io/artificial_intelligence/"
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://zagathou.github.io/ai-image-generators/#article",
+   "headline": "AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick",
+   "description": "Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.",
+   "inLanguage": "de-CH",
+   "datePublished": "2026-10-03",
+   "dateModified": "2026-10-03",
+   "author": {
+    "@id": "https://zagathou.github.io/ai-image-generators/#author"
+   },
+   "about": [
+    "Text-to-Image",
+    "Open-Weight-Modelle",
+    "Lokale KI-Bildgenerierung"
+   ],
+   "hasPart": {
+    "@id": "https://zagathou.github.io/ai-image-generators/#modelle"
+   }
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://zagathou.github.io/ai-image-generators/#modelle",
+   "name": "Lokal nutzbare Bild-KI-Modelle",
+   "numberOfItems": 30,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Stable Diffusion 1.5",
+     "url": "https://zagathou.github.io/ai-image-generators/#sd15"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Stable Diffusion XL (SDXL 1.0)",
+     "url": "https://zagathou.github.io/ai-image-generators/#sdxl"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Stable Diffusion 3.5 (Large, Large Turbo, Medium)",
+     "url": "https://zagathou.github.io/ai-image-generators/#sd35"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Juggernaut XL",
+     "url": "https://zagathou.github.io/ai-image-generators/#juggernaut"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "RealVisXL V5.0",
+     "url": "https://zagathou.github.io/ai-image-generators/#realvisxl"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "Pony Diffusion V6 XL",
+     "url": "https://zagathou.github.io/ai-image-generators/#pony-v6"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "Pony V7",
+     "url": "https://zagathou.github.io/ai-image-generators/#pony-v7"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "name": "Illustrious XL",
+     "url": "https://zagathou.github.io/ai-image-generators/#illustrious"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "name": "NoobAI-XL (Epsilon und V-Pred)",
+     "url": "https://zagathou.github.io/ai-image-generators/#noobai"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "name": "Anima",
+     "url": "https://zagathou.github.io/ai-image-generators/#anima"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "name": "Neta Lumina",
+     "url": "https://zagathou.github.io/ai-image-generators/#neta-lumina"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "name": "FLUX.1 [dev] und FLUX.1 [schnell]",
+     "url": "https://zagathou.github.io/ai-image-generators/#flux1"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "name": "FLUX.1 Kontext [dev] und FLUX.1 Krea [dev]",
+     "url": "https://zagathou.github.io/ai-image-generators/#flux1-kontext-krea"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "name": "FLUX.2 [dev]",
+     "url": "https://zagathou.github.io/ai-image-generators/#flux2"
+    },
+    {
+     "@type": "ListItem",
+     "position": 15,
+     "name": "FLUX.2 [klein] (4B und 9B)",
+     "url": "https://zagathou.github.io/ai-image-generators/#flux2-klein"
+    },
+    {
+     "@type": "ListItem",
+     "position": 16,
+     "name": "Chroma (Chroma1-HD, -Base, -Flash)",
+     "url": "https://zagathou.github.io/ai-image-generators/#chroma"
+    },
+    {
+     "@type": "ListItem",
+     "position": 17,
+     "name": "Qwen-Image und Qwen-Image-2512",
+     "url": "https://zagathou.github.io/ai-image-generators/#qwen-image"
+    },
+    {
+     "@type": "ListItem",
+     "position": 18,
+     "name": "Qwen-Image-2.1",
+     "url": "https://zagathou.github.io/ai-image-generators/#qwen-image-21"
+    },
+    {
+     "@type": "ListItem",
+     "position": 19,
+     "name": "Z-Image (Turbo und Base)",
+     "url": "https://zagathou.github.io/ai-image-generators/#z-image"
+    },
+    {
+     "@type": "ListItem",
+     "position": 20,
+     "name": "HiDream-I1 (Full, Dev, Fast)",
+     "url": "https://zagathou.github.io/ai-image-generators/#hidream"
+    },
+    {
+     "@type": "ListItem",
+     "position": 21,
+     "name": "HunyuanImage 2.1 und 3.0",
+     "url": "https://zagathou.github.io/ai-image-generators/#hunyuanimage"
+    },
+    {
+     "@type": "ListItem",
+     "position": 22,
+     "name": "Krea 2 (Raw und Turbo)",
+     "url": "https://zagathou.github.io/ai-image-generators/#krea2"
+    },
+    {
+     "@type": "ListItem",
+     "position": 23,
+     "name": "Ideogram 4",
+     "url": "https://zagathou.github.io/ai-image-generators/#ideogram4"
+    },
+    {
+     "@type": "ListItem",
+     "position": 24,
+     "name": "ERNIE-Image (und Turbo)",
+     "url": "https://zagathou.github.io/ai-image-generators/#ernie-image"
+    },
+    {
+     "@type": "ListItem",
+     "position": 25,
+     "name": "GLM-Image",
+     "url": "https://zagathou.github.io/ai-image-generators/#glm-image"
+    },
+    {
+     "@type": "ListItem",
+     "position": 26,
+     "name": "Lumina-Image 2.0",
+     "url": "https://zagathou.github.io/ai-image-generators/#lumina2"
+    },
+    {
+     "@type": "ListItem",
+     "position": 27,
+     "name": "PixArt-Σ (Sigma)",
+     "url": "https://zagathou.github.io/ai-image-generators/#pixart-sigma"
+    },
+    {
+     "@type": "ListItem",
+     "position": 28,
+     "name": "Kolors",
+     "url": "https://zagathou.github.io/ai-image-generators/#kolors"
+    },
+    {
+     "@type": "ListItem",
+     "position": 29,
+     "name": "AuraFlow",
+     "url": "https://zagathou.github.io/ai-image-generators/#auraflow"
+    },
+    {
+     "@type": "ListItem",
+     "position": 30,
+     "name": "Wan 2.1 und Wan 2.2",
+     "url": "https://zagathou.github.io/ai-image-generators/#wan"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://zagathou.github.io/ai-image-generators/#author",
+   "name": "Christian Grigoriadis",
+   "alternateName": "Zagathou",
+   "url": "https://zagathou.github.io/zagathou/",
+   "sameAs": [
+    "https://github.com/Zagathou"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Session-ID",
+    "value": "055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173"
+   }
+  }
+ ]
+}
+  </script>
+  <style>
+    :root{
+      --bg:#1f1f23; --panel:rgba(255,255,255,0.04); --panel-strong:rgba(255,255,255,0.07);
+      --text:rgba(255,255,255,0.88); --muted:rgba(255,255,255,0.62);
+      --accent:#03ff36; --line:rgba(255,255,255,0.08);
+      --content-max:1000px; --pad:18px;
+      --scroll-track:rgba(0,0,0,0); --scroll-thumb:rgba(3,255,54,0.55); --scroll-thumb-hover:rgba(3,255,54,0.85);
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    html, body{ margin:0; background:var(--bg); color:var(--text); font-family:"Nunito", system-ui, sans-serif; font-size:18px; line-height:1.65; }
+    .page{ width:clamp(85%,90%,1100px); max-width:var(--content-max); margin:0 auto; padding:var(--pad); }
+    .card{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 10px 30px rgba(0,0,0,0.22); margin:0 0 18px; }
+    h1, h2, h3{ font-family:"Comfortaa", cursive, sans-serif; font-size:22px; font-weight:700; color:var(--accent); text-transform:uppercase; line-height:1.4; letter-spacing:0.3px; margin:0 0 12px; overflow-wrap:anywhere; }
+    p{ margin:0 0 12px; }
+    p:last-child{ margin-bottom:0; }
+    a{ color:var(--accent); text-decoration:none; font-weight:700; overflow-wrap:anywhere; }
+    a:hover, a:focus-visible{ text-decoration:underline; text-decoration-color:var(--accent); }
+    strong{ color:#fff; }
+    code{ font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:15px; background:var(--panel-strong); border:1px solid var(--line); border-radius:6px; padding:0 5px; overflow-wrap:anywhere; }
+    .legal{ border:2px solid var(--accent); }
+    .group-head{ background:var(--panel-strong); }
+    .facts{ margin:0 0 14px; display:grid; grid-template-columns:max-content 1fr; gap:6px 14px; }
+    .facts dt{ color:var(--muted); font-weight:700; }
+    .facts dd{ margin:0; min-width:0; overflow-wrap:anywhere; }
+    .dl{ font-size:16px; color:var(--muted); }
+    .toc ol{ margin:0; padding-left:22px; columns:2; column-gap:28px; }
+    .toc li{ break-inside:avoid; margin:0 0 4px; }
+    ul.plain{ margin:0 0 12px; padding-left:22px; }
+    ul.plain li{ margin:0 0 6px; }
+    .tablewrap{ overflow-x:auto; margin:0 0 12px; }
+    table{ border-collapse:collapse; width:100%; min-width:900px; font-size:15px; line-height:1.4; }
+    caption{ text-align:left; color:var(--muted); padding:0 0 8px; }
+    th, td{ border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
+    thead th{ color:var(--accent); font-family:"Comfortaa", cursive, sans-serif; font-size:14px; }
+    tbody th{ font-weight:700; }
+    .note{ font-size:15px; color:var(--muted); }
+    footer{ color:var(--muted); font-size:15px; text-align:center; padding:4px 0 24px; }
+    footer p{ margin:0 0 6px; }
+    .contact{ text-align:left; color:var(--text); font-size:16px; }
+    .contact dl{ margin:0; display:grid; grid-template-columns:max-content 1fr; gap:4px 12px; }
+    .contact dt{ color:var(--muted); font-weight:700; }
+    .contact dd{ margin:0; min-width:0; overflow-wrap:anywhere; word-break:break-word; }
+    .sid{ font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:14px; background:var(--panel-strong); border:1px solid var(--line); border-radius:6px; padding:1px 6px; overflow-wrap:anywhere; word-break:break-all; }
+    ::-webkit-scrollbar{ width:20px; height:20px; }
+    ::-webkit-scrollbar-track{ background:var(--scroll-track); }
+    ::-webkit-scrollbar-thumb{ background:var(--scroll-thumb); border-radius:999px; border:1px solid rgba(0,0,0,0); background-clip:padding-box; }
+    ::-webkit-scrollbar-thumb:hover{ background:var(--scroll-thumb-hover); background-clip:padding-box; }
+    *{ scrollbar-color:var(--scroll-thumb) var(--scroll-track); }
+    @media (max-width:600px){
+      .contact dl, .facts{ grid-template-columns:1fr; } .contact dd, .facts dd{ margin-bottom:6px; }
+      .toc ol{ columns:1; }
+      .page{ width:100%; padding:12px; } .card{ padding:14px; border-radius:14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+  <main>
+    <section class="card" id="intro" aria-labelledby="title">
+      <h1 id="title">AI IMAGE GENERATORS</h1>
+
+      <p>Recherchierte Übersicht («Datenbank») über Bildgenerierungs-KI-Modelle mit <strong>offenen Gewichten</strong> (Open Weights), die sich <strong>lokal</strong> auf dem eigenen Rechner ausführen lassen – Stand: <strong>3. Oktober 2026</strong>. Schwerpunkt ist die Frage, wie gefiltert oder ungefiltert («unzensiert») die Modelle sind, und wofür sie sich stilistisch eignen: Airbrush-Look, CGI-/3D-Render-Look, Surrealismus, Figuren mit komplett weissen Augen, glänzendes schwarzes PVC/Lack/Latex, makellose helle Haut, detaillierte feminine Hände, ostasiatische Ästhetik sowie Anime im Vergleich zu Fotorealismus.</p>
+      <p>Alle Fakten (Entwickler, Datum, Lizenz, Grösse, Hardware, Filter) stammen aus den offiziellen Model Cards, Lizenztexten und Ankündigungen, die bei jedem Modell verlinkt sind. Wo es keine offizielle Angabe gibt, steht das ausdrücklich da.</p>
+      <p>Stand: <time datetime="2026-10-03">03.10.2026</time></p>
+    </section>
+    <section class="card legal" id="rechtliches" aria-labelledby="rechtliches-h">
+      <h2 id="rechtliches-h">Rechtliche Hinweise – bitte zuerst lesen</h2>
+      <p><strong>KI-generierte sexuelle Darstellungen von Minderjährigen oder kindlich wirkenden Figuren sind strafbar.</strong> In Deutschland erfassen <a href="https://www.gesetze-im-internet.de/stgb/__184b.html">§ 184B STGB</a> (kinderpornographische Inhalte, Personen unter 14 Jahren) und <a href="https://www.gesetze-im-internet.de/stgb/__184c.html">§ 184C STGB</a> (jugendpornographische Inhalte, 14 bis 17 Jahre) ausdrücklich auch Inhalte, die ein «tatsächliches oder wirklichkeitsnahes Geschehen» wiedergeben – also auch fotorealistische KI-Bilder. Abruf und Besitz wirklichkeitsnaher kinderpornographischer Inhalte werden nach § 184b Abs. 3 StGB mit Freiheitsstrafe von drei Monaten bis zu fünf Jahren bestraft. Das Verbreiten ist nach § 184b Abs. 1 Satz 2 StGB sogar dann strafbar, wenn der Inhalt «kein tatsächliches oder wirklichkeitsnahes Geschehen» wiedergibt, also auch bei gezeichneten oder rein fiktiven Darstellungen. Massgeblich kann bereits der Eindruck auf einen objektiven Betrachter sein (siehe <a href="https://www.fsm.de/en/wissen/a-bis-z/kinder-und-jugendpornografie/">FSM</a>, mit Verweis auf BVerfG 2 BvR 2369/08).</p>
+      <p><strong>Schweiz:</strong> <a href="https://www.fedlex.admin.ch/eli/cc/54/757_781_799/de">ART. 197 STGB</a> stellt in Abs. 4 und 5 auch pornografische Gegenstände mit «nicht tatsächlichen» sexuellen Handlungen mit Minderjährigen unter Strafe – einschliesslich Besitz und Konsum.</p>
+      <p><strong>Deepfakes realer Personen ohne Einwilligung</strong> verletzen das Persönlichkeitsrecht. Bildnisse dürfen nach <a href="https://www.gesetze-im-internet.de/kunsturhg/__22.html">§ 22 KUG</a> nur mit Einwilligung des Abgebildeten verbreitet oder öffentlich zur Schau gestellt werden; Verstösse sind nach <a href="https://www.gesetze-im-internet.de/kunsturhg/__33.html">§ 33 KUG</a> strafbar (auf Antrag). <a href="https://www.gesetze-im-internet.de/stgb/__201a.html">§ 201A STGB</a> Abs. 2 bestraft das unbefugte Zugänglichmachen einer Bildaufnahme, die geeignet ist, dem Ansehen der abgebildeten Person erheblich zu schaden. Weil das Bundesjustizministerium hier Strafbarkeitslücken sieht – insbesondere beim Herstellen sexualisierter Deepfakes –, hat es am 17. April 2026 den <a href="https://www.bmjv.de/SharedDocs/Pressemitteilungen/DE/2026/0417_Gesetz_gegen_digitale_Gewalt.html">ENTWURF EINES GESETZES GEGEN DIGITALE GEWALT</a> vorgestellt (u. a. neuer § 184k StGB «Verletzung der Intimsphäre durch Bildaufnahmen» und § 201b StGB «Verletzung von Persönlichkeitsrechten durch täuschende Inhalte»). Stand Anfang Oktober 2026 ist das ein Entwurf, noch kein geltendes Recht.</p>
+      <p><strong>EU AI Act:</strong> Nach Art. 50 Abs. 4 der <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">KI-VERORDNUNG (EU) 2024/1689</a> müssen Betreiber, die Deepfakes erzeugen, seit dem 2. August 2026 offenlegen, dass der Inhalt künstlich erzeugt oder manipuliert wurde (<a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">FAQ DER EU-KOMMISSION</a>). Rein persönliche, nicht berufliche Nutzung durch Privatpersonen ist nach Art. 2 Abs. 10 ausgenommen. Pornographische Inhalte dürfen zudem Personen unter 18 Jahren nicht zugänglich gemacht werden (<a href="https://www.gesetze-im-internet.de/stgb/__184.html">§ 184 STGB</a>).</p>
+      <p><strong>Modell-Lizenzen verbieten bestimmte Nutzungen.</strong> Die <a href="https://huggingface.co/spaces/CompVis/stable-diffusion-license">CREATIVEML OPENRAIL-M</a> (Stable Diffusion 1.5) untersagt u. a. jede Nutzung, die geltendes Recht verletzt, Minderjährige ausbeutet oder schädigt oder nachweislich falsche Inhalte mit Schädigungsabsicht verbreitet. Die <a href="https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev">FLUX.1 [DEV] NON-COMMERCIAL LICENSE</a> erlaubt die Gewichte nur nicht-kommerziell und verlangt Content-Filter oder eine Prüfung der Outputs auf rechtswidrige Inhalte vor jeder Weitergabe; die Outputs selbst dürfen kommerziell genutzt werden. Die Lizenzen von Krea 2 und Ideogram 4 verpflichten Betreiber zu Inhaltsfiltern. Die Tencent-Hunyuan-Lizenz gilt ausdrücklich nicht in der EU, im Vereinigten Königreich und in Südkorea.</p>
+      <p><strong>«Unzensiert» heisst nicht «rechtsfrei».</strong> Wer lokal ohne Filter arbeitet, trägt die volle Verantwortung für jedes erzeugte und jedes geteilte Bild. Dieser Hinweis ist keine Rechtsberatung.</p>
+    </section>
+    <section class="card" id="methodik" aria-labelledby="methodik-h">
+      <h2 id="methodik-h">Was heisst «unzensiert»?</h2>
+      <p><strong>Lokal heisst: kein Server prüft mit.</strong> Online-Dienste filtern Prompts und Bilder auf ihren Servern. Bei lokal ausgeführten Modellen gibt es einen Filter nur dann, wenn (1) die Software einen optionalen Safety-Checker einschaltet, (2) die Modell-Lizenz Filter oder eine Prüfung verlangt oder (3) das Modell selbst durch gefilterte Trainingsdaten bzw. Safety-Finetuning bestimmte Inhalte kaum erzeugen kann. Punkt 3 ist die eigentliche «Zensur in den Gewichten»: Sie lässt sich nicht abschalten, sondern höchstens durch Community-Finetunes oder LoRAs teilweise ausgleichen.</p>
+      <p><strong>Einstufung in dieser Übersicht</strong> (jeweils laut Model Card bzw. Entwickler): <strong>«Offen trainiert»</strong> – die Entwickler geben an, dass die Trainingsdaten auch Erwachsenen-Inhalte enthalten oder das Modell «uncensored» ist. <strong>«Ohne Angabe»</strong> – die Model Card sagt nichts zur NSFW-Filterung. <strong>«Gefiltert»</strong> – die Entwickler nennen NSFW-Filterung der Trainingsdaten und/oder Safety-Finetuning.</p>
+      <p><strong>Stil-Einschätzungen</strong> beruhen auf den offiziellen Beschreibungen, den Angaben zu Trainingsdaten (z. B. Danbooru-Tags bei Anime-Modellen) und verbreiteten Community-Erfahrungen – <strong>nicht auf eigenen Benchmark-Tests</strong>. Ergebnisse hängen stark von Prompt, Sampler, Auflösung und LoRAs ab.</p>
+      <p>Erotische oder freizügige Inhalte sind – wo überhaupt erwähnt – ausschliesslich im Zusammenhang mit eindeutig erwachsenen Figuren gemeint. Diese Seite enthält bewusst keine expliziten Texte und keine Beispiel-Prompts dafür.</p>
+    </section>
+    <nav class="card toc" aria-labelledby="toc-h">
+      <h2 id="toc-h">Inhalt</h2>
+      <ol>
+        <li><a href="#rechtliches">RECHTLICHE HINWEISE</a></li>
+        <li><a href="#methodik">WAS HEISST UNZENSIERT?</a></li>
+        <li><a href="#vergleich">VERGLEICHSTABELLE</a></li>
+        <li><a href="#stable-diffusion">STABLE-DIFFUSION-FAMILIE UND FOTOREALISTISCHE SDXL-FINETUNES</a></li>
+        <li><a href="#anime">ANIME- UND ILLUSTRATIONSMODELLE</a></li>
+        <li><a href="#flux">FLUX-FAMILIE UND CHROMA</a></li>
+        <li><a href="#neue-generation">NEUE GENERATION 2025–2026: GROSSE TRANSFORMER-MODELLE</a></li>
+        <li><a href="#weitere">WEITERE OFFENE MODELLE (KLEINER ODER ÄLTER)</a></li>
+        <li><a href="#video">VIDEOMODELLE ALS BILDGENERATOR</a></li>
+        <li><a href="#nicht-lokal">ZUM VERGLEICH: NICHT LOKAL VERFÜGBAR</a></li>
+        <li><a href="#stil-kompass">STIL-KOMPASS</a></li>
+        <li><a href="#software">SOFTWARE &amp; OBERFLÄCHEN</a></li>
+        <li><a href="#hardware">HARDWARE</a></li>
+        <li><a href="#quellen">QUELLEN</a></li>
+      </ol>
+    </nav>
+    <section class="card" id="vergleich" aria-labelledby="vergleich-h">
+      <h2 id="vergleich-h">Vergleichstabelle</h2>
+      <div class="tablewrap">
+      <table>
+        <caption>Vergleich der lokal nutzbaren Modelle (Stand 03.10.2026)</caption>
+        <thead><tr><th scope="col">Modell</th><th scope="col">Entwickler</th><th scope="col">Jahr</th><th scope="col">Grösse</th><th scope="col">Lizenz</th><th scope="col">Kommerziell</th><th scope="col">Filter-Einstufung</th><th scope="col">Stärke</th><th scope="col">VRAM</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="#sd15">STABLE DIFFUSION 1.5</a></th><td>Runway/Stability</td><td>2022</td><td>0,9B</td><td>OpenRAIL-M</td><td>ja*</td><td>Ohne Filter (LAION)</td><td>Ökosystem, wenig VRAM</td><td>gering</td></tr>
+          <tr><th scope="row"><a href="#sdxl">SDXL 1.0</a></th><td>Stability AI</td><td>2023</td><td>3,5B</td><td>OpenRAIL++-M</td><td>ja*</td><td>Ohne Angabe</td><td>Basis vieler Finetunes</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#sd35">SD 3.5 LARGE/MEDIUM</a></th><td>Stability AI</td><td>2024</td><td>8,1B/2,5B</td><td>Community</td><td>bis 1 Mio. USD</td><td>Gefiltert</td><td>3D, Prompt-Treue</td><td>Medium 9,9 GB</td></tr>
+          <tr><th scope="row"><a href="#juggernaut">JUGGERNAUT XL</a></th><td>RunDiffusion</td><td>2023–25</td><td>3,5B</td><td>OpenRAIL-M</td><td>ja*</td><td>Ohne Angabe</td><td>Fotorealismus</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#realvisxl">REALVISXL V5.0</a></th><td>SG161222</td><td>2024</td><td>3,5B</td><td>OpenRAIL++-M</td><td>ja*</td><td>Offen (SFW/NSFW)</td><td>Fotorealismus</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#pony-v6">PONY DIFFUSION V6 XL</a></th><td>PurpleSmartAI</td><td>2024</td><td>3,5B</td><td>FAIPL mod.</td><td>nur nach Anfrage</td><td>Offen trainiert</td><td>Anime, Cartoon, Furry</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#pony-v7">PONY V7</a></th><td>PurpleSmartAI</td><td>2025</td><td>~7B</td><td>Pony License</td><td>eingeschränkt</td><td>Offen trainiert</td><td>Anime, mehr Realismus</td><td>k. A. (GGUF)</td></tr>
+          <tr><th scope="row"><a href="#illustrious">ILLUSTRIOUS XL</a></th><td>OnomaAI</td><td>2024–25</td><td>3,5B</td><td>FAIPL / OpenRAIL</td><td>eingeschränkt</td><td>Offen (Danbooru)</td><td>Anime, Figurenwissen</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#noobai">NOOBAI-XL</a></th><td>Laxhar Lab</td><td>2024</td><td>3,5B</td><td>FAIPL + Zusatz</td><td>nein</td><td>Offen trainiert</td><td>Anime, dunkle Bilder</td><td>8 GB</td></tr>
+          <tr><th scope="row"><a href="#anima">ANIMA</a></th><td>CircleStone/Comfy</td><td>2026</td><td>2B</td><td>Non-Commercial</td><td>Outputs ja</td><td>Offen trainiert</td><td>modernes Anime</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#neta-lumina">NETA LUMINA</a></th><td>Neta.art</td><td>2025</td><td>2B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>Anime, Guofeng</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#flux1">FLUX.1 [DEV]</a></th><td>Black Forest Labs</td><td>2024</td><td>12B</td><td>Non-Commercial</td><td>Outputs ja</td><td>Ohne Angabe</td><td>Allrounder, Glanz, Hände</td><td>~24 GB (BF16)</td></tr>
+          <tr><th scope="row"><a href="#flux1">FLUX.1 [SCHNELL]</a></th><td>Black Forest Labs</td><td>2024</td><td>12B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>schnell (1–4 Schritte)</td><td>~24 GB (BF16)</td></tr>
+          <tr><th scope="row"><a href="#flux1-kontext-krea">FLUX.1 KONTEXT/KREA [DEV]</a></th><td>BFL (+Krea)</td><td>2025</td><td>12B</td><td>Non-Commercial</td><td>Outputs ja</td><td>Gefiltert</td><td>Editierung / natürlicher Look</td><td>~24 GB (BF16)</td></tr>
+          <tr><th scope="row"><a href="#flux2">FLUX.2 [DEV]</a></th><td>Black Forest Labs</td><td>2025</td><td>32B</td><td>Non-Commercial</td><td>Outputs ja</td><td>Gefiltert</td><td>Top-Qualität, Referenzen</td><td>24–32+ GB (4-Bit)</td></tr>
+          <tr><th scope="row"><a href="#flux2-klein">FLUX.2 [KLEIN] 4B/9B</a></th><td>Black Forest Labs</td><td>2026</td><td>4B/9B</td><td>Apache 2.0 / NC</td><td>4B ja</td><td>Gefiltert</td><td>sehr schnell</td><td>~13 GB (4B)</td></tr>
+          <tr><th scope="row"><a href="#chroma">CHROMA1-HD</a></th><td>Lodestone Rock</td><td>2025</td><td>8,9B</td><td>Apache 2.0</td><td>ja</td><td>Offen trainiert (uncensored)</td><td>Allrounder ohne Filter</td><td>~18 GB (BF16)</td></tr>
+          <tr><th scope="row"><a href="#qwen-image">QWEN-IMAGE / 2512</a></th><td>Alibaba Qwen</td><td>2025</td><td>20B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>Text, Realismus, Ostasien</td><td>~40 GB (BF16)</td></tr>
+          <tr><th scope="row"><a href="#qwen-image-21">QWEN-IMAGE-2.1</a></th><td>Alibaba Qwen</td><td>2026</td><td>7B</td><td>Research</td><td>nein</td><td>Ohne Angabe</td><td>Gen + Edit, RGBA, 2K</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#z-image">Z-IMAGE TURBO/BASE</a></th><td>Tongyi-MAI</td><td>2025–26</td><td>6B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>Fotorealismus, schnell</td><td>16 GB</td></tr>
+          <tr><th scope="row"><a href="#hidream">HIDREAM-I1</a></th><td>HiDream.ai</td><td>2025</td><td>17B</td><td>MIT</td><td>ja</td><td>Ohne Angabe</td><td>Stilvielfalt, Prompt-Treue</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#hunyuanimage">HUNYUANIMAGE 2.1</a></th><td>Tencent</td><td>2025</td><td>17B</td><td>Hunyuan (nicht EU)</td><td>nicht in EU</td><td>Ohne Angabe</td><td>2K, Semantik</td><td>24 GB</td></tr>
+          <tr><th scope="row"><a href="#krea2">KREA 2</a></th><td>Krea</td><td>2026</td><td>12B</td><td>Community</td><td>bis 1 Mio. USD</td><td>Gefiltert</td><td>Ästhetik, LoRA-Basis</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#ideogram4">IDEOGRAM 4</a></th><td>Ideogram</td><td>2026</td><td>9,3B</td><td>Non-Commercial</td><td>nein</td><td>Gefiltert</td><td>Text, Design</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#ernie-image">ERNIE-IMAGE</a></th><td>Baidu</td><td>2026</td><td>8B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>Text, Poster, Kino-Look</td><td>24 GB</td></tr>
+          <tr><th scope="row"><a href="#glm-image">GLM-IMAGE</a></th><td>Z.ai</td><td>2026</td><td>9B+7B</td><td>MIT</td><td>ja</td><td>Ohne Angabe</td><td>Text, Wissen</td><td>~23 GB</td></tr>
+          <tr><th scope="row"><a href="#lumina2">LUMINA-IMAGE 2.0</a></th><td>Alpha-VLLM</td><td>2025</td><td>2B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>effiziente Basis</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#pixart-sigma">PIXART-Σ</a></th><td>PixArt</td><td>2024</td><td>0,6B</td><td>OpenRAIL++-M</td><td>ja*</td><td>Ohne Angabe</td><td>klein, bis 4K</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#kolors">KOLORS</a></th><td>Kuaishou</td><td>2024</td><td>U-Net + GLM</td><td>eigene</td><td>nach Registrierung</td><td>Ohne konkrete Angabe</td><td>Ostasien, Chinesisch</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#auraflow">AURAFLOW V0.3</a></th><td>fal</td><td>2024</td><td>6,8B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>Basis von Pony V7</td><td>k. A.</td></tr>
+          <tr><th scope="row"><a href="#wan">WAN 2.1 / 2.2</a></th><td>Alibaba Wan</td><td>2025</td><td>1,3B–14B</td><td>Apache 2.0</td><td>ja</td><td>Ohne Angabe</td><td>filmischer Realismus</td><td>8–80 GB</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note">* mit den Nutzungsbeschränkungen der jeweiligen RAIL-Lizenz. «k. A.» = keine offizielle Angabe. VRAM-Werte stammen aus den Model Cards oder sind aus der Gewichtsgrösse berechnet (BF16, ohne Text-Encoder); Quantisierung senkt sie deutlich. «Ohne Angabe» heisst nicht automatisch «unzensiert».</p>
+    </section>
+    <section class="group" id="stable-diffusion" aria-labelledby="stable-diffusion-h">
+    <div class="card group-head">
+      <h2 id="stable-diffusion-h">Stable-Diffusion-Familie und fotorealistische SDXL-Finetunes</h2>
+      <p>Die ältesten, aber bis heute meistgenutzten offenen Modelle. Ihr grösster Vorteil ist das riesige Ökosystem aus Finetunes, LoRAs und ControlNets und der geringe Hardwarebedarf.</p>
+    </div>
+    <article class="card model" id="sd15" aria-labelledby="sd15-h">
+      <h3 id="sd15-h">Stable Diffusion 1.5</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Runway in Zusammenarbeit mit CompVis (LMU München) und Stability AI; das ursprüngliche Repository runwayml/stable-diffusion-v1-5 ist zurückgezogen, offizieller Spiegel: stable-diffusion-v1-5</dd>
+        <dt>Veröffentlicht</dt><dd>Oktober 2022</dd>
+        <dt>Lizenz</dt><dd>CreativeML OpenRAIL-M – kommerzielle Nutzung erlaubt, aber mit verbindlichen Nutzungsbeschränkungen (Attachment A)</dd>
+        <dt>Architektur / Grösse</dt><dd>Latent-Diffusion mit U-Net (rund 860 Mio. Parameter) und CLIP-ViT-L/14-Text-Encoder; native Auflösung 512 × 512</dd>
+        <dt>Hardware</dt><dd>läuft schon auf älteren Grafikkarten mit wenig VRAM (Grössenordnung 4 GB mit Optimierungen); Checkpoint rund 2 GB in FP16</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Filter in den Gewichten.</strong> Trainiert auf Teilmengen von LAION-2B(en); die Model Card weist darauf hin, dass LAION-5B Erwachsenen-Material enthält. Vorgesehen war ein nachgelagerter «Safety Checker» in der Diffusers-Bibliothek – ComfyUI, AUTOMATIC1111 und Forge verwenden ihn standardmässig nicht.</dd>
+        <dt>Unzensierte Varianten</dt><dd>tausende Community-Checkpoints auf Civitai, z. B. Realistic Vision (SG161222) für Fotorealismus und majicMIX realistic (Merjic) mit Fokus auf ostasiatische Gesichter</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Durch das grösste LoRA-Ökosystem lässt sich praktisch jeder Stil nachrüsten – Airbrush-, Pin-up-, CGI- oder Anime-Looks, glänzendes PVC/Latex oder helle, makellose Haut über passende LoRAs. Das Basismodell selbst wirkt nach heutigen Massstäben veraltet: geringe Auflösung, schwache Hände (bekannte Schwäche der SD-1.x-Generation), Anatomie- und Kompositionsfehler bei komplexen Szenen. Komplett weisse Augen gelingen meist nur mit LoRA oder Inpainting.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> gering; Schrift im Bild ist praktisch nicht nutzbar. Prompts funktionieren am besten als Stichwortlisten.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5">https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5</a> · <a href="https://civitai.com/models/4201">https://civitai.com/models/4201</a> · <a href="https://civitai.com/models/43331">https://civitai.com/models/43331</a></p>
+    </article>
+    <article class="card model" id="sdxl" aria-labelledby="sdxl-h">
+      <h3 id="sdxl-h">Stable Diffusion XL (SDXL 1.0)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Stability AI</dd>
+        <dt>Veröffentlicht</dt><dd>26. Juli 2023</dd>
+        <dt>Lizenz</dt><dd>CreativeML Open RAIL++-M – kommerzielle Nutzung erlaubt, mit Nutzungsbeschränkungen</dd>
+        <dt>Architektur / Grösse</dt><dd>Latent-Diffusion mit grossem U-Net; laut Stability AI 3,5 Mrd. Parameter im Basismodell, 6,6 Mrd. zusammen mit dem Refiner; zwei Text-Encoder (OpenCLIP ViT-bigG und CLIP ViT-L); native Auflösung 1024 × 1024</dd>
+        <dt>Hardware</dt><dd>laut Stability AI auf Consumer-GPUs mit 8 GB VRAM nutzbar</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur NSFW-Filterung in der Model Card, kein Filter in den Gewichten. Das Basismodell gilt bei Erotik als eher zurückhaltend; die Lücke füllen Community-Finetunes.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Pony Diffusion V6 XL, Illustrious XL, NoobAI-XL (Anime) sowie RealVisXL (Foto) – siehe eigene Abschnitte</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> SDXL ist bis heute die wichtigste Basis für lokale Bildgenerierung, weil fast jede Stil-Nische als Finetune oder LoRA existiert. Laut Stability AI erzeugt SDXL Bilder in «praktisch jedem Kunststil» und war bei Erscheinen das beste offene Modell für Fotorealismus, inklusive besserer Hände als die Vorgänger. Für Airbrush-, CGI- und Hochglanz-Looks (PVC, Lack, Latex) sind die Finetunes meist besser geeignet als das Basismodell.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> ordentlich bei einfachen Szenen, schwächer bei mehreren Figuren und genauen Positionen; Text im Bild nur kurz und unzuverlässig.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0</a> · <a href="https://stability.ai/news/stable-diffusion-sdxl-1-announcement">https://stability.ai/news/stable-diffusion-sdxl-1-announcement</a></p>
+    </article>
+    <article class="card model" id="sd35" aria-labelledby="sd35-h">
+      <h3 id="sd35-h">Stable Diffusion 3.5 (Large, Large Turbo, Medium)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Stability AI</dd>
+        <dt>Veröffentlicht</dt><dd>22. Oktober 2024 (Large, Large Turbo), 29. Oktober 2024 (Medium)</dd>
+        <dt>Lizenz</dt><dd>Stability AI Community License – kostenlos für Forschung, nicht-kommerzielle Nutzung und kommerzielle Nutzung bei weniger als 1 Mio. USD Jahresumsatz; darüber Enterprise-Lizenz</dd>
+        <dt>Architektur / Grösse</dt><dd>Multimodal Diffusion Transformer (MMDiT); Large 8,1 Mrd. Parameter, Medium 2,5 Mrd. (MMDiT-X); Large Turbo ist eine auf 4 Schritte destillierte Version von Large</dd>
+        <dt>Hardware</dt><dd>Medium laut Stability AI 9,9 GB VRAM (ohne Text-Encoder); Large deutlich mehr, quantisierte Varianten senken den Bedarf</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert:</strong> laut Model Card mit «filtered data sets» und Sicherheitsmassnahmen trainiert.</dd>
+        <dt>Unzensierte Varianten</dt><dd>deutlich weniger Community-Finetunes als bei SDXL oder FLUX</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Stability AI nennt ausdrücklich 3D, Fotografie, Malerei und Line-Art; die Ausgaben sind bewusst variantenreich (gleicher Prompt, sehr unterschiedliche Bilder). Für CGI- und Surrealismus-Motive ist die gute Prompt-Treue hilfreich. Für Erotik ist das Modell wegen der gefilterten Daten wenig geeignet, und das Finetune-Ökosystem blieb klein.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> laut Stability AI eine Stärke von Large; Typografie deutlich besser als SDXL.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">https://huggingface.co/stabilityai/stable-diffusion-3.5-large</a> · <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">https://huggingface.co/stabilityai/stable-diffusion-3.5-medium</a> · <a href="https://stability.ai/news/introducing-stable-diffusion-3-5">https://stability.ai/news/introducing-stable-diffusion-3-5</a> · <a href="https://stability.ai/license">https://stability.ai/license</a></p>
+    </article>
+    <article class="card model" id="juggernaut" aria-labelledby="juggernaut-h">
+      <h3 id="juggernaut-h">Juggernaut XL</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>RunDiffusion (Version 9 gemeinsam mit KandooAI)</dd>
+        <dt>Veröffentlicht</dt><dd>SDXL-Finetune seit 2023; v9 im Februar 2024, X im April 2024, XI im August 2024, «Ragnarok» im Mai 2025 (Daten laut Civitai)</dd>
+        <dt>Lizenz</dt><dd>v9 auf Hugging Face: CreativeML OpenRAIL-M</dd>
+        <dt>Architektur / Grösse</dt><dd>SDXL-Finetune (gleiche Grösse wie SDXL)</dd>
+        <dt>Hardware</dt><dd>laut Model Card komfortabel mit 8 GB VRAM</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zu NSFW in der Model Card; das Modell ist primär auf Fotorealismus ausgelegt.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut RunDiffusion «das weltweit meistgeladene SDXL-Modell» (über 6 Mio. Downloads auf Hugging Face), gezielt für Fotorealismus gebaut – Hauttextur, Mikrokontrast und natürliches Licht. Geeignet für realistische Porträts, Mode und Produktbilder; Hochglanzmaterialien wie Lack oder Latex profitieren von der guten Lichtwiedergabe. Für Anime oder komplett weisse Augen ohne LoRA eher ungeeignet.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> wie SDXL; voll kompatibel mit SDXL-ControlNets, IP-Adaptern und LoRAs.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/RunDiffusion/Juggernaut-XL-v9">https://huggingface.co/RunDiffusion/Juggernaut-XL-v9</a> · <a href="https://civitai.com/models/133005">https://civitai.com/models/133005</a></p>
+    </article>
+    <article class="card model" id="realvisxl" aria-labelledby="realvisxl-h">
+      <h3 id="realvisxl-h">RealVisXL V5.0</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>SG161222 (auch Autor von Realistic Vision für SD 1.5)</dd>
+        <dt>Veröffentlicht</dt><dd>August 2024 (V5.0 laut Civitai)</dd>
+        <dt>Lizenz</dt><dd>CreativeML Open RAIL++-M</dd>
+        <dt>Architektur / Grösse</dt><dd>SDXL-Finetune; zusätzlich «Lightning»-Variante für wenige Schritte</dd>
+        <dt>Hardware</dt><dd>wie SDXL (rund 8 GB VRAM)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen:</strong> laut Model Card auf Fotorealismus ausgerichtet und fähig, SFW- und NSFW-Bilder zu erzeugen.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> fotorealistische Menschen, Haut und Stoffe; geeignet für realistische Hochglanz-Looks, helle, glatte Haut (per Prompt bzw. Negativprompt steuerbar) und Porträts. Die Model Card empfiehlt einen Negativprompt gegen Hand- und Augenfehler und ein Hires-Fix-Upscaling – ein Hinweis darauf, dass Hände und Augen auch hier Nacharbeit brauchen können.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> wie SDXL.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/SG161222/RealVisXL_V5.0">https://huggingface.co/SG161222/RealVisXL_V5.0</a> · <a href="https://civitai.com/models/139562">https://civitai.com/models/139562</a></p>
+    </article>
+    </section>
+    <section class="group" id="anime" aria-labelledby="anime-h">
+    <div class="card group-head">
+      <h2 id="anime-h">Anime- und Illustrationsmodelle</h2>
+      <p>Diese Modelle sind meist auf Danbooru-, e621- oder ähnlichen Tag-Datensätzen trainiert. Sie verstehen deshalb Stichwort-Tags wie <code>white_eyes</code>, <code>empty_eyes</code>, <code>blank_eyes</code>, <code>no_pupils</code>, <code>latex</code>, <code>latex_bodysuit</code>, <code>shiny_clothes</code>, <code>pale_skin</code>, <code>3d</code> oder <code>surreal</code> – alles Tags, die es auf Danbooru gibt (laut Tag-Liste der Erweiterung <a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">A1111-SD-WEBUI-TAGCOMPLETE</a>, teils mit zehntausenden Einträgen). Das macht sie besonders treffsicher für weisse Augen, Hochglanz-Kleidung und helle Haut im Anime-Stil.</p>
+    </div>
+    <article class="card model" id="pony-v6" aria-labelledby="pony-v6-h">
+      <h3 id="pony-v6-h">Pony Diffusion V6 XL</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>PurpleSmartAI (AstraliteHeart)</dd>
+        <dt>Veröffentlicht</dt><dd>Januar 2024 (Civitai)</dd>
+        <dt>Lizenz</dt><dd>modifizierte Fair AI Public License 1.0-SD: kein Betrieb auf Websites oder in Apps mit Monetarisierung (auch nicht für abgeleitete Modelle); kommerzielle Nutzung nur nach Anfrage</dd>
+        <dt>Architektur / Grösse</dt><dd>SDXL-Finetune, trainiert auf rund 2,6 Mio. Bildern</dd>
+        <dt>Hardware</dt><dd>wie SDXL (rund 8 GB VRAM); «Clip Skip 2» ist laut Entwickler Pflicht</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen trainiert:</strong> laut Entwickler etwa 1:1 aus Anime/Cartoon/Furry/Pony-Daten und 1:1 aus «safe/questionable/explicit» bewerteten Bildern.</dd>
+        <dt>Unzensierte Varianten</dt><dd>unzählige Merges und LoRAs auf Civitai («Pony»-Basis)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Charaktere im Anime-, Cartoon- und Furry-Stil, auch Interaktionen mehrerer Figuren. Steuerung über Qualitäts-Tags (<code>score_9, score_8_up …</code>) und Quellen-Tags (<code>source_anime</code> usw.). Über Tags und LoRAs gut für Airbrush- und Hochglanz-Anime, Latex/PVC-Outfits und weisse Augen. Fotorealismus ist keine Stärke; der Entwickler nennt ausserdem schwer entfernbare Pseudo-Signaturen.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> versteht natürliche Sprache und Tags; Text im Bild praktisch nicht.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://civitai.com/models/257749">https://civitai.com/models/257749</a></p>
+    </article>
+    <article class="card model" id="pony-v7" aria-labelledby="pony-v7-h">
+      <h3 id="pony-v7-h">Pony V7</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>PurpleSmartAI</dd>
+        <dt>Veröffentlicht</dt><dd>Oktober 2025 (Civitai-Seite vom 8. Oktober 2025, Gewichte auf Hugging Face seit Ende Oktober 2025)</dd>
+        <dt>Lizenz</dt><dd>«Pony License»: laut Model Card kommerzielle Nutzung von Modell und Outputs erlaubt, ausser bei Inferenz-Diensten/Apps, Firmen mit über 1 Mio. Umsatz oder professioneller Videoproduktion</dd>
+        <dt>Architektur / Grösse</dt><dd>basiert auf AuraFlow (rund 7 Mrd. Parameter); Auflösungen 768 bis 1536 px</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe; Gewichte in BF16 rechnerisch rund 14 GB (ohne Text-Encoder); GGUF-Varianten (Q8_0 empfohlen) für weniger VRAM</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen trainiert:</strong> rund 10 Mio. Bilder, je etwa 1:1 «safe/questionable/explicit»; laut Entwickler wurden unangemessene explizite Inhalte herausgefiltert.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Entwickler gegenüber V6 viel besseres Verständnis für räumliche Angaben und mehrere Figuren, bessere Hintergründe, deutlich mehr Realismus und sehr helle bzw. sehr dunkle Bilder. Einschränkungen laut Model Card: Qualitäts-Tags wirken schwächer als bei V6, kleine Details und Gesichter können je nach Stil leiden (veralteter VAE); eine Version 7.1 ist angekündigt. Das Ökosystem ist wegen der AuraFlow-Basis kleiner als bei SDXL.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> natürliche Sprache plus Tags; Textdarstellung laut Entwickler ausdrücklich nicht unterstützt.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/purplesmartai/pony-v7-base">https://huggingface.co/purplesmartai/pony-v7-base</a> · <a href="https://civitai.com/models/1901521">https://civitai.com/models/1901521</a></p>
+    </article>
+    <article class="card model" id="illustrious" aria-labelledby="illustrious-h">
+      <h3 id="illustrious-h">Illustrious XL</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>OnomaAI Research</dd>
+        <dt>Veröffentlicht</dt><dd>v0.1 im September 2024; v1.0, v1.1 und v2.0 auf Hugging Face seit Februar, März bzw. April 2025</dd>
+        <dt>Lizenz</dt><dd>v0.1: Fair AI Public License 1.0-SD (abgeleitete Modelle müssen offen bleiben, keine Monetarisierung geschlossener Derivate); spätere Versionen laut Hugging-Face-Metadaten unter SDXL- bzw. CreativeML-OpenRAIL-M-Lizenz</dd>
+        <dt>Architektur / Grösse</dt><dd>SDXL-Finetune, fortgesetzt von Kohaku XL Beta 5, trainiert auf Danbooru2023</dd>
+        <dt>Hardware</dt><dd>wie SDXL (rund 8 GB VRAM)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen (Danbooru-Daten):</strong> Danbooru enthält auch Erwachsenen-Inhalte, entsprechend kann das Basismodell NSFW erzeugen. OnomaAI empfiehlt ausdrücklich die Variante «v0.1-GUIDED» mit zusätzlichen Sicherheitsmechanismen.</dd>
+        <dt>Unzensierte Varianten</dt><dd>NoobAI-XL und sehr viele Community-Merges auf Civitai</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Illustration und Anime mit enormem Wissen über Figuren, Stile und Künstler aus Danbooru; Das Basismodell ist laut OnomaAI vor allem als Grundlage für eigene Finetunes gedacht; die meisten Nutzer verwenden Community-Merges. Über Danbooru-Tags besonders treffsicher bei weissen bzw. leeren Augen, Latex- und Hochglanz-Kleidung, heller Haut, 3D- und surrealen Motiven. Für Fotorealismus nicht gedacht.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> Tag-basiert (Danbooru-Tags); natürliche Sprache nur eingeschränkt. Text im Bild kaum.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0">https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0</a> · <a href="https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0">https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0</a> · <a href="https://arxiv.org/abs/2409.19946">https://arxiv.org/abs/2409.19946</a></p>
+    </article>
+    <article class="card model" id="noobai" aria-labelledby="noobai-h">
+      <h3 id="noobai-h">NoobAI-XL (Epsilon und V-Pred)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Laxhar Lab (Laxhar Dream Lab)</dd>
+        <dt>Veröffentlicht</dt><dd>Epsilon 1.0/1.1 im November 2024, V-Pred 1.0 im Dezember 2024</dd>
+        <dt>Lizenz</dt><dd>Fair AI Public License 1.0-SD mit Zusatzbedingungen: <strong>jede Kommerzialisierung verboten</strong>, Derivate und Merges müssen offengelegt werden</dd>
+        <dt>Architektur / Grösse</dt><dd>SDXL-Finetune auf Basis von Illustrious XL; trainiert auf den vollständigen Danbooru- und e621-Datensätzen</dd>
+        <dt>Hardware</dt><dd>wie SDXL; die V-Pred-Version braucht passende Einstellungen (v-prediction, Euler-Sampler) und wird u. a. in reForge und ComfyUI unterstützt</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen trainiert</strong> (Hugging-Face-Tag «not-for-all-audiences»); die Entwickler setzen im empfohlenen Negativprompt sogar «nsfw» ein, um SFW-Bilder zu erhalten.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> sehr breites Anime- und Furry-Wissen mit Danbooru-Daten bis etwa 23. Oktober 2024 (laut Model Card), Datums- und Qualitäts-Tags. Die V-Pred-Variante gilt in der Community als stark bei sehr dunklen und kontrastreichen Bildern – gut für schwarzes Hochglanz-Latex/PVC mit harten Reflexen. Weisse Augen, helle Haut, 3D-Look und Surrealismus lassen sich über Danbooru-Tags direkt ansprechen.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> Tag-basiert, natürliche Sprache eingeschränkt; kein brauchbarer Text im Bild.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Laxhar/noobai-XL-1.1">https://huggingface.co/Laxhar/noobai-XL-1.1</a> · <a href="https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0">https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0</a></p>
+    </article>
+    <article class="card model" id="anima" aria-labelledby="anima-h">
+      <h3 id="anima-h">Anima</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>CircleStone Labs in Zusammenarbeit mit Comfy Org</dd>
+        <dt>Veröffentlicht</dt><dd>Hugging Face seit Januar 2026</dd>
+        <dt>Lizenz</dt><dd>CircleStone Labs Non-Commercial License: Gewichte nur nicht-kommerziell; Outputs dürfen laut Lizenz auch kommerziell genutzt werden</dd>
+        <dt>Architektur / Grösse</dt><dd>2 Mrd. Parameter, Finetune von NVIDIA Cosmos-Predict2-2B-Text2Image; Text-Encoder Qwen3 0.6B, VAE von Qwen-Image; Varianten Base, Aesthetic und Turbo (8–12 Schritte)</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe; wegen der geringen Grösse auch für Mittelklasse-GPUs geeignet</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen trainiert:</strong> mehrere Millionen Anime-Bilder plus rund 800 000 nicht-Anime-Kunstwerke; das Modell kennt die Sicherheits-Tags safe, sensitive, nsfw und explicit (Wissensstand der Anime-Daten: September 2025).</dd>
+        <dt>Unzensierte Varianten</dt><dd>Community-Erweiterung Anima-2.9B (Schicht-Erweiterung, Wissensstand Juli 2026, gleiche Lizenz)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> modernes Anime- und Illustrationsmodell mit aktuellem Figurenwissen, Danbooru-Tags und natürlicher Sprache; laut Entwickler auch für andere nicht-fotorealistische Kunst geeignet. Der Sampler euler_a neigt laut Model Card zu einem 2,5D-Look. Über Tags gut für weisse Augen, Latex/Hochglanz und helle Haut im Anime-Stil. Unterstützt in ComfyUI (nativ) und Forge Neo.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> Tags plus Fliesstext; Prompt-Gewichtungen müssen höher sein als bei SDXL.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/circlestone-labs/Anima">https://huggingface.co/circlestone-labs/Anima</a> · <a href="https://huggingface.co/Gazingstars123/Anima-2.9B">https://huggingface.co/Gazingstars123/Anima-2.9B</a></p>
+    </article>
+    <article class="card model" id="neta-lumina" aria-labelledby="neta-lumina-h">
+      <h3 id="neta-lumina-h">Neta Lumina</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Neta.art Lab</dd>
+        <dt>Veröffentlicht</dt><dd>Juni 2025</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0</dd>
+        <dt>Architektur / Grösse</dt><dd>Finetune von Lumina-Image 2.0 (2 Mrd. Parameter) mit Gemma-Text-Encoder</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe; kleines Modell</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Anime mit natürlicher Sprache und Danbooru-Tags; laut Entwickler optimiert u. a. für Furry, Guofeng (traditionelle chinesische Ästhetik) und Haustiere – interessant für ostasiatische Ästhetik im Illustrationsstil. Mehrsprachige Prompts (Chinesisch, Englisch, Japanisch empfohlen).</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> laut Entwickler gute Befolgung komplexer Prompts dank Gemma-Encoder.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/neta-art/Neta-Lumina">https://huggingface.co/neta-art/Neta-Lumina</a></p>
+    </article>
+    </section>
+    <section class="group" id="flux" aria-labelledby="flux-h">
+    <div class="card group-head">
+      <h2 id="flux-h">FLUX-Familie und Chroma</h2>
+      <p>Black Forest Labs (BFL) wurde von ehemaligen Stable-Diffusion-Entwicklern gegründet. Die FLUX-Modelle setzen seit 2024 Massstäbe bei Bildqualität und Prompt-Treue; die neueren Versionen sind allerdings ausdrücklich gegen NSFW-Inhalte gehärtet. Chroma ist der bekannteste Community-Gegenentwurf.</p>
+    </div>
+    <article class="card model" id="flux1" aria-labelledby="flux1-h">
+      <h3 id="flux1-h">FLUX.1 [dev] und FLUX.1 [schnell]</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Black Forest Labs (Freiburg im Breisgau)</dd>
+        <dt>Veröffentlicht</dt><dd>1. August 2024</dd>
+        <dt>Lizenz</dt><dd>[schnell]: Apache 2.0 (auch kommerziell); [dev]: FLUX.1 [dev] Non-Commercial License – Gewichte nur nicht-kommerziell, erzeugte Bilder dürfen kommerziell genutzt werden; Pflicht zu Content-Filtern oder manueller Prüfung vor der Weitergabe von Outputs</dd>
+        <dt>Architektur / Grösse</dt><dd>Rectified-Flow-Transformer mit 12 Mrd. Parametern; Text-Encoder T5-XXL und CLIP-L; [schnell] ist auf 1–4 Schritte destilliert, [dev] per Guidance-Distillation</dd>
+        <dt>Hardware</dt><dd>BF16-Gewichte rund 24 GB; mit FP8-, NF4- oder GGUF-Quantisierung (z. B. city96/FLUX.1-dev-gguf) auch auf 8–12-GB-Karten lauffähig, dann langsamer</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur Trainingsfilterung in den ursprünglichen Model Cards; in der Praxis fehlen dem Modell explizite anatomische Konzepte weitgehend (Community-Erfahrung – genau diese Lücke will Chroma schliessen). BFL liefert im GitHub-Repository optionale Inferenz-Filter mit.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Chroma (siehe unten) sowie zahlreiche Community-Finetunes und LoRAs auf Civitai</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut BFL Ausgabequalität direkt hinter dem damaligen Spitzenmodell FLUX.1 [pro]; sehr gut bei CGI-/3D-Render-Looks, Produkt- und Hochglanzoberflächen (Reflexionen auf Lack, PVC oder Latex), glatter heller Haut und surrealen Kompositionen. Hände sind gegenüber SDXL deutlich zuverlässiger. In der Community oft genannte Eigenheiten: eine Tendenz zu sehr glatter, «plastischer» Haut und zum typischen «FLUX-Kinn» – für einen Airbrush-Look eher ein Vorteil. Anime ist möglich, aber nicht die Stärke des Basismodells.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> sehr gut; versteht lange Beschreibungen in natürlicher Sprache und kann kurze Texte im Bild sauber setzen. [dev] verwendet keinen klassischen Negativprompt.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">https://huggingface.co/black-forest-labs/FLUX.1-dev</a> · <a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">https://huggingface.co/black-forest-labs/FLUX.1-schnell</a> · <a href="https://github.com/black-forest-labs/flux">https://github.com/black-forest-labs/flux</a> · <a href="https://huggingface.co/city96/FLUX.1-dev-gguf">https://huggingface.co/city96/FLUX.1-dev-gguf</a></p>
+    </article>
+    <article class="card model" id="flux1-kontext-krea" aria-labelledby="flux1-kontext-krea-h">
+      <h3 id="flux1-kontext-krea-h">FLUX.1 Kontext [dev] und FLUX.1 Krea [dev]</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Black Forest Labs; Krea [dev] gemeinsam mit Krea</dd>
+        <dt>Veröffentlicht</dt><dd>Kontext [dev]: 26. Juni 2025; Krea [dev]: 31. Juli 2025</dd>
+        <dt>Lizenz</dt><dd>FLUX.1 [dev] Non-Commercial License (inkl. Filter- bzw. Prüfpflicht)</dd>
+        <dt>Architektur / Grösse</dt><dd>je 12 Mrd. Parameter; Kontext ist ein Bild-Editiermodell (Bild + Textanweisung), Krea [dev] ein Text-zu-Bild-Modell</dd>
+        <dt>Hardware</dt><dd>wie FLUX.1 [dev]</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert:</strong> laut Model Cards NSFW-Filterung der Trainingsdaten, Filterung bekannten Missbrauchsmaterials gemeinsam mit der Internet Watch Foundation und mehrere Runden gezieltes Safety-Finetuning gegen synthetisches Missbrauchsmaterial und nicht-einvernehmliche intime Bilder (NCII).</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Kontext eignet sich für konsistente Figuren über mehrere Bilder, Stilübertragung und gezielte lokale Änderungen (z. B. Kleidung, Augenfarbe, Hintergrund). Krea [dev] legt laut Model Card den Fokus auf ästhetische Fotografie und wurde entwickelt, um den übersättigten «KI-Look» zu überwinden – natürlicher, fotografischer und damit eher das Gegenteil eines Airbrush-Looks.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> sehr gut; Kontext folgt Editieranweisungen präzise.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev">https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev</a> · <a href="https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev">https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev</a></p>
+    </article>
+    <article class="card model" id="flux2" aria-labelledby="flux2-h">
+      <h3 id="flux2-h">FLUX.2 [dev]</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Black Forest Labs</dd>
+        <dt>Veröffentlicht</dt><dd>25. November 2025</dd>
+        <dt>Lizenz</dt><dd>FLUX [dev] Non-Commercial License</dd>
+        <dt>Architektur / Grösse</dt><dd>Rectified-Flow-Transformer mit 32 Mrd. Parametern; Text-Encoder Mistral-Small-3.2-24B; Generierung, Editierung und Kombination mehrerer Referenzbilder in einem Modell</dd>
+        <dt>Hardware</dt><dd>laut BFL auf RTX 4090/5090 nur mit 4-Bit-Quantisierung und ausgelagertem (Remote-)Text-Encoder; unquantisiert Rechenzentrums-GPUs wie H100</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert:</strong> NSFW- und Missbrauchsmaterial-Filterung der Trainingsdaten, Safety-Finetuning gegen synthetisches Missbrauchsmaterial und NCII, externe Prüfungen vor der Veröffentlichung.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut BFL Stand der Technik bei offener Text-zu-Bild-Generierung und Multi-Referenz-Editierung: Figuren, Objekte und Stile aus Referenzbildern ohne eigenes Training übernehmen. Sehr stark bei Fotorealismus, Produkt-/CGI-Look und Typografie. Für freizügige Inhalte ungeeignet.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> sehr hoch, inklusive Text im Bild.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/black-forest-labs/FLUX.2-dev">https://huggingface.co/black-forest-labs/FLUX.2-dev</a> · <a href="https://github.com/black-forest-labs/flux2">https://github.com/black-forest-labs/flux2</a></p>
+    </article>
+    <article class="card model" id="flux2-klein" aria-labelledby="flux2-klein-h">
+      <h3 id="flux2-klein-h">FLUX.2 [klein] (4B und 9B)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Black Forest Labs</dd>
+        <dt>Veröffentlicht</dt><dd>15. Januar 2026</dd>
+        <dt>Lizenz</dt><dd>4B (und 4B-Base): Apache 2.0, auch kommerziell; 9B-Varianten: FLUX Non-Commercial License</dd>
+        <dt>Architektur / Grösse</dt><dd>Rectified-Flow-Transformer mit 4 bzw. 9 Mrd. Parametern; destillierte Varianten mit 4 Schritten und undestillierte «Base»-Varianten fürs Finetuning; Generierung und Editierung in einem Modell</dd>
+        <dt>Hardware</dt><dd>4B laut Hugging-Face-Model-Card rund 13 GB VRAM (z. B. RTX 3090/4070); das GitHub-README nennt teils niedrigere Werte – die Angaben weichen voneinander ab</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert</strong> wie FLUX.2 [dev]; Filter oder Prüfung sind bei 9B laut Lizenz Pflicht, bei 4B empfohlen.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Community-Projekte auf Basis von klein-Base, z. B. das experimentelle Chroma2-Kaleidoscope von Lodestone Rock (Work in Progress)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> sehr schnelle Generierung (laut BFL teils unter einer Sekunde), solide Qualität für die Grösse, gut für schnelle Iteration bei CGI-, Produkt- und Fotolooks. Die Apache-lizenzierten Base-Gewichte sind die wichtigste neue Grundlage für Community-Finetunes.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> gut; Text im Bild laut Model Card möglich, aber teils ungenau.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-4B">https://huggingface.co/black-forest-labs/FLUX.2-klein-4B</a> · <a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-9B">https://huggingface.co/black-forest-labs/FLUX.2-klein-9B</a></p>
+    </article>
+    <article class="card model" id="chroma" aria-labelledby="chroma-h">
+      <h3 id="chroma-h">Chroma (Chroma1-HD, -Base, -Flash)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Lodestone Rock (Community-Projekt)</dd>
+        <dt>Veröffentlicht</dt><dd>Training öffentlich ab Anfang 2025; finale Chroma1-Versionen im August 2025</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0 – auch kommerziell</dd>
+        <dt>Architektur / Grösse</dt><dd>8,9 Mrd. Parameter, stark modifizierte Version von FLUX.1 [schnell] (Timestep-Modulation verkleinert); T5-XXL-Text-Encoder, FLUX-VAE; «Flash» mit eingebackenem CFG für wenige Schritte; «Radiance» (Pixel-Space) noch in Arbeit</dd>
+        <dt>Hardware</dt><dd>in BF16 rund 18 GB Gewichte; quantisierte Fassungen (FP8, GGUF) für 8–12-GB-Karten</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Offen trainiert:</strong> laut Entwickler «fully uncensored» und mit gezielt wieder eingeführten anatomischen Konzepten, die FLUX fehlen; trainiert auf 5 Mio. Bildern (aus 20 Mio.) inklusive Anime, Furry, Kunst und Fotos; ausdrücklich «nicht auf einen bestimmten Safety-Filter ausgerichtet».</dd>
+        <dt>Unzensierte Varianten</dt><dd>Chroma ist selbst die unzensierte Alternative; Nachfolger-Experimente: Zeta-Chroma (auf Z-Image-Basis), Chroma2-Kaleidoscope (auf FLUX.2-klein-Basis), Kroma (auf Krea-2-Basis)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> breites Stilspektrum von Foto über Kunst bis Anime, mit der Bildästhetik der FLUX-Architektur. Gut für Airbrush- und CGI-Looks, Hochglanzmaterialien, helle glatte Haut und surreale Motive; dank Negativprompt und echtem CFG besser steuerbar als FLUX.1 [dev]. Gilt in der Community als eines der stärksten frei lizenzierten Modelle für erwachsene, freizügige Inhalte.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> natürliche Sprache über T5; Text im Bild möglich, aber weniger zuverlässig als bei FLUX.2 oder Qwen-Image.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/lodestones/Chroma1-HD">https://huggingface.co/lodestones/Chroma1-HD</a> · <a href="https://huggingface.co/lodestones/Chroma1-Base">https://huggingface.co/lodestones/Chroma1-Base</a> · <a href="https://huggingface.co/lodestones/Chroma1-Flash">https://huggingface.co/lodestones/Chroma1-Flash</a> · <a href="https://huggingface.co/lodestones/Chroma">https://huggingface.co/lodestones/Chroma</a> · <a href="https://huggingface.co/silveroxides/Chroma-GGUF">https://huggingface.co/silveroxides/Chroma-GGUF</a></p>
+    </article>
+    </section>
+    <section class="group" id="neue-generation" aria-labelledby="neue-generation-h">
+    <div class="card group-head">
+      <h2 id="neue-generation-h">Neue Generation 2025–2026: grosse Transformer-Modelle</h2>
+      <p>Seit 2025 kommen viele der stärksten offenen Bildmodelle aus China (Alibaba, Tencent, Baidu, Z.ai) sowie neu von Krea und Ideogram. Sie verwenden grosse Sprachmodelle als Text-Encoder und sind deshalb sehr gut im Verstehen langer Prompts und im Setzen von Text. Die meisten Model Cards schweigen zur NSFW-Filterung; die westlichen Neuzugänge Krea 2 und Ideogram 4 sind ausdrücklich gefiltert.</p>
+    </div>
+    <article class="card model" id="qwen-image" aria-labelledby="qwen-image-h">
+      <h3 id="qwen-image-h">Qwen-Image und Qwen-Image-2512</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Qwen-Team von Alibaba</dd>
+        <dt>Veröffentlicht</dt><dd>Qwen-Image: 4. August 2025; Qwen-Image-2512 (Dezember-Update): Dezember 2025</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0 – auch kommerziell</dd>
+        <dt>Architektur / Grösse</dt><dd>MMDiT mit 20 Mrd. Parametern, Qwen2.5-VL als Text-Encoder; dazu Editiermodelle (Qwen-Image-Edit)</dd>
+        <dt>Hardware</dt><dd>BF16-Gewichte rund 40 GB (rechnerisch); lokal praktisch nur mit FP8-, GGUF- oder Nunchaku-Quantisierung und Offloading auf 16–24-GB-Karten</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur NSFW-Filterung in der Model Card; explizite Anatomie gilt in der Community als schwach ausgeprägt, Community-LoRAs ergänzen sie.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Qwen ein breites Stilspektrum von Fotorealismus über impressionistische Malerei bis Anime und Minimal-Design. Das Update 2512 reduziert laut Qwen den «KI-Look» und verbessert besonders die Darstellung von Menschen (Haut, Haare, Altersmerkmale); die offiziellen Beispiele zeigen überwiegend ostasiatische Personen – ein Hinweis auf die Stärke bei ostasiatischer Ästhetik. Für einen bewusst glatten Airbrush-Look lassen sich die im Negativprompt-Beispiel genannten Begriffe («übermässig glatt», «Wachsfigur-Look») gezielt weglassen.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> eine der grössten Stärken: komplexe chinesische und englische Schrift, Plakate und Layouts mit hoher Genauigkeit.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Qwen/Qwen-Image">https://huggingface.co/Qwen/Qwen-Image</a> · <a href="https://huggingface.co/Qwen/Qwen-Image-2512">https://huggingface.co/Qwen/Qwen-Image-2512</a> · <a href="https://qwenlm.github.io/blog/qwen-image/">https://qwenlm.github.io/blog/qwen-image/</a></p>
+    </article>
+    <article class="card model" id="qwen-image-21" aria-labelledby="qwen-image-21-h">
+      <h3 id="qwen-image-21-h">Qwen-Image-2.1</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Qwen-Team von Alibaba</dd>
+        <dt>Veröffentlicht</dt><dd>20. September 2026</dd>
+        <dt>Lizenz</dt><dd><strong>Qwen Research License</strong> – nur nicht-kommerziell; kommerzielle Nutzung erfordert eine separate Lizenz</dd>
+        <dt>Architektur / Grösse</dt><dd>7 Mrd. Parameter in der Bildgenerierungs-Komponente (32 Single-Stream-DiT-Schichten); Generierung und Editierung in einem Modell, transparente Bilder (RGBA), bis zu 10 Referenzbilder, native 2K-Auflösung</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe; deutlich kleiner als der 20-Mrd.-Vorgänger</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card. Wenige Tage nach Erscheinen tauchten auf Hugging Face mehrere Community-Repositories mit «Uncensored»-GGUF-Fassungen auf – deren Qualität und Herkunft sind nicht geprüft.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Qwen realistischere Texturen, verbesserte Porträtbeleuchtung und Typografie sowie feinere Details. Interessant für Fotorealismus, Porträts mit glatter Haut, ostasiatische Ästhetik und freigestellte Figuren (RGBA). Da es sehr neu ist, gibt es noch kaum Erfahrungswerte zu Spezialstilen.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> hoch, mit verbesserter Typografie.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Qwen/Qwen-Image-2.1">https://huggingface.co/Qwen/Qwen-Image-2.1</a> · <a href="https://github.com/QwenLM/Qwen-Image-2.1">https://github.com/QwenLM/Qwen-Image-2.1</a></p>
+    </article>
+    <article class="card model" id="z-image" aria-labelledby="z-image-h">
+      <h3 id="z-image-h">Z-Image (Turbo und Base)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Tongyi-MAI (Alibaba)</dd>
+        <dt>Veröffentlicht</dt><dd>Z-Image-Turbo: 26. November 2025; Z-Image (Base): 27. Januar 2026</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0 – auch kommerziell</dd>
+        <dt>Architektur / Grösse</dt><dd>6 Mrd. Parameter, «Scalable Single-Stream DiT» (S3-DiT); Turbo ist auf 8 Schritte destilliert und unterstützt keinen Negativprompt, Base braucht 28–50 Schritte und unterstützt Negativprompts</dd>
+        <dt>Hardware</dt><dd>laut Tongyi-MAI passt Turbo bequem auf Consumer-Karten mit 16 GB VRAM; quantisiert auch weniger</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card. Nach Community-Berichten (keine offizielle Aussage) wird nicht aktiv zensiert, explizite Anatomie ist aber untertrainiert.</dd>
+        <dt>Unzensierte Varianten</dt><dd>viele Community-Finetunes und LoRAs; Zeta-Chroma von Lodestone Rock (experimentell, Basis Z-Image)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Tongyi-MAI starker Fotorealismus bei sehr hoher Geschwindigkeit; Base deckt von hyperrealistischer Fotografie über cineastische Digital Art bis Anime alles ab. Die offizielle Galerie zeigt u. a. Hanfu – gute ostasiatische Ästhetik. Gut für Porträts mit heller, glatter Haut und für CGI-Looks; das kleine Modell ist zudem gut finetunebar.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> präzise zweisprachige Textdarstellung (Chinesisch und Englisch).</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Tongyi-MAI/Z-Image-Turbo">https://huggingface.co/Tongyi-MAI/Z-Image-Turbo</a> · <a href="https://huggingface.co/Tongyi-MAI/Z-Image">https://huggingface.co/Tongyi-MAI/Z-Image</a> · <a href="https://huggingface.co/lodestones/Zeta-Chroma">https://huggingface.co/lodestones/Zeta-Chroma</a></p>
+    </article>
+    <article class="card model" id="hidream" aria-labelledby="hidream-h">
+      <h3 id="hidream-h">HiDream-I1 (Full, Dev, Fast)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>HiDream.ai</dd>
+        <dt>Veröffentlicht</dt><dd>April 2025 (Editiermodell HiDream-E1 folgte am 28. April 2025)</dd>
+        <dt>Lizenz</dt><dd>MIT für die Transformer-Gewichte; Text-Encoder Llama 3.1 8B unter der Llama 3.1 Community License, VAE von FLUX.1 [schnell] (Apache 2.0); Bilder laut HiDream frei kommerziell nutzbar</dd>
+        <dt>Architektur / Grösse</dt><dd>17 Mrd. Parameter, Sparse Diffusion Transformer (Mixture of Experts); mehrere Text-Encoder (u. a. T5-XXL und Llama-3.1-8B-Instruct)</dd>
+        <dt>Hardware</dt><dd>hoher Bedarf; lokal meist mit FP8/GGUF-Quantisierung auf 16–24-GB-Karten</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut HiDream hervorragende Ergebnisse in vielen Stilen – fotorealistisch, Cartoon, künstlerisch. Durch die Lizenz (MIT) attraktiv für Finetunes; das Ökosystem blieb dennoch kleiner als bei FLUX.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> laut HiDream bei Erscheinen bestes Prompt-Following aller offenen Modelle (Benchmarks GenEval und DPG).</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">https://huggingface.co/HiDream-ai/HiDream-I1-Full</a> · <a href="https://github.com/HiDream-ai/HiDream-I1">https://github.com/HiDream-ai/HiDream-I1</a></p>
+    </article>
+    <article class="card model" id="hunyuanimage" aria-labelledby="hunyuanimage-h">
+      <h3 id="hunyuanimage-h">HunyuanImage 2.1 und 3.0</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Tencent Hunyuan</dd>
+        <dt>Veröffentlicht</dt><dd>2.1: 8. September 2025; 3.0: September 2025; 3.0-Instruct und -Instruct-Distil: 26. Januar 2026</dd>
+        <dt>Lizenz</dt><dd>Tencent Hunyuan Community License – <strong>gilt ausdrücklich nicht in der EU, im Vereinigten Königreich und in Südkorea</strong>; dort besteht also keine Nutzungslizenz</dd>
+        <dt>Architektur / Grösse</dt><dd>2.1: Diffusion Transformer mit 17 Mrd. Parametern für 2K-Bilder; 3.0: Mixture-of-Experts mit 80 Mrd. Parametern (13 Mrd. aktiv), multimodal-autoregressiv</dd>
+        <dt>Hardware</dt><dd>2.1: mindestens 24 GB VRAM für 2048 × 2048 (mit FP8); 3.0: laut Tencent mindestens 3 × 80 GB, Instruct mindestens 8 × 80 GB – also nicht für Heim-PCs</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur NSFW-Filterung in den Model Cards.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> 2.1 erreicht laut Tencent bei der semantischen Treue den besten Wert unter offenen Modellen und liegt nahe an GPT-Image; gute Text-Darstellung durch einen zeichenbewussten Encoder. Für Nutzer in Deutschland und der Schweiz relevant: Die Lizenz schliesst die EU aus; die Schweiz ist nicht ausdrücklich genannt.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> sehr gut (ByT5-basierte Glyphen-Verarbeitung bei 2.1).</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/tencent/HunyuanImage-2.1">https://huggingface.co/tencent/HunyuanImage-2.1</a> · <a href="https://huggingface.co/tencent/HunyuanImage-3.0">https://huggingface.co/tencent/HunyuanImage-3.0</a></p>
+    </article>
+    <article class="card model" id="krea2" aria-labelledby="krea2-h">
+      <h3 id="krea2-h">Krea 2 (Raw und Turbo)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Krea</dd>
+        <dt>Veröffentlicht</dt><dd>22. Juni 2026</dd>
+        <dt>Lizenz</dt><dd>Krea 2 Community License: kommerzielle Nutzung nur unter 1 Mio. USD Jahresumsatz; Betreiber müssen Inhaltsfilter oder gleichwertige Prüfprozesse einsetzen; Zugang auf Hugging Face erst nach Zustimmung (gated)</dd>
+        <dt>Architektur / Grösse</dt><dd>Diffusion Transformer mit 12 Mrd. Parametern, Qwen3-VL als Text-Encoder, VAE von Qwen-Image; Raw (für Finetuning/LoRAs) und Turbo (destilliert, 8 Schritte)</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert:</strong> laut Model Card wurden die Trainingsdaten vor dem Training von bestimmten schädlichen Inhalten bereinigt und das Modell gegen sexuell explizite Inhalte und NCII getestet bzw. nachtrainiert.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Kroma von Lodestone Rock (experimentell; die Lizenzangaben im Repository sind widersprüchlich)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> ästhetisch starkes Basismodell für kreative und kommerzielle Bildgestaltung, Concept Art und Design; Raw ist ausdrücklich als Grundlage für eigene LoRAs gedacht. Für freizügige Inhalte ungeeignet.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> hoch dank Qwen3-VL-Encoder.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/krea/Krea-2-Raw">https://huggingface.co/krea/Krea-2-Raw</a> · <a href="https://huggingface.co/krea/Krea-2-Turbo">https://huggingface.co/krea/Krea-2-Turbo</a></p>
+    </article>
+    <article class="card model" id="ideogram4" aria-labelledby="ideogram4-h">
+      <h3 id="ideogram4-h">Ideogram 4</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Ideogram</dd>
+        <dt>Veröffentlicht</dt><dd>3. Juni 2026 (erstes offenes Modell von Ideogram)</dd>
+        <dt>Lizenz</dt><dd>Ideogram 4 Non-Commercial; Zugang gated</dd>
+        <dt>Architektur / Grösse</dt><dd>9,3 Mrd. Parameter, von Grund auf trainiert (kein Finetune); strukturierte JSON-Prompts; Qwen3-VL-8B als Text-Encoder; native 2K-Auflösung; Gewichte als NF4 und FP8</dd>
+        <dt>Hardware</dt><dd>keine offizielle VRAM-Angabe; die NF4-Fassung zielt auf Consumer-GPUs</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Gefiltert:</strong> NSFW-Filterung vor dem Training, Safety-Nachtraining und Prompt-/Output-Filter (Hive), deren Beibehaltung von Betreibern erwartet wird.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> Grafikdesign, Poster, Typografie und Fotografie; laut Ideogram von professionellen Designern bewertet. Für freizügige Inhalte ungeeignet.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> laut Ideogram die beste Textdarstellung aller offenen Modelle, mehrsprachig.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/ideogram-ai/ideogram-4-nf4">https://huggingface.co/ideogram-ai/ideogram-4-nf4</a> · <a href="https://huggingface.co/ideogram-ai/ideogram-4-fp8">https://huggingface.co/ideogram-ai/ideogram-4-fp8</a></p>
+    </article>
+    <article class="card model" id="ernie-image" aria-labelledby="ernie-image-h">
+      <h3 id="ernie-image-h">ERNIE-Image (und Turbo)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Baidu (ERNIE-Image-Team)</dd>
+        <dt>Veröffentlicht</dt><dd>April 2026 (Hugging Face)</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0 – auch kommerziell</dd>
+        <dt>Architektur / Grösse</dt><dd>Single-Stream Diffusion Transformer mit 8 Mrd. Parametern plus leichter «Prompt Enhancer», der kurze Eingaben ausformuliert; Turbo mit 8 Schritten</dd>
+        <dt>Hardware</dt><dd>laut Baidu auf Consumer-GPUs mit 24 GB VRAM</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Baidu besonders stark bei dichtem, langem und layoutkritischem Text (Poster, Infografiken, UI-Bilder), dazu realistische Fotografie und weichere, cineastische Bildstimmungen.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> sehr gut, Text ist die Kernstärke.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/baidu/ERNIE-Image">https://huggingface.co/baidu/ERNIE-Image</a> · <a href="https://huggingface.co/baidu/ERNIE-Image-Turbo">https://huggingface.co/baidu/ERNIE-Image-Turbo</a></p>
+    </article>
+    <article class="card model" id="glm-image" aria-labelledby="glm-image-h">
+      <h3 id="glm-image-h">GLM-Image</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Z.ai (Zhipu)</dd>
+        <dt>Veröffentlicht</dt><dd>Januar 2026 (Hugging Face)</dd>
+        <dt>Lizenz</dt><dd>MIT</dd>
+        <dt>Architektur / Grösse</dt><dd>hybrid: autoregressiver Generator mit 9 Mrd. Parametern (aus GLM-4-9B) plus Diffusions-Decoder mit 7 Mrd. Parametern</dd>
+        <dt>Hardware</dt><dd>laut Z.ai rund 23 GB GPU-Speicher mit CPU-Offloading (langsamer)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> wissensintensive Bilder, Infografiken und Editierung inklusive Stilübertragung und identitätserhaltender Generierung.</p>
+      <p><strong>Prompt-Treue &amp; Text:</strong> laut Z.ai deutliche Vorteile bei Textdarstellung (Glyph-Encoder).</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/zai-org/GLM-Image">https://huggingface.co/zai-org/GLM-Image</a></p>
+    </article>
+    </section>
+    <section class="group" id="weitere" aria-labelledby="weitere-h">
+    <div class="card group-head">
+      <h2 id="weitere-h">Weitere offene Modelle (kleiner oder älter)</h2>
+      <p>Technisch interessante Modelle, die heute vor allem als Basis für Finetunes oder für schwächere Hardware relevant sind.</p>
+    </div>
+    <article class="card model" id="lumina2" aria-labelledby="lumina2-h">
+      <h3 id="lumina2-h">Lumina-Image 2.0</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Alpha-VLLM (Shanghai AI Laboratory)</dd>
+        <dt>Veröffentlicht</dt><dd>Januar 2025</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0</dd>
+        <dt>Architektur / Grösse</dt><dd>flussbasierter Diffusion Transformer mit 2 Mrd. Parametern, Gemma-2B als Text-Encoder</dd>
+        <dt>Hardware</dt><dd>gering; läuft auf Mittelklasse-GPUs</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Basis von Neta Lumina (Anime, siehe oben)</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> effizientes, frei lizenziertes Basismodell mit guter Prompt-Treue für seine Grösse; heute vor allem als Grundlage von Neta Lumina relevant.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0">https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0</a></p>
+    </article>
+    <article class="card model" id="pixart-sigma" aria-labelledby="pixart-sigma-h">
+      <h3 id="pixart-sigma-h">PixArt-Σ (Sigma)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>PixArt-Team (Huawei Noah’s Ark Lab u. a.)</dd>
+        <dt>Veröffentlicht</dt><dd>April 2024</dd>
+        <dt>Lizenz</dt><dd>CreativeML Open RAIL++-M</dd>
+        <dt>Architektur / Grösse</dt><dd>Diffusion Transformer mit rund 0,6 Mrd. Parametern, T5-Text-Encoder; Bilder in 1024 px, 2K und 4K in einem Durchgang</dd>
+        <dt>Hardware</dt><dd>gering (der T5-Encoder braucht am meisten Speicher)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur Trainingsfilterung.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> sehr klein und schnell, gute Prompt-Treue für die Grösse. Laut Model Card kein perfekter Fotorealismus und keine lesbare Schrift. Heute weitgehend von neueren Modellen überholt.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS">https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS</a></p>
+    </article>
+    <article class="card model" id="kolors" aria-labelledby="kolors-h">
+      <h3 id="kolors-h">Kolors</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Kolors-Team von Kuaishou</dd>
+        <dt>Veröffentlicht</dt><dd>6. Juli 2024</dd>
+        <dt>Lizenz</dt><dd>Code: Apache 2.0; Modellgewichte: frei für akademische Forschung, kommerzielle Nutzung nach Registrierung per Fragebogen beim Kolors-Team</dd>
+        <dt>Architektur / Grösse</dt><dd>Latent Diffusion mit U-Net (SDXL-ähnlich) und ChatGLM3 als Text-Encoder; zweisprachig Chinesisch/Englisch</dd>
+        <dt>Hardware</dt><dd>ähnlich wie SDXL plus Speicher für ChatGLM3 (quantisierbar)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne konkrete Angabe</strong> zur NSFW-Filterung; die Model Card betont Bemühungen um «Sicherheit der Daten» und warnt vor Missbrauch.</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut Kuaishou fotorealistische Bildsynthese mit deutlichen Vorteilen bei Bildqualität und komplexer Semantik gegenüber damaligen Modellen; gute chinesische Textdarstellung und starke ostasiatische Ästhetik (Porträts, Mode). Ökosystem kleiner als bei SDXL.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Kwai-Kolors/Kolors">https://huggingface.co/Kwai-Kolors/Kolors</a> · <a href="https://github.com/Kwai-Kolors/Kolors">https://github.com/Kwai-Kolors/Kolors</a></p>
+    </article>
+    <article class="card model" id="auraflow" aria-labelledby="auraflow-h">
+      <h3 id="auraflow-h">AuraFlow</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>fal</dd>
+        <dt>Veröffentlicht</dt><dd>v0.1 im Juli 2024, v0.3 im August 2024</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0</dd>
+        <dt>Architektur / Grösse</dt><dd>flussbasiertes Text-zu-Bild-Modell mit rund 6,8 Mrd. Parametern; als Beta bezeichnet</dd>
+        <dt>Hardware</dt><dd>Grössenordnung 12–16 GB VRAM in FP16 (rechnerisch, keine offizielle Angabe)</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> in der Model Card.</dd>
+        <dt>Unzensierte Varianten</dt><dd>Pony V7 (siehe oben) basiert auf AuraFlow</dd>
+      </dl>
+      <p><strong>Stärken &amp; Stile:</strong> laut fal bei Erscheinen das grösste vollständig offene flussbasierte Modell mit guter Prompt-Treue; die Bildästhetik des Basismodells ist weniger ausgefeilt. Heute vor allem als Basis von Pony V7 relevant.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/fal/AuraFlow-v0.3">https://huggingface.co/fal/AuraFlow-v0.3</a></p>
+    </article>
+    </section>
+    <section class="group" id="video" aria-labelledby="video-h">
+    <div class="card group-head">
+      <h2 id="video-h">Videomodelle als Bildgenerator</h2>
+    </div>
+    <article class="card model" id="wan" aria-labelledby="wan-h">
+      <h3 id="wan-h">Wan 2.1 und Wan 2.2</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Wan-Team von Alibaba</dd>
+        <dt>Veröffentlicht</dt><dd>Wan 2.1: Februar 2025; Wan 2.2: Juli 2025</dd>
+        <dt>Lizenz</dt><dd>Apache 2.0</dd>
+        <dt>Architektur / Grösse</dt><dd>Video-Diffusion-Transformer: Wan 2.1 mit 1,3 bzw. 14 Mrd. Parametern; Wan 2.2 als Mixture-of-Experts «A14B» sowie kompaktes TI2V-5B-Modell</dd>
+        <dt>Hardware</dt><dd>Wan 2.1 T2V-1.3B laut Alibaba ab 8,19 GB VRAM; TI2V-5B (2.2) läuft auf einer RTX 4090; die 14B-Modelle brauchen ohne Quantisierung bis zu 80 GB</dd>
+        <dt>Zensur / Filter</dt><dd><strong>Ohne Angabe</strong> zur NSFW-Filterung in den Model Cards.</dd>
+      </dl>
+      <p><strong>Als Bildmodell:</strong> Laut Alibaba beherrscht Wan 2.1 neben Video auch Text-zu-Bild; in der Praxis erzeugt man dafür ein Video mit nur einem Frame. Viele Nutzer loben den natürlichen, filmischen Fotorealismus und die gute Anatomie dieser Einzelbilder – Wan 2.1 kann laut Alibaba zudem chinesischen und englischen Text erzeugen. Für Airbrush-, CGI- oder Anime-Looks sind dedizierte Bildmodelle meist besser. Neuere Wan-Versionen sind (Stand Oktober 2026) nicht als offene Gewichte auf der offiziellen Hugging-Face-Seite verfügbar.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B">https://huggingface.co/Wan-AI/Wan2.1-T2V-14B</a> · <a href="https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B">https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B</a> · <a href="https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B">https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B</a></p>
+    </article>
+    </section>
+    <section class="group" id="nicht-lokal" aria-labelledby="nicht-lokal-h">
+    <div class="card group-head">
+      <h2 id="nicht-lokal-h">Zum Vergleich: nicht lokal verfügbar</h2>
+      <p>Diese Modelle haben <strong>keine offenen Gewichte</strong> und laufen nur in der Cloud des Anbieters – inklusive der dortigen Inhaltsfilter. Sie sind nur zur Einordnung aufgeführt.</p>
+    </div>
+    <article class="card model" id="grok-imagine" aria-labelledby="grok-imagine-h">
+      <h3 id="grok-imagine-h">Grok Imagine (xAI)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>xAI</dd>
+        <dt>Lokal nutzbar</dt><dd>nein – nur über grok.com, die Grok-Apps und die API; keine offenen Gewichte</dd>
+        <dt>Filter</dt><dd>Inhaltsrichtlinien und Moderation von xAI auf deren Servern</dd>
+      </dl>
+      <p>Grok Imagine ist für seinen eigenen, oft cineastisch-glatten Look bekannt. Wer diesen Look lokal annähern möchte, findet die nächsten Verwandten bei FLUX.1 [dev] bzw. Chroma (glatte Haut, CGI-Glanz), Qwen-Image-2512 und Z-Image (Fotorealismus, ostasiatische Ästhetik) oder bei Illustrious/NoobAI-Merges mit 2,5D-Stil (Anime-nahe Figuren). Ein direkter Vergleich ist subjektiv und hier nicht getestet.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://grok.com/imagine">https://grok.com/imagine</a></p>
+    </article>
+    <article class="card model" id="flux3" aria-labelledby="flux3-h">
+      <h3 id="flux3-h">FLUX 3 (Black Forest Labs)</h3>
+      <dl class="facts">
+        <dt>Entwickler</dt><dd>Black Forest Labs</dd>
+        <dt>Stand</dt><dd>am 23. Juli 2026 als multimodales Modell im Early Access angekündigt; offene Bild-Gewichte gibt es (Stand Oktober 2026) nicht</dd>
+      </dl>
+      <p>Ob und wann eine offene [dev]- oder [klein]-Variante folgt, ist nicht bekannt. Sobald offene Gewichte erscheinen, gelten voraussichtlich ähnliche Lizenz- und Filterbedingungen wie bei FLUX.2 – das ist eine Vermutung, keine offizielle Aussage.</p>
+      <p class="dl"><strong>Offizielle Seiten / Download:</strong> <a href="https://bfl.ai/">https://bfl.ai/</a></p>
+    </article>
+    </section>
+    <section class="card" id="stil-kompass" aria-labelledby="stil-h">
+      <h2 id="stil-h">Stil-Kompass: welches Modell für welchen Look?</h2>
+      <p>Zusammenfassung der Einschätzungen aus den Modell-Abschnitten (nicht selbst getestet; Ergebnisse hängen stark von Prompt, LoRAs und Einstellungen ab).</p>
+      <dl class="facts">
+        <dt>Airbrush-Look</dt><dd>glatte, weich verlaufende Haut und Flächen wie bei klassischer Airbrush-Illustration: FLUX.1 [dev] und Chroma (neigen ohnehin zu glatter Haut), SDXL-/Pony-Merges mit Airbrush-LoRAs; bei Qwen-Image-2512 die Begriffe gegen «Glätte» aus dem Negativprompt weglassen.</dd>
+        <dt>CGI- / 3D-Render-Look</dt><dd>FLUX.1/FLUX.2, Chroma, Qwen-Image, Z-Image und SD 3.5 (laut Stability AI stark bei 3D); im Anime-Bereich Illustrious/NoobAI mit dem Tag <code>3d</code> oder entsprechenden Merges.</dd>
+        <dt>Surrealismus</dt><dd>Modelle mit hoher Prompt-Treue setzen ungewöhnliche Kombinationen am zuverlässigsten um: FLUX, Chroma, Qwen-Image, HiDream, SD 3.5; Anime-Modelle über den Danbooru-Tag <code>surreal</code>.</dd>
+        <dt>Komplett weisse Augen (weisse Sklera, keine Iris)</dt><dd>am treffsichersten mit Danbooru-trainierten Modellen (Illustrious, NoobAI, Pony, Anima) über Tags wie <code>white_eyes</code>, <code>empty_eyes</code>, <code>blank_eyes</code> oder <code>no_pupils</code>. Fotorealistische Modelle «korrigieren» Augen gern zurück zu normaler Iris – dort helfen eine präzise Beschreibung (z. B. «completely white eyes, no iris, no pupils»), LoRAs oder Inpainting.</dd>
+        <dt>Schwarzes PVC / Lack / Latex mit Hochglanz-Reflexen</dt><dd>FLUX.1, Chroma und RealVisXL/Juggernaut für realistische Reflexionen; NoobAI V-Pred für sehr dunkle, kontrastreiche Bilder; Anime-Modelle über <code>latex</code>, <code>latex_bodysuit</code>, <code>shiny_clothes</code>. Bei den gefilterten Modellen (FLUX.2, Krea 2, Ideogram 4) funktioniert Mode in Lack und Latex grundsätzlich, freizügige Darstellungen aber kaum.</dd>
+        <dt>Makellose, helle, glatte Haut</dt><dd>FLUX.1/Chroma (glatt), Qwen-Image-2512 und Z-Image (Porträts), RealVisXL; Anime-Modelle über <code>pale_skin</code>.</dd>
+        <dt>Detaillierte feminine Hände</dt><dd>Hände bleiben eine Schwäche älterer Modelle (SD 1.5, teils SDXL). Deutlich besser sind FLUX, Chroma, Qwen-Image, Z-Image, HiDream und die anderen grossen Transformer-Modelle. Bei SDXL helfen Hires-Fix, Inpainting (z. B. ADetailer-Erweiterung) und Hand-LoRAs.</dd>
+        <dt>Ostasiatische Ästhetik</dt><dd>Qwen-Image/Qwen-Image-2512 (offizielle Beispiele überwiegend ostasiatisch), Z-Image (Hanfu im Showcase), Kolors, HunyuanImage, Neta Lumina (Guofeng) sowie SD-1.5-Finetunes wie majicMIX realistic.</dd>
+        <dt>Anime vs. Fotorealismus</dt><dd>Anime/Illustration: Illustrious XL, NoobAI-XL, Pony V6/V7, Anima, Neta Lumina. Fotorealismus: Juggernaut XL, RealVisXL, FLUX.1 Krea, Qwen-Image-2512, Z-Image, Chroma, Wan (Einzelbild). Allrounder: FLUX.1 [dev], Chroma, Qwen-Image, HiDream.</dd>
+      </dl>
+    </section>
+    <section class="card" id="software" aria-labelledby="software-h">
+      <h2 id="software-h">Software &amp; Oberflächen für die lokale Nutzung</h2>
+      <p>Alle folgenden Programme sind Open Source und laufen vollständig lokal. Keines erzwingt einen Inhaltsfilter; wo es einen gibt, ist er optional.</p>
+      <dl class="facts">
+        <dt>ComfyUI</dt><dd>Knotenbasierte Oberfläche (Workflows als Graph), GPL-3.0, sehr aktive Entwicklung (Version 0.38.0 vom 29. September 2026). Unterstützt praktisch jedes neue Modell als Erstes – von SD 1.5 über FLUX.2, Qwen-Image und Z-Image bis Anima und Wan. <strong>Kein eingebauter NSFW-Filter.</strong> Steile Lernkurve, dafür maximale Kontrolle.<br><a href="https://github.com/Comfy-Org/ComfyUI">https://github.com/Comfy-Org/ComfyUI</a></dd>
+        <dt>SwarmUI</dt><dd>MIT-Lizenz, nutzt ComfyUI als Backend, bietet aber eine einfache Oberfläche mit Zugriff auf den Comfy-Workflow-Editor. Laut Dokumentation gilt bei lokaler Nutzung: Für die eigenen Erzeugnisse ist man selbst verantwortlich. <strong>Kein Filter</strong> per Voreinstellung.<br><a href="https://github.com/mcmonkeyprojects/SwarmUI">https://github.com/mcmonkeyprojects/SwarmUI</a></dd>
+        <dt>Stable Diffusion WebUI Forge / Forge Neo</dt><dd>Schnellere, speichersparende Variante von AUTOMATIC1111 (AGPL-3.0). Das Original von lllyasviel wird kaum noch gepflegt (letzte Änderungen Juli 2025). Aktiv weiterentwickelt wird der Fork <a href="https://github.com/Haoming02/sd-webui-forge-classic">FORGE NEO</a> (Haoming02), der u. a. FLUX.2 [klein], Z-Image, Qwen-Image, Wan 2.2 und Anima unterstützt. Für NoobAI V-Pred empfiehlt sich auch <a href="https://github.com/Panchovix/stable-diffusion-webui-reForge">REFORGE</a>. <strong>Kein NSFW-Filter.</strong><br><a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">https://github.com/lllyasviel/stable-diffusion-webui-forge</a></dd>
+        <dt>AUTOMATIC1111 (Stable Diffusion WebUI)</dt><dd>Der Klassiker mit dem grössten Erweiterungs-Ökosystem (AGPL-3.0), letzte Version 1.10.1; neue Architekturen wie FLUX werden nicht offiziell unterstützt. <strong>Kein NSFW-Filter</strong> im Code.<br><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">https://github.com/AUTOMATIC1111/stable-diffusion-webui</a></dd>
+        <dt>Fooocus</dt><dd>Sehr einfache, Midjourney-ähnliche Oberfläche nur für SDXL-Modelle (GPL-3.0); laut Projekt im «Limited LTS»-Modus (nur noch Bugfixes). Optionale Schwärzung von NSFW-Bildern über eine Einstellung (<code>default_black_out_nsfw</code>), standardmässig aus.<br><a href="https://github.com/lllyasviel/Fooocus">https://github.com/lllyasviel/Fooocus</a></dd>
+        <dt>InvokeAI</dt><dd>Professionelle Oberfläche mit Canvas, Ebenen und Inpainting (Apache-2.0), Version 6.14.2 (September 2026); unterstützt u. a. SD/SDXL, FLUX, SD3, Anima, ERNIE-Image, Ideogram 4 und Wan. Enthält einen <strong>optionalen</strong> NSFW-Checker (CompVis Safety Checker), der standardmässig ausgeschaltet ist.<br><a href="https://github.com/invoke-ai/InvokeAI">https://github.com/invoke-ai/InvokeAI</a></dd>
+        <dt>SD.Next</dt><dd>Funktionsreiche Oberfläche mit sehr breiter Modellunterstützung (Apache-2.0). Optionale NudeNet-Erweiterung zur Erkennung bzw. Zensur, standardmässig deaktiviert.<br><a href="https://github.com/vladmandic/sdnext">https://github.com/vladmandic/sdnext</a></dd>
+      </dl>
+    </section>
+    <section class="card" id="hardware" aria-labelledby="hardware-h">
+      <h2 id="hardware-h">Hardware</h2>
+      <p><strong>Grafikkarte (VRAM ist entscheidend):</strong> NVIDIA-Karten mit CUDA sind am besten unterstützt. Grobe Orientierung: <strong>6–8 GB</strong> für SD 1.5 und SDXL-Modelle (Pony, Illustrious, NoobAI, Juggernaut, RealVisXL); <strong>12–16 GB</strong> für Z-Image, Anima, FLUX.2 [klein] 4B und quantisiertes FLUX.1/Chroma; <strong>24 GB</strong> (z. B. RTX 3090/4090) für FLUX.1/Chroma in voller Präzision, ERNIE-Image, HunyuanImage 2.1 und quantisiertes Qwen-Image oder HiDream; <strong>32 GB</strong> (RTX 5090) für FLUX.2 [dev] mit 4-Bit-Quantisierung. HunyuanImage 3.0 braucht Rechenzentrums-Hardware.</p>
+      <p><strong>Quantisierung:</strong> FP8-, NF4- und GGUF-Fassungen (Q8 bis Q4) reduzieren den Speicherbedarf grosser Modelle stark, kosten aber etwas Qualität und oft Geschwindigkeit. Offloading auf den Arbeitsspeicher funktioniert, ist aber langsam – 32–64 GB RAM sind für grosse Modelle sinnvoll.</p>
+      <p><strong>AMD und Apple:</strong> AMD-Karten laufen unter Linux mit ROCm, Apple-Silicon-Macs über PyTorch MPS – beides langsamer und mit weniger Modellunterstützung als NVIDIA.</p>
+      <p><strong>Speicherplatz:</strong> Ein SDXL-Checkpoint hat rund 6–7 GB, FLUX.1 [dev] rund 24 GB, dazu Text-Encoder (T5-XXL fp16 rund 10 GB) – eine schnelle SSD mit mehreren hundert GB ist empfehlenswert.</p>
+    </section>
+    <section class="card" id="quellen" aria-labelledby="quellen-h">
+      <h2 id="quellen-h">Quellen</h2>
+      <p>Alle Angaben wurden am 3. Oktober 2026 anhand dieser offiziellen Seiten geprüft. Veröffentlichungsdaten ohne genaues Datum stützen sich teils auf das Erstellungsdatum des Hugging-Face-Repositorys.</p>
+      <h3>Stable-Diffusion-Familie und fotorealistische SDXL-Finetunes</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5">https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5</a></li>
+        <li><a href="https://civitai.com/models/4201">https://civitai.com/models/4201</a></li>
+        <li><a href="https://civitai.com/models/43331">https://civitai.com/models/43331</a></li>
+        <li><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0</a></li>
+        <li><a href="https://stability.ai/news/stable-diffusion-sdxl-1-announcement">https://stability.ai/news/stable-diffusion-sdxl-1-announcement</a></li>
+        <li><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">https://huggingface.co/stabilityai/stable-diffusion-3.5-large</a></li>
+        <li><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">https://huggingface.co/stabilityai/stable-diffusion-3.5-medium</a></li>
+        <li><a href="https://stability.ai/news/introducing-stable-diffusion-3-5">https://stability.ai/news/introducing-stable-diffusion-3-5</a></li>
+        <li><a href="https://stability.ai/license">https://stability.ai/license</a></li>
+        <li><a href="https://huggingface.co/RunDiffusion/Juggernaut-XL-v9">https://huggingface.co/RunDiffusion/Juggernaut-XL-v9</a></li>
+        <li><a href="https://civitai.com/models/133005">https://civitai.com/models/133005</a></li>
+        <li><a href="https://huggingface.co/SG161222/RealVisXL_V5.0">https://huggingface.co/SG161222/RealVisXL_V5.0</a></li>
+        <li><a href="https://civitai.com/models/139562">https://civitai.com/models/139562</a></li>
+      </ul>
+      <h3>Anime- und Illustrationsmodelle</h3>
+      <ul class="plain">
+        <li><a href="https://civitai.com/models/257749">https://civitai.com/models/257749</a></li>
+        <li><a href="https://huggingface.co/purplesmartai/pony-v7-base">https://huggingface.co/purplesmartai/pony-v7-base</a></li>
+        <li><a href="https://civitai.com/models/1901521">https://civitai.com/models/1901521</a></li>
+        <li><a href="https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0">https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0</a></li>
+        <li><a href="https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0">https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0</a></li>
+        <li><a href="https://arxiv.org/abs/2409.19946">https://arxiv.org/abs/2409.19946</a></li>
+        <li><a href="https://huggingface.co/Laxhar/noobai-XL-1.1">https://huggingface.co/Laxhar/noobai-XL-1.1</a></li>
+        <li><a href="https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0">https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0</a></li>
+        <li><a href="https://huggingface.co/circlestone-labs/Anima">https://huggingface.co/circlestone-labs/Anima</a></li>
+        <li><a href="https://huggingface.co/Gazingstars123/Anima-2.9B">https://huggingface.co/Gazingstars123/Anima-2.9B</a></li>
+        <li><a href="https://huggingface.co/neta-art/Neta-Lumina">https://huggingface.co/neta-art/Neta-Lumina</a></li>
+        <li><a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete">https://github.com/DominikDoom/a1111-sd-webui-tagcomplete</a></li>
+      </ul>
+      <h3>FLUX-Familie und Chroma</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">https://huggingface.co/black-forest-labs/FLUX.1-dev</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">https://huggingface.co/black-forest-labs/FLUX.1-schnell</a></li>
+        <li><a href="https://github.com/black-forest-labs/flux">https://github.com/black-forest-labs/flux</a></li>
+        <li><a href="https://huggingface.co/city96/FLUX.1-dev-gguf">https://huggingface.co/city96/FLUX.1-dev-gguf</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev">https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev">https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.2-dev">https://huggingface.co/black-forest-labs/FLUX.2-dev</a></li>
+        <li><a href="https://github.com/black-forest-labs/flux2">https://github.com/black-forest-labs/flux2</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-4B">https://huggingface.co/black-forest-labs/FLUX.2-klein-4B</a></li>
+        <li><a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-9B">https://huggingface.co/black-forest-labs/FLUX.2-klein-9B</a></li>
+        <li><a href="https://huggingface.co/lodestones/Chroma1-HD">https://huggingface.co/lodestones/Chroma1-HD</a></li>
+        <li><a href="https://huggingface.co/lodestones/Chroma1-Base">https://huggingface.co/lodestones/Chroma1-Base</a></li>
+        <li><a href="https://huggingface.co/lodestones/Chroma1-Flash">https://huggingface.co/lodestones/Chroma1-Flash</a></li>
+        <li><a href="https://huggingface.co/lodestones/Chroma">https://huggingface.co/lodestones/Chroma</a></li>
+        <li><a href="https://huggingface.co/silveroxides/Chroma-GGUF">https://huggingface.co/silveroxides/Chroma-GGUF</a></li>
+      </ul>
+      <h3>Neue Generation 2025–2026: grosse Transformer-Modelle</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/Qwen/Qwen-Image">https://huggingface.co/Qwen/Qwen-Image</a></li>
+        <li><a href="https://huggingface.co/Qwen/Qwen-Image-2512">https://huggingface.co/Qwen/Qwen-Image-2512</a></li>
+        <li><a href="https://qwenlm.github.io/blog/qwen-image/">https://qwenlm.github.io/blog/qwen-image/</a></li>
+        <li><a href="https://huggingface.co/Qwen/Qwen-Image-2.1">https://huggingface.co/Qwen/Qwen-Image-2.1</a></li>
+        <li><a href="https://github.com/QwenLM/Qwen-Image-2.1">https://github.com/QwenLM/Qwen-Image-2.1</a></li>
+        <li><a href="https://huggingface.co/Tongyi-MAI/Z-Image-Turbo">https://huggingface.co/Tongyi-MAI/Z-Image-Turbo</a></li>
+        <li><a href="https://huggingface.co/Tongyi-MAI/Z-Image">https://huggingface.co/Tongyi-MAI/Z-Image</a></li>
+        <li><a href="https://huggingface.co/lodestones/Zeta-Chroma">https://huggingface.co/lodestones/Zeta-Chroma</a></li>
+        <li><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">https://huggingface.co/HiDream-ai/HiDream-I1-Full</a></li>
+        <li><a href="https://github.com/HiDream-ai/HiDream-I1">https://github.com/HiDream-ai/HiDream-I1</a></li>
+        <li><a href="https://huggingface.co/tencent/HunyuanImage-2.1">https://huggingface.co/tencent/HunyuanImage-2.1</a></li>
+        <li><a href="https://huggingface.co/tencent/HunyuanImage-3.0">https://huggingface.co/tencent/HunyuanImage-3.0</a></li>
+        <li><a href="https://huggingface.co/krea/Krea-2-Raw">https://huggingface.co/krea/Krea-2-Raw</a></li>
+        <li><a href="https://huggingface.co/krea/Krea-2-Turbo">https://huggingface.co/krea/Krea-2-Turbo</a></li>
+        <li><a href="https://huggingface.co/ideogram-ai/ideogram-4-nf4">https://huggingface.co/ideogram-ai/ideogram-4-nf4</a></li>
+        <li><a href="https://huggingface.co/ideogram-ai/ideogram-4-fp8">https://huggingface.co/ideogram-ai/ideogram-4-fp8</a></li>
+        <li><a href="https://huggingface.co/baidu/ERNIE-Image">https://huggingface.co/baidu/ERNIE-Image</a></li>
+        <li><a href="https://huggingface.co/baidu/ERNIE-Image-Turbo">https://huggingface.co/baidu/ERNIE-Image-Turbo</a></li>
+        <li><a href="https://huggingface.co/zai-org/GLM-Image">https://huggingface.co/zai-org/GLM-Image</a></li>
+      </ul>
+      <h3>Weitere offene Modelle (kleiner oder älter)</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0">https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0</a></li>
+        <li><a href="https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS">https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS</a></li>
+        <li><a href="https://huggingface.co/Kwai-Kolors/Kolors">https://huggingface.co/Kwai-Kolors/Kolors</a></li>
+        <li><a href="https://github.com/Kwai-Kolors/Kolors">https://github.com/Kwai-Kolors/Kolors</a></li>
+        <li><a href="https://huggingface.co/fal/AuraFlow-v0.3">https://huggingface.co/fal/AuraFlow-v0.3</a></li>
+      </ul>
+      <h3>Videomodelle als Bildgenerator</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B">https://huggingface.co/Wan-AI/Wan2.1-T2V-14B</a></li>
+        <li><a href="https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B">https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B</a></li>
+        <li><a href="https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B">https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B</a></li>
+      </ul>
+      <h3>Zum Vergleich: nicht lokal verfügbar</h3>
+      <ul class="plain">
+        <li><a href="https://grok.com/imagine">https://grok.com/imagine</a></li>
+        <li><a href="https://bfl.ai/">https://bfl.ai/</a></li>
+      </ul>
+      <h3>Software</h3>
+      <ul class="plain">
+        <li><a href="https://github.com/Comfy-Org/ComfyUI">https://github.com/Comfy-Org/ComfyUI</a></li>
+        <li><a href="https://github.com/mcmonkeyprojects/SwarmUI">https://github.com/mcmonkeyprojects/SwarmUI</a></li>
+        <li><a href="https://github.com/lllyasviel/stable-diffusion-webui-forge">https://github.com/lllyasviel/stable-diffusion-webui-forge</a></li>
+        <li><a href="https://github.com/Haoming02/sd-webui-forge-classic">https://github.com/Haoming02/sd-webui-forge-classic</a></li>
+        <li><a href="https://github.com/Panchovix/stable-diffusion-webui-reForge">https://github.com/Panchovix/stable-diffusion-webui-reForge</a></li>
+        <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">https://github.com/AUTOMATIC1111/stable-diffusion-webui</a></li>
+        <li><a href="https://github.com/lllyasviel/Fooocus">https://github.com/lllyasviel/Fooocus</a></li>
+        <li><a href="https://github.com/invoke-ai/InvokeAI">https://github.com/invoke-ai/InvokeAI</a></li>
+        <li><a href="https://github.com/vladmandic/sdnext">https://github.com/vladmandic/sdnext</a></li>
+      </ul>
+      <h3>Stable Diffusion &amp; Stability AI</h3>
+      <ul class="plain">
+        <li><a href="https://huggingface.co/spaces/CompVis/stable-diffusion-license">https://huggingface.co/spaces/CompVis/stable-diffusion-license</a></li>
+      </ul>
+      <h3>Black Forest Labs</h3>
+      <ul class="plain">
+        <li><a href="https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev">https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev</a></li>
+      </ul>
+      <h3>Recht</h3>
+      <ul class="plain">
+        <li><a href="https://www.gesetze-im-internet.de/stgb/__184b.html">https://www.gesetze-im-internet.de/stgb/__184b.html</a></li>
+        <li><a href="https://www.gesetze-im-internet.de/stgb/__184c.html">https://www.gesetze-im-internet.de/stgb/__184c.html</a></li>
+        <li><a href="https://www.gesetze-im-internet.de/stgb/__184.html">https://www.gesetze-im-internet.de/stgb/__184.html</a></li>
+        <li><a href="https://www.gesetze-im-internet.de/stgb/__201a.html">https://www.gesetze-im-internet.de/stgb/__201a.html</a></li>
+        <li><a href="https://www.gesetze-im-internet.de/kunsturhg/__22.html">https://www.gesetze-im-internet.de/kunsturhg/__22.html</a></li>
+        <li><a href="https://www.gesetze-im-internet.de/kunsturhg/__33.html">https://www.gesetze-im-internet.de/kunsturhg/__33.html</a></li>
+        <li><a href="https://www.fsm.de/en/wissen/a-bis-z/kinder-und-jugendpornografie/">https://www.fsm.de/en/wissen/a-bis-z/kinder-und-jugendpornografie/</a></li>
+        <li><a href="https://www.fedlex.admin.ch/eli/cc/54/757_781_799/de">https://www.fedlex.admin.ch/eli/cc/54/757_781_799/de</a></li>
+        <li><a href="https://www.bmjv.de/SharedDocs/Pressemitteilungen/DE/2026/0417_Gesetz_gegen_digitale_Gewalt.html">https://www.bmjv.de/SharedDocs/Pressemitteilungen/DE/2026/0417_Gesetz_gegen_digitale_Gewalt.html</a></li>
+        <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">https://eur-lex.europa.eu/eli/reg/2024/1689/oj</a></li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act</a></li>
+      </ul>
+    </section>
+    <aside class="card" id="siehe-auch" aria-labelledby="siehe-h">
+      <h2 id="siehe-h">Siehe auch</h2>
+      <p><a href="https://zagathou.github.io/artificial_intelligence/">ARTIFICIAL INTELLIGENCE</a> – Übersicht über künstliche Intelligenz von Christian Grigoriadis (Zagathou).</p>
+    </aside>
+  </main>
+
+  <footer>
+    <section class="card contact" id="kontakt" aria-labelledby="kontakt-h">
+      <h2 id="kontakt-h">Autor &amp; Kontakt</h2>
+      <dl>
+        <dt>Autor</dt><dd>Christian Grigoriadis (Zagathou)</dd>
+        <dt>Session-ID</dt><dd><code class="sid">055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173</code></dd>
+        <dt>About</dt><dd><a href="https://zagathou.github.io/zagathou/">https://zagathou.github.io/zagathou/</a></dd>
+        <dt>GitHub</dt><dd><a href="https://github.com/Zagathou">https://github.com/Zagathou</a></dd>
+        <dt>Für KI</dt><dd><a href="llms.txt">LLMS.TXT</a> · <a href="llms-full.txt">LLMS-FULL.TXT</a></dd>
+      </dl>
+    </section>
+    <p lang="en">These webpages are optimized for simple Non-Agentic Artificial Intelligence and easy to read.</p>
+    <p>Last Updated: 03.10.2026</p>
+    <p lang="en">Coded by <a href="https://x.ai/bot">GrokBot</a> / <a href="https://x.ai/">SpaceXAI</a>!</p>
+  </footer>
+  </div>
+</body>
+</html>

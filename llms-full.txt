@@ -1,0 +1,731 @@
+# AI IMAGE GENERATORS – Lokale Bild-KI-Modelle im Überblick
+
+> Recherchierte Übersicht lokaler Open-Weight-Bild-KI-Modelle (SDXL, Pony, FLUX, Chroma, Qwen-Image, Z-Image u. a.): Lizenz, Hardware, Filter und Stile. Stand Oktober 2026.
+
+Seite: https://zagathou.github.io/ai-image-generators/
+Sprache: Deutsch (Schweizer Rechtschreibung)
+Stand: 03.10.2026
+
+Recherchierte Übersicht («Datenbank») über Bildgenerierungs-KI-Modelle mit offenen Gewichten (Open Weights), die sich lokal auf dem eigenen Rechner ausführen lassen – Stand: 3. Oktober 2026. Schwerpunkt ist die Frage, wie gefiltert oder ungefiltert («unzensiert») die Modelle sind, und wofür sie sich stilistisch eignen: Airbrush-Look, CGI-/3D-Render-Look, Surrealismus, Figuren mit komplett weissen Augen, glänzendes schwarzes PVC/Lack/Latex, makellose helle Haut, detaillierte feminine Hände, ostasiatische Ästhetik sowie Anime im Vergleich zu Fotorealismus.
+
+Alle Fakten (Entwickler, Datum, Lizenz, Grösse, Hardware, Filter) stammen aus den offiziellen Model Cards, Lizenztexten und Ankündigungen, die bei jedem Modell verlinkt sind. Wo es keine offizielle Angabe gibt, steht das ausdrücklich da.
+
+## Rechtliche Hinweise – bitte zuerst lesen
+
+KI-generierte sexuelle Darstellungen von Minderjährigen oder kindlich wirkenden Figuren sind strafbar. In Deutschland erfassen § 184B STGB (https://www.gesetze-im-internet.de/stgb/__184b.html) (kinderpornographische Inhalte, Personen unter 14 Jahren) und § 184C STGB (https://www.gesetze-im-internet.de/stgb/__184c.html) (jugendpornographische Inhalte, 14 bis 17 Jahre) ausdrücklich auch Inhalte, die ein «tatsächliches oder wirklichkeitsnahes Geschehen» wiedergeben – also auch fotorealistische KI-Bilder. Abruf und Besitz wirklichkeitsnaher kinderpornographischer Inhalte werden nach § 184b Abs. 3 StGB mit Freiheitsstrafe von drei Monaten bis zu fünf Jahren bestraft. Das Verbreiten ist nach § 184b Abs. 1 Satz 2 StGB sogar dann strafbar, wenn der Inhalt «kein tatsächliches oder wirklichkeitsnahes Geschehen» wiedergibt, also auch bei gezeichneten oder rein fiktiven Darstellungen. Massgeblich kann bereits der Eindruck auf einen objektiven Betrachter sein (siehe FSM (https://www.fsm.de/en/wissen/a-bis-z/kinder-und-jugendpornografie/), mit Verweis auf BVerfG 2 BvR 2369/08).
+
+Schweiz: ART. 197 STGB (https://www.fedlex.admin.ch/eli/cc/54/757_781_799/de) stellt in Abs. 4 und 5 auch pornografische Gegenstände mit «nicht tatsächlichen» sexuellen Handlungen mit Minderjährigen unter Strafe – einschliesslich Besitz und Konsum.
+
+Deepfakes realer Personen ohne Einwilligung verletzen das Persönlichkeitsrecht. Bildnisse dürfen nach § 22 KUG (https://www.gesetze-im-internet.de/kunsturhg/__22.html) nur mit Einwilligung des Abgebildeten verbreitet oder öffentlich zur Schau gestellt werden; Verstösse sind nach § 33 KUG (https://www.gesetze-im-internet.de/kunsturhg/__33.html) strafbar (auf Antrag). § 201A STGB (https://www.gesetze-im-internet.de/stgb/__201a.html) Abs. 2 bestraft das unbefugte Zugänglichmachen einer Bildaufnahme, die geeignet ist, dem Ansehen der abgebildeten Person erheblich zu schaden. Weil das Bundesjustizministerium hier Strafbarkeitslücken sieht – insbesondere beim Herstellen sexualisierter Deepfakes –, hat es am 17. April 2026 den ENTWURF EINES GESETZES GEGEN DIGITALE GEWALT (https://www.bmjv.de/SharedDocs/Pressemitteilungen/DE/2026/0417_Gesetz_gegen_digitale_Gewalt.html) vorgestellt (u. a. neuer § 184k StGB «Verletzung der Intimsphäre durch Bildaufnahmen» und § 201b StGB «Verletzung von Persönlichkeitsrechten durch täuschende Inhalte»). Stand Anfang Oktober 2026 ist das ein Entwurf, noch kein geltendes Recht.
+
+EU AI Act: Nach Art. 50 Abs. 4 der KI-VERORDNUNG (EU) 2024/1689 (https://eur-lex.europa.eu/eli/reg/2024/1689/oj) müssen Betreiber, die Deepfakes erzeugen, seit dem 2. August 2026 offenlegen, dass der Inhalt künstlich erzeugt oder manipuliert wurde (FAQ DER EU-KOMMISSION (https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)). Rein persönliche, nicht berufliche Nutzung durch Privatpersonen ist nach Art. 2 Abs. 10 ausgenommen. Pornographische Inhalte dürfen zudem Personen unter 18 Jahren nicht zugänglich gemacht werden (§ 184 STGB (https://www.gesetze-im-internet.de/stgb/__184.html)).
+
+Modell-Lizenzen verbieten bestimmte Nutzungen. Die CREATIVEML OPENRAIL-M (https://huggingface.co/spaces/CompVis/stable-diffusion-license) (Stable Diffusion 1.5) untersagt u. a. jede Nutzung, die geltendes Recht verletzt, Minderjährige ausbeutet oder schädigt oder nachweislich falsche Inhalte mit Schädigungsabsicht verbreitet. Die FLUX.1 [DEV] NON-COMMERCIAL LICENSE (https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev) erlaubt die Gewichte nur nicht-kommerziell und verlangt Content-Filter oder eine Prüfung der Outputs auf rechtswidrige Inhalte vor jeder Weitergabe; die Outputs selbst dürfen kommerziell genutzt werden. Die Lizenzen von Krea 2 und Ideogram 4 verpflichten Betreiber zu Inhaltsfiltern. Die Tencent-Hunyuan-Lizenz gilt ausdrücklich nicht in der EU, im Vereinigten Königreich und in Südkorea.
+
+«Unzensiert» heisst nicht «rechtsfrei». Wer lokal ohne Filter arbeitet, trägt die volle Verantwortung für jedes erzeugte und jedes geteilte Bild. Dieser Hinweis ist keine Rechtsberatung.
+
+## Was heisst «unzensiert»?
+
+Lokal heisst: kein Server prüft mit. Online-Dienste filtern Prompts und Bilder auf ihren Servern. Bei lokal ausgeführten Modellen gibt es einen Filter nur dann, wenn (1) die Software einen optionalen Safety-Checker einschaltet, (2) die Modell-Lizenz Filter oder eine Prüfung verlangt oder (3) das Modell selbst durch gefilterte Trainingsdaten bzw. Safety-Finetuning bestimmte Inhalte kaum erzeugen kann. Punkt 3 ist die eigentliche «Zensur in den Gewichten»: Sie lässt sich nicht abschalten, sondern höchstens durch Community-Finetunes oder LoRAs teilweise ausgleichen.
+
+Einstufung in dieser Übersicht (jeweils laut Model Card bzw. Entwickler): «Offen trainiert» – die Entwickler geben an, dass die Trainingsdaten auch Erwachsenen-Inhalte enthalten oder das Modell «uncensored» ist. «Ohne Angabe» – die Model Card sagt nichts zur NSFW-Filterung. «Gefiltert» – die Entwickler nennen NSFW-Filterung der Trainingsdaten und/oder Safety-Finetuning.
+
+Stil-Einschätzungen beruhen auf den offiziellen Beschreibungen, den Angaben zu Trainingsdaten (z. B. Danbooru-Tags bei Anime-Modellen) und verbreiteten Community-Erfahrungen – nicht auf eigenen Benchmark-Tests. Ergebnisse hängen stark von Prompt, Sampler, Auflösung und LoRAs ab.
+
+Erotische oder freizügige Inhalte sind – wo überhaupt erwähnt – ausschliesslich im Zusammenhang mit eindeutig erwachsenen Figuren gemeint. Diese Seite enthält bewusst keine expliziten Texte und keine Beispiel-Prompts dafür.
+
+## Vergleichstabelle
+
+Modell | Entwickler | Jahr | Grösse | Lizenz | Kommerziell | Filter-Einstufung | Stärke | VRAM
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Stable Diffusion 1.5 | Runway/Stability | 2022 | 0,9B | OpenRAIL-M | ja* | Ohne Filter (LAION) | Ökosystem, wenig VRAM | gering
+SDXL 1.0 | Stability AI | 2023 | 3,5B | OpenRAIL++-M | ja* | Ohne Angabe | Basis vieler Finetunes | 8 GB
+SD 3.5 Large/Medium | Stability AI | 2024 | 8,1B/2,5B | Community | bis 1 Mio. USD | Gefiltert | 3D, Prompt-Treue | Medium 9,9 GB
+Juggernaut XL | RunDiffusion | 2023–25 | 3,5B | OpenRAIL-M | ja* | Ohne Angabe | Fotorealismus | 8 GB
+RealVisXL V5.0 | SG161222 | 2024 | 3,5B | OpenRAIL++-M | ja* | Offen (SFW/NSFW) | Fotorealismus | 8 GB
+Pony Diffusion V6 XL | PurpleSmartAI | 2024 | 3,5B | FAIPL mod. | nur nach Anfrage | Offen trainiert | Anime, Cartoon, Furry | 8 GB
+Pony V7 | PurpleSmartAI | 2025 | ~7B | Pony License | eingeschränkt | Offen trainiert | Anime, mehr Realismus | k. A. (GGUF)
+Illustrious XL | OnomaAI | 2024–25 | 3,5B | FAIPL / OpenRAIL | eingeschränkt | Offen (Danbooru) | Anime, Figurenwissen | 8 GB
+NoobAI-XL | Laxhar Lab | 2024 | 3,5B | FAIPL + Zusatz | nein | Offen trainiert | Anime, dunkle Bilder | 8 GB
+Anima | CircleStone/Comfy | 2026 | 2B | Non-Commercial | Outputs ja | Offen trainiert | modernes Anime | k. A.
+Neta Lumina | Neta.art | 2025 | 2B | Apache 2.0 | ja | Ohne Angabe | Anime, Guofeng | k. A.
+FLUX.1 [dev] | Black Forest Labs | 2024 | 12B | Non-Commercial | Outputs ja | Ohne Angabe | Allrounder, Glanz, Hände | ~24 GB (BF16)
+FLUX.1 [schnell] | Black Forest Labs | 2024 | 12B | Apache 2.0 | ja | Ohne Angabe | schnell (1–4 Schritte) | ~24 GB (BF16)
+FLUX.1 Kontext/Krea [dev] | BFL (+Krea) | 2025 | 12B | Non-Commercial | Outputs ja | Gefiltert | Editierung / natürlicher Look | ~24 GB (BF16)
+FLUX.2 [dev] | Black Forest Labs | 2025 | 32B | Non-Commercial | Outputs ja | Gefiltert | Top-Qualität, Referenzen | 24–32+ GB (4-Bit)
+FLUX.2 [klein] 4B/9B | Black Forest Labs | 2026 | 4B/9B | Apache 2.0 / NC | 4B ja | Gefiltert | sehr schnell | ~13 GB (4B)
+Chroma1-HD | Lodestone Rock | 2025 | 8,9B | Apache 2.0 | ja | Offen trainiert (uncensored) | Allrounder ohne Filter | ~18 GB (BF16)
+Qwen-Image / 2512 | Alibaba Qwen | 2025 | 20B | Apache 2.0 | ja | Ohne Angabe | Text, Realismus, Ostasien | ~40 GB (BF16)
+Qwen-Image-2.1 | Alibaba Qwen | 2026 | 7B | Research | nein | Ohne Angabe | Gen + Edit, RGBA, 2K | k. A.
+Z-Image Turbo/Base | Tongyi-MAI | 2025–26 | 6B | Apache 2.0 | ja | Ohne Angabe | Fotorealismus, schnell | 16 GB
+HiDream-I1 | HiDream.ai | 2025 | 17B | MIT | ja | Ohne Angabe | Stilvielfalt, Prompt-Treue | k. A.
+HunyuanImage 2.1 | Tencent | 2025 | 17B | Hunyuan (nicht EU) | nicht in EU | Ohne Angabe | 2K, Semantik | 24 GB
+Krea 2 | Krea | 2026 | 12B | Community | bis 1 Mio. USD | Gefiltert | Ästhetik, LoRA-Basis | k. A.
+Ideogram 4 | Ideogram | 2026 | 9,3B | Non-Commercial | nein | Gefiltert | Text, Design | k. A.
+ERNIE-Image | Baidu | 2026 | 8B | Apache 2.0 | ja | Ohne Angabe | Text, Poster, Kino-Look | 24 GB
+GLM-Image | Z.ai | 2026 | 9B+7B | MIT | ja | Ohne Angabe | Text, Wissen | ~23 GB
+Lumina-Image 2.0 | Alpha-VLLM | 2025 | 2B | Apache 2.0 | ja | Ohne Angabe | effiziente Basis | k. A.
+PixArt-Σ | PixArt | 2024 | 0,6B | OpenRAIL++-M | ja* | Ohne Angabe | klein, bis 4K | k. A.
+Kolors | Kuaishou | 2024 | U-Net + GLM | eigene | nach Registrierung | Ohne konkrete Angabe | Ostasien, Chinesisch | k. A.
+AuraFlow v0.3 | fal | 2024 | 6,8B | Apache 2.0 | ja | Ohne Angabe | Basis von Pony V7 | k. A.
+Wan 2.1 / 2.2 | Alibaba Wan | 2025 | 1,3B–14B | Apache 2.0 | ja | Ohne Angabe | filmischer Realismus | 8–80 GB
+
+* mit den Nutzungsbeschränkungen der jeweiligen RAIL-Lizenz. «k. A.» = keine offizielle Angabe. VRAM-Werte stammen aus den Model Cards oder sind aus der Gewichtsgrösse berechnet (BF16, ohne Text-Encoder); Quantisierung senkt sie deutlich. «Ohne Angabe» heisst nicht automatisch «unzensiert».
+
+## Stable-Diffusion-Familie und fotorealistische SDXL-Finetunes
+
+Die ältesten, aber bis heute meistgenutzten offenen Modelle. Ihr grösster Vorteil ist das riesige Ökosystem aus Finetunes, LoRAs und ControlNets und der geringe Hardwarebedarf.
+
+### Stable Diffusion 1.5
+
+- Entwickler: Runway in Zusammenarbeit mit CompVis (LMU München) und Stability AI; das ursprüngliche Repository runwayml/stable-diffusion-v1-5 ist zurückgezogen, offizieller Spiegel: stable-diffusion-v1-5
+- Veröffentlicht: Oktober 2022
+- Lizenz: CreativeML OpenRAIL-M – kommerzielle Nutzung erlaubt, aber mit verbindlichen Nutzungsbeschränkungen (Attachment A)
+- Architektur / Grösse: Latent-Diffusion mit U-Net (rund 860 Mio. Parameter) und CLIP-ViT-L/14-Text-Encoder; native Auflösung 512 × 512
+- Hardware: läuft schon auf älteren Grafikkarten mit wenig VRAM (Grössenordnung 4 GB mit Optimierungen); Checkpoint rund 2 GB in FP16
+- Zensur / Filter: Ohne Filter in den Gewichten. Trainiert auf Teilmengen von LAION-2B(en); die Model Card weist darauf hin, dass LAION-5B Erwachsenen-Material enthält. Vorgesehen war ein nachgelagerter «Safety Checker» in der Diffusers-Bibliothek – ComfyUI, AUTOMATIC1111 und Forge verwenden ihn standardmässig nicht.
+- Unzensierte Varianten: tausende Community-Checkpoints auf Civitai, z. B. Realistic Vision (SG161222) für Fotorealismus und majicMIX realistic (Merjic) mit Fokus auf ostasiatische Gesichter
+
+Stärken & Stile: Durch das grösste LoRA-Ökosystem lässt sich praktisch jeder Stil nachrüsten – Airbrush-, Pin-up-, CGI- oder Anime-Looks, glänzendes PVC/Latex oder helle, makellose Haut über passende LoRAs. Das Basismodell selbst wirkt nach heutigen Massstäben veraltet: geringe Auflösung, schwache Hände (bekannte Schwäche der SD-1.x-Generation), Anatomie- und Kompositionsfehler bei komplexen Szenen. Komplett weisse Augen gelingen meist nur mit LoRA oder Inpainting.
+
+Prompt-Treue & Text: gering; Schrift im Bild ist praktisch nicht nutzbar. Prompts funktionieren am besten als Stichwortlisten.
+
+Offizielle Seiten / Download: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5 · https://civitai.com/models/4201 · https://civitai.com/models/43331
+
+### Stable Diffusion XL (SDXL 1.0)
+
+- Entwickler: Stability AI
+- Veröffentlicht: 26. Juli 2023
+- Lizenz: CreativeML Open RAIL++-M – kommerzielle Nutzung erlaubt, mit Nutzungsbeschränkungen
+- Architektur / Grösse: Latent-Diffusion mit grossem U-Net; laut Stability AI 3,5 Mrd. Parameter im Basismodell, 6,6 Mrd. zusammen mit dem Refiner; zwei Text-Encoder (OpenCLIP ViT-bigG und CLIP ViT-L); native Auflösung 1024 × 1024
+- Hardware: laut Stability AI auf Consumer-GPUs mit 8 GB VRAM nutzbar
+- Zensur / Filter: Ohne Angabe zur NSFW-Filterung in der Model Card, kein Filter in den Gewichten. Das Basismodell gilt bei Erotik als eher zurückhaltend; die Lücke füllen Community-Finetunes.
+- Unzensierte Varianten: Pony Diffusion V6 XL, Illustrious XL, NoobAI-XL (Anime) sowie RealVisXL (Foto) – siehe eigene Abschnitte
+
+Stärken & Stile: SDXL ist bis heute die wichtigste Basis für lokale Bildgenerierung, weil fast jede Stil-Nische als Finetune oder LoRA existiert. Laut Stability AI erzeugt SDXL Bilder in «praktisch jedem Kunststil» und war bei Erscheinen das beste offene Modell für Fotorealismus, inklusive besserer Hände als die Vorgänger. Für Airbrush-, CGI- und Hochglanz-Looks (PVC, Lack, Latex) sind die Finetunes meist besser geeignet als das Basismodell.
+
+Prompt-Treue & Text: ordentlich bei einfachen Szenen, schwächer bei mehreren Figuren und genauen Positionen; Text im Bild nur kurz und unzuverlässig.
+
+Offizielle Seiten / Download: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0 · https://stability.ai/news/stable-diffusion-sdxl-1-announcement
+
+### Stable Diffusion 3.5 (Large, Large Turbo, Medium)
+
+- Entwickler: Stability AI
+- Veröffentlicht: 22. Oktober 2024 (Large, Large Turbo), 29. Oktober 2024 (Medium)
+- Lizenz: Stability AI Community License – kostenlos für Forschung, nicht-kommerzielle Nutzung und kommerzielle Nutzung bei weniger als 1 Mio. USD Jahresumsatz; darüber Enterprise-Lizenz
+- Architektur / Grösse: Multimodal Diffusion Transformer (MMDiT); Large 8,1 Mrd. Parameter, Medium 2,5 Mrd. (MMDiT-X); Large Turbo ist eine auf 4 Schritte destillierte Version von Large
+- Hardware: Medium laut Stability AI 9,9 GB VRAM (ohne Text-Encoder); Large deutlich mehr, quantisierte Varianten senken den Bedarf
+- Zensur / Filter: Gefiltert: laut Model Card mit «filtered data sets» und Sicherheitsmassnahmen trainiert.
+- Unzensierte Varianten: deutlich weniger Community-Finetunes als bei SDXL oder FLUX
+
+Stärken & Stile: Stability AI nennt ausdrücklich 3D, Fotografie, Malerei und Line-Art; die Ausgaben sind bewusst variantenreich (gleicher Prompt, sehr unterschiedliche Bilder). Für CGI- und Surrealismus-Motive ist die gute Prompt-Treue hilfreich. Für Erotik ist das Modell wegen der gefilterten Daten wenig geeignet, und das Finetune-Ökosystem blieb klein.
+
+Prompt-Treue & Text: laut Stability AI eine Stärke von Large; Typografie deutlich besser als SDXL.
+
+Offizielle Seiten / Download: https://huggingface.co/stabilityai/stable-diffusion-3.5-large · https://huggingface.co/stabilityai/stable-diffusion-3.5-medium · https://stability.ai/news/introducing-stable-diffusion-3-5 · https://stability.ai/license
+
+### Juggernaut XL
+
+- Entwickler: RunDiffusion (Version 9 gemeinsam mit KandooAI)
+- Veröffentlicht: SDXL-Finetune seit 2023; v9 im Februar 2024, X im April 2024, XI im August 2024, «Ragnarok» im Mai 2025 (Daten laut Civitai)
+- Lizenz: v9 auf Hugging Face: CreativeML OpenRAIL-M
+- Architektur / Grösse: SDXL-Finetune (gleiche Grösse wie SDXL)
+- Hardware: laut Model Card komfortabel mit 8 GB VRAM
+- Zensur / Filter: Ohne Angabe zu NSFW in der Model Card; das Modell ist primär auf Fotorealismus ausgelegt.
+
+Stärken & Stile: laut RunDiffusion «das weltweit meistgeladene SDXL-Modell» (über 6 Mio. Downloads auf Hugging Face), gezielt für Fotorealismus gebaut – Hauttextur, Mikrokontrast und natürliches Licht. Geeignet für realistische Porträts, Mode und Produktbilder; Hochglanzmaterialien wie Lack oder Latex profitieren von der guten Lichtwiedergabe. Für Anime oder komplett weisse Augen ohne LoRA eher ungeeignet.
+
+Prompt-Treue & Text: wie SDXL; voll kompatibel mit SDXL-ControlNets, IP-Adaptern und LoRAs.
+
+Offizielle Seiten / Download: https://huggingface.co/RunDiffusion/Juggernaut-XL-v9 · https://civitai.com/models/133005
+
+### RealVisXL V5.0
+
+- Entwickler: SG161222 (auch Autor von Realistic Vision für SD 1.5)
+- Veröffentlicht: August 2024 (V5.0 laut Civitai)
+- Lizenz: CreativeML Open RAIL++-M
+- Architektur / Grösse: SDXL-Finetune; zusätzlich «Lightning»-Variante für wenige Schritte
+- Hardware: wie SDXL (rund 8 GB VRAM)
+- Zensur / Filter: Offen: laut Model Card auf Fotorealismus ausgerichtet und fähig, SFW- und NSFW-Bilder zu erzeugen.
+
+Stärken & Stile: fotorealistische Menschen, Haut und Stoffe; geeignet für realistische Hochglanz-Looks, helle, glatte Haut (per Prompt bzw. Negativprompt steuerbar) und Porträts. Die Model Card empfiehlt einen Negativprompt gegen Hand- und Augenfehler und ein Hires-Fix-Upscaling – ein Hinweis darauf, dass Hände und Augen auch hier Nacharbeit brauchen können.
+
+Prompt-Treue & Text: wie SDXL.
+
+Offizielle Seiten / Download: https://huggingface.co/SG161222/RealVisXL_V5.0 · https://civitai.com/models/139562
+
+## Anime- und Illustrationsmodelle
+
+Diese Modelle sind meist auf Danbooru-, e621- oder ähnlichen Tag-Datensätzen trainiert. Sie verstehen deshalb Stichwort-Tags wie white_eyes, empty_eyes, blank_eyes, no_pupils, latex, latex_bodysuit, shiny_clothes, pale_skin, 3d oder surreal – alles Tags, die es auf Danbooru gibt (laut Tag-Liste der Erweiterung A1111-SD-WEBUI-TAGCOMPLETE (https://github.com/DominikDoom/a1111-sd-webui-tagcomplete), teils mit zehntausenden Einträgen). Das macht sie besonders treffsicher für weisse Augen, Hochglanz-Kleidung und helle Haut im Anime-Stil.
+
+### Pony Diffusion V6 XL
+
+- Entwickler: PurpleSmartAI (AstraliteHeart)
+- Veröffentlicht: Januar 2024 (Civitai)
+- Lizenz: modifizierte Fair AI Public License 1.0-SD: kein Betrieb auf Websites oder in Apps mit Monetarisierung (auch nicht für abgeleitete Modelle); kommerzielle Nutzung nur nach Anfrage
+- Architektur / Grösse: SDXL-Finetune, trainiert auf rund 2,6 Mio. Bildern
+- Hardware: wie SDXL (rund 8 GB VRAM); «Clip Skip 2» ist laut Entwickler Pflicht
+- Zensur / Filter: Offen trainiert: laut Entwickler etwa 1:1 aus Anime/Cartoon/Furry/Pony-Daten und 1:1 aus «safe/questionable/explicit» bewerteten Bildern.
+- Unzensierte Varianten: unzählige Merges und LoRAs auf Civitai («Pony»-Basis)
+
+Stärken & Stile: Charaktere im Anime-, Cartoon- und Furry-Stil, auch Interaktionen mehrerer Figuren. Steuerung über Qualitäts-Tags (score_9, score_8_up …) und Quellen-Tags (source_anime usw.). Über Tags und LoRAs gut für Airbrush- und Hochglanz-Anime, Latex/PVC-Outfits und weisse Augen. Fotorealismus ist keine Stärke; der Entwickler nennt ausserdem schwer entfernbare Pseudo-Signaturen.
+
+Prompt-Treue & Text: versteht natürliche Sprache und Tags; Text im Bild praktisch nicht.
+
+Offizielle Seiten / Download: https://civitai.com/models/257749
+
+### Pony V7
+
+- Entwickler: PurpleSmartAI
+- Veröffentlicht: Oktober 2025 (Civitai-Seite vom 8. Oktober 2025, Gewichte auf Hugging Face seit Ende Oktober 2025)
+- Lizenz: «Pony License»: laut Model Card kommerzielle Nutzung von Modell und Outputs erlaubt, ausser bei Inferenz-Diensten/Apps, Firmen mit über 1 Mio. Umsatz oder professioneller Videoproduktion
+- Architektur / Grösse: basiert auf AuraFlow (rund 7 Mrd. Parameter); Auflösungen 768 bis 1536 px
+- Hardware: keine offizielle VRAM-Angabe; Gewichte in BF16 rechnerisch rund 14 GB (ohne Text-Encoder); GGUF-Varianten (Q8_0 empfohlen) für weniger VRAM
+- Zensur / Filter: Offen trainiert: rund 10 Mio. Bilder, je etwa 1:1 «safe/questionable/explicit»; laut Entwickler wurden unangemessene explizite Inhalte herausgefiltert.
+
+Stärken & Stile: laut Entwickler gegenüber V6 viel besseres Verständnis für räumliche Angaben und mehrere Figuren, bessere Hintergründe, deutlich mehr Realismus und sehr helle bzw. sehr dunkle Bilder. Einschränkungen laut Model Card: Qualitäts-Tags wirken schwächer als bei V6, kleine Details und Gesichter können je nach Stil leiden (veralteter VAE); eine Version 7.1 ist angekündigt. Das Ökosystem ist wegen der AuraFlow-Basis kleiner als bei SDXL.
+
+Prompt-Treue & Text: natürliche Sprache plus Tags; Textdarstellung laut Entwickler ausdrücklich nicht unterstützt.
+
+Offizielle Seiten / Download: https://huggingface.co/purplesmartai/pony-v7-base · https://civitai.com/models/1901521
+
+### Illustrious XL
+
+- Entwickler: OnomaAI Research
+- Veröffentlicht: v0.1 im September 2024; v1.0, v1.1 und v2.0 auf Hugging Face seit Februar, März bzw. April 2025
+- Lizenz: v0.1: Fair AI Public License 1.0-SD (abgeleitete Modelle müssen offen bleiben, keine Monetarisierung geschlossener Derivate); spätere Versionen laut Hugging-Face-Metadaten unter SDXL- bzw. CreativeML-OpenRAIL-M-Lizenz
+- Architektur / Grösse: SDXL-Finetune, fortgesetzt von Kohaku XL Beta 5, trainiert auf Danbooru2023
+- Hardware: wie SDXL (rund 8 GB VRAM)
+- Zensur / Filter: Offen (Danbooru-Daten): Danbooru enthält auch Erwachsenen-Inhalte, entsprechend kann das Basismodell NSFW erzeugen. OnomaAI empfiehlt ausdrücklich die Variante «v0.1-GUIDED» mit zusätzlichen Sicherheitsmechanismen.
+- Unzensierte Varianten: NoobAI-XL und sehr viele Community-Merges auf Civitai
+
+Stärken & Stile: Illustration und Anime mit enormem Wissen über Figuren, Stile und Künstler aus Danbooru; Das Basismodell ist laut OnomaAI vor allem als Grundlage für eigene Finetunes gedacht; die meisten Nutzer verwenden Community-Merges. Über Danbooru-Tags besonders treffsicher bei weissen bzw. leeren Augen, Latex- und Hochglanz-Kleidung, heller Haut, 3D- und surrealen Motiven. Für Fotorealismus nicht gedacht.
+
+Prompt-Treue & Text: Tag-basiert (Danbooru-Tags); natürliche Sprache nur eingeschränkt. Text im Bild kaum.
+
+Offizielle Seiten / Download: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0 · https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0 · https://arxiv.org/abs/2409.19946
+
+### NoobAI-XL (Epsilon und V-Pred)
+
+- Entwickler: Laxhar Lab (Laxhar Dream Lab)
+- Veröffentlicht: Epsilon 1.0/1.1 im November 2024, V-Pred 1.0 im Dezember 2024
+- Lizenz: Fair AI Public License 1.0-SD mit Zusatzbedingungen: jede Kommerzialisierung verboten, Derivate und Merges müssen offengelegt werden
+- Architektur / Grösse: SDXL-Finetune auf Basis von Illustrious XL; trainiert auf den vollständigen Danbooru- und e621-Datensätzen
+- Hardware: wie SDXL; die V-Pred-Version braucht passende Einstellungen (v-prediction, Euler-Sampler) und wird u. a. in reForge und ComfyUI unterstützt
+- Zensur / Filter: Offen trainiert (Hugging-Face-Tag «not-for-all-audiences»); die Entwickler setzen im empfohlenen Negativprompt sogar «nsfw» ein, um SFW-Bilder zu erhalten.
+
+Stärken & Stile: sehr breites Anime- und Furry-Wissen mit Danbooru-Daten bis etwa 23. Oktober 2024 (laut Model Card), Datums- und Qualitäts-Tags. Die V-Pred-Variante gilt in der Community als stark bei sehr dunklen und kontrastreichen Bildern – gut für schwarzes Hochglanz-Latex/PVC mit harten Reflexen. Weisse Augen, helle Haut, 3D-Look und Surrealismus lassen sich über Danbooru-Tags direkt ansprechen.
+
+Prompt-Treue & Text: Tag-basiert, natürliche Sprache eingeschränkt; kein brauchbarer Text im Bild.
+
+Offizielle Seiten / Download: https://huggingface.co/Laxhar/noobai-XL-1.1 · https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0
+
+### Anima
+
+- Entwickler: CircleStone Labs in Zusammenarbeit mit Comfy Org
+- Veröffentlicht: Hugging Face seit Januar 2026
+- Lizenz: CircleStone Labs Non-Commercial License: Gewichte nur nicht-kommerziell; Outputs dürfen laut Lizenz auch kommerziell genutzt werden
+- Architektur / Grösse: 2 Mrd. Parameter, Finetune von NVIDIA Cosmos-Predict2-2B-Text2Image; Text-Encoder Qwen3 0.6B, VAE von Qwen-Image; Varianten Base, Aesthetic und Turbo (8–12 Schritte)
+- Hardware: keine offizielle VRAM-Angabe; wegen der geringen Grösse auch für Mittelklasse-GPUs geeignet
+- Zensur / Filter: Offen trainiert: mehrere Millionen Anime-Bilder plus rund 800 000 nicht-Anime-Kunstwerke; das Modell kennt die Sicherheits-Tags safe, sensitive, nsfw und explicit (Wissensstand der Anime-Daten: September 2025).
+- Unzensierte Varianten: Community-Erweiterung Anima-2.9B (Schicht-Erweiterung, Wissensstand Juli 2026, gleiche Lizenz)
+
+Stärken & Stile: modernes Anime- und Illustrationsmodell mit aktuellem Figurenwissen, Danbooru-Tags und natürlicher Sprache; laut Entwickler auch für andere nicht-fotorealistische Kunst geeignet. Der Sampler euler_a neigt laut Model Card zu einem 2,5D-Look. Über Tags gut für weisse Augen, Latex/Hochglanz und helle Haut im Anime-Stil. Unterstützt in ComfyUI (nativ) und Forge Neo.
+
+Prompt-Treue & Text: Tags plus Fliesstext; Prompt-Gewichtungen müssen höher sein als bei SDXL.
+
+Offizielle Seiten / Download: https://huggingface.co/circlestone-labs/Anima · https://huggingface.co/Gazingstars123/Anima-2.9B
+
+### Neta Lumina
+
+- Entwickler: Neta.art Lab
+- Veröffentlicht: Juni 2025
+- Lizenz: Apache 2.0
+- Architektur / Grösse: Finetune von Lumina-Image 2.0 (2 Mrd. Parameter) mit Gemma-Text-Encoder
+- Hardware: keine offizielle VRAM-Angabe; kleines Modell
+- Zensur / Filter: Ohne Angabe in der Model Card.
+
+Stärken & Stile: Anime mit natürlicher Sprache und Danbooru-Tags; laut Entwickler optimiert u. a. für Furry, Guofeng (traditionelle chinesische Ästhetik) und Haustiere – interessant für ostasiatische Ästhetik im Illustrationsstil. Mehrsprachige Prompts (Chinesisch, Englisch, Japanisch empfohlen).
+
+Prompt-Treue & Text: laut Entwickler gute Befolgung komplexer Prompts dank Gemma-Encoder.
+
+Offizielle Seiten / Download: https://huggingface.co/neta-art/Neta-Lumina
+
+## FLUX-Familie und Chroma
+
+Black Forest Labs (BFL) wurde von ehemaligen Stable-Diffusion-Entwicklern gegründet. Die FLUX-Modelle setzen seit 2024 Massstäbe bei Bildqualität und Prompt-Treue; die neueren Versionen sind allerdings ausdrücklich gegen NSFW-Inhalte gehärtet. Chroma ist der bekannteste Community-Gegenentwurf.
+
+### FLUX.1 [dev] und FLUX.1 [schnell]
+
+- Entwickler: Black Forest Labs (Freiburg im Breisgau)
+- Veröffentlicht: 1. August 2024
+- Lizenz: [schnell]: Apache 2.0 (auch kommerziell); [dev]: FLUX.1 [dev] Non-Commercial License – Gewichte nur nicht-kommerziell, erzeugte Bilder dürfen kommerziell genutzt werden; Pflicht zu Content-Filtern oder manueller Prüfung vor der Weitergabe von Outputs
+- Architektur / Grösse: Rectified-Flow-Transformer mit 12 Mrd. Parametern; Text-Encoder T5-XXL und CLIP-L; [schnell] ist auf 1–4 Schritte destilliert, [dev] per Guidance-Distillation
+- Hardware: BF16-Gewichte rund 24 GB; mit FP8-, NF4- oder GGUF-Quantisierung (z. B. city96/FLUX.1-dev-gguf) auch auf 8–12-GB-Karten lauffähig, dann langsamer
+- Zensur / Filter: Ohne Angabe zur Trainingsfilterung in den ursprünglichen Model Cards; in der Praxis fehlen dem Modell explizite anatomische Konzepte weitgehend (Community-Erfahrung – genau diese Lücke will Chroma schliessen). BFL liefert im GitHub-Repository optionale Inferenz-Filter mit.
+- Unzensierte Varianten: Chroma (siehe unten) sowie zahlreiche Community-Finetunes und LoRAs auf Civitai
+
+Stärken & Stile: laut BFL Ausgabequalität direkt hinter dem damaligen Spitzenmodell FLUX.1 [pro]; sehr gut bei CGI-/3D-Render-Looks, Produkt- und Hochglanzoberflächen (Reflexionen auf Lack, PVC oder Latex), glatter heller Haut und surrealen Kompositionen. Hände sind gegenüber SDXL deutlich zuverlässiger. In der Community oft genannte Eigenheiten: eine Tendenz zu sehr glatter, «plastischer» Haut und zum typischen «FLUX-Kinn» – für einen Airbrush-Look eher ein Vorteil. Anime ist möglich, aber nicht die Stärke des Basismodells.
+
+Prompt-Treue & Text: sehr gut; versteht lange Beschreibungen in natürlicher Sprache und kann kurze Texte im Bild sauber setzen. [dev] verwendet keinen klassischen Negativprompt.
+
+Offizielle Seiten / Download: https://huggingface.co/black-forest-labs/FLUX.1-dev · https://huggingface.co/black-forest-labs/FLUX.1-schnell · https://github.com/black-forest-labs/flux · https://huggingface.co/city96/FLUX.1-dev-gguf
+
+### FLUX.1 Kontext [dev] und FLUX.1 Krea [dev]
+
+- Entwickler: Black Forest Labs; Krea [dev] gemeinsam mit Krea
+- Veröffentlicht: Kontext [dev]: 26. Juni 2025; Krea [dev]: 31. Juli 2025
+- Lizenz: FLUX.1 [dev] Non-Commercial License (inkl. Filter- bzw. Prüfpflicht)
+- Architektur / Grösse: je 12 Mrd. Parameter; Kontext ist ein Bild-Editiermodell (Bild + Textanweisung), Krea [dev] ein Text-zu-Bild-Modell
+- Hardware: wie FLUX.1 [dev]
+- Zensur / Filter: Gefiltert: laut Model Cards NSFW-Filterung der Trainingsdaten, Filterung bekannten Missbrauchsmaterials gemeinsam mit der Internet Watch Foundation und mehrere Runden gezieltes Safety-Finetuning gegen synthetisches Missbrauchsmaterial und nicht-einvernehmliche intime Bilder (NCII).
+
+Stärken & Stile: Kontext eignet sich für konsistente Figuren über mehrere Bilder, Stilübertragung und gezielte lokale Änderungen (z. B. Kleidung, Augenfarbe, Hintergrund). Krea [dev] legt laut Model Card den Fokus auf ästhetische Fotografie und wurde entwickelt, um den übersättigten «KI-Look» zu überwinden – natürlicher, fotografischer und damit eher das Gegenteil eines Airbrush-Looks.
+
+Prompt-Treue & Text: sehr gut; Kontext folgt Editieranweisungen präzise.
+
+Offizielle Seiten / Download: https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev · https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
+
+### FLUX.2 [dev]
+
+- Entwickler: Black Forest Labs
+- Veröffentlicht: 25. November 2025
+- Lizenz: FLUX [dev] Non-Commercial License
+- Architektur / Grösse: Rectified-Flow-Transformer mit 32 Mrd. Parametern; Text-Encoder Mistral-Small-3.2-24B; Generierung, Editierung und Kombination mehrerer Referenzbilder in einem Modell
+- Hardware: laut BFL auf RTX 4090/5090 nur mit 4-Bit-Quantisierung und ausgelagertem (Remote-)Text-Encoder; unquantisiert Rechenzentrums-GPUs wie H100
+- Zensur / Filter: Gefiltert: NSFW- und Missbrauchsmaterial-Filterung der Trainingsdaten, Safety-Finetuning gegen synthetisches Missbrauchsmaterial und NCII, externe Prüfungen vor der Veröffentlichung.
+
+Stärken & Stile: laut BFL Stand der Technik bei offener Text-zu-Bild-Generierung und Multi-Referenz-Editierung: Figuren, Objekte und Stile aus Referenzbildern ohne eigenes Training übernehmen. Sehr stark bei Fotorealismus, Produkt-/CGI-Look und Typografie. Für freizügige Inhalte ungeeignet.
+
+Prompt-Treue & Text: sehr hoch, inklusive Text im Bild.
+
+Offizielle Seiten / Download: https://huggingface.co/black-forest-labs/FLUX.2-dev · https://github.com/black-forest-labs/flux2
+
+### FLUX.2 [klein] (4B und 9B)
+
+- Entwickler: Black Forest Labs
+- Veröffentlicht: 15. Januar 2026
+- Lizenz: 4B (und 4B-Base): Apache 2.0, auch kommerziell; 9B-Varianten: FLUX Non-Commercial License
+- Architektur / Grösse: Rectified-Flow-Transformer mit 4 bzw. 9 Mrd. Parametern; destillierte Varianten mit 4 Schritten und undestillierte «Base»-Varianten fürs Finetuning; Generierung und Editierung in einem Modell
+- Hardware: 4B laut Hugging-Face-Model-Card rund 13 GB VRAM (z. B. RTX 3090/4070); das GitHub-README nennt teils niedrigere Werte – die Angaben weichen voneinander ab
+- Zensur / Filter: Gefiltert wie FLUX.2 [dev]; Filter oder Prüfung sind bei 9B laut Lizenz Pflicht, bei 4B empfohlen.
+- Unzensierte Varianten: Community-Projekte auf Basis von klein-Base, z. B. das experimentelle Chroma2-Kaleidoscope von Lodestone Rock (Work in Progress)
+
+Stärken & Stile: sehr schnelle Generierung (laut BFL teils unter einer Sekunde), solide Qualität für die Grösse, gut für schnelle Iteration bei CGI-, Produkt- und Fotolooks. Die Apache-lizenzierten Base-Gewichte sind die wichtigste neue Grundlage für Community-Finetunes.
+
+Prompt-Treue & Text: gut; Text im Bild laut Model Card möglich, aber teils ungenau.
+
+Offizielle Seiten / Download: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B · https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+
+### Chroma (Chroma1-HD, -Base, -Flash)
+
+- Entwickler: Lodestone Rock (Community-Projekt)
+- Veröffentlicht: Training öffentlich ab Anfang 2025; finale Chroma1-Versionen im August 2025
+- Lizenz: Apache 2.0 – auch kommerziell
+- Architektur / Grösse: 8,9 Mrd. Parameter, stark modifizierte Version von FLUX.1 [schnell] (Timestep-Modulation verkleinert); T5-XXL-Text-Encoder, FLUX-VAE; «Flash» mit eingebackenem CFG für wenige Schritte; «Radiance» (Pixel-Space) noch in Arbeit
+- Hardware: in BF16 rund 18 GB Gewichte; quantisierte Fassungen (FP8, GGUF) für 8–12-GB-Karten
+- Zensur / Filter: Offen trainiert: laut Entwickler «fully uncensored» und mit gezielt wieder eingeführten anatomischen Konzepten, die FLUX fehlen; trainiert auf 5 Mio. Bildern (aus 20 Mio.) inklusive Anime, Furry, Kunst und Fotos; ausdrücklich «nicht auf einen bestimmten Safety-Filter ausgerichtet».
+- Unzensierte Varianten: Chroma ist selbst die unzensierte Alternative; Nachfolger-Experimente: Zeta-Chroma (auf Z-Image-Basis), Chroma2-Kaleidoscope (auf FLUX.2-klein-Basis), Kroma (auf Krea-2-Basis)
+
+Stärken & Stile: breites Stilspektrum von Foto über Kunst bis Anime, mit der Bildästhetik der FLUX-Architektur. Gut für Airbrush- und CGI-Looks, Hochglanzmaterialien, helle glatte Haut und surreale Motive; dank Negativprompt und echtem CFG besser steuerbar als FLUX.1 [dev]. Gilt in der Community als eines der stärksten frei lizenzierten Modelle für erwachsene, freizügige Inhalte.
+
+Prompt-Treue & Text: natürliche Sprache über T5; Text im Bild möglich, aber weniger zuverlässig als bei FLUX.2 oder Qwen-Image.
+
+Offizielle Seiten / Download: https://huggingface.co/lodestones/Chroma1-HD · https://huggingface.co/lodestones/Chroma1-Base · https://huggingface.co/lodestones/Chroma1-Flash · https://huggingface.co/lodestones/Chroma · https://huggingface.co/silveroxides/Chroma-GGUF
+
+## Neue Generation 2025–2026: grosse Transformer-Modelle
+
+Seit 2025 kommen viele der stärksten offenen Bildmodelle aus China (Alibaba, Tencent, Baidu, Z.ai) sowie neu von Krea und Ideogram. Sie verwenden grosse Sprachmodelle als Text-Encoder und sind deshalb sehr gut im Verstehen langer Prompts und im Setzen von Text. Die meisten Model Cards schweigen zur NSFW-Filterung; die westlichen Neuzugänge Krea 2 und Ideogram 4 sind ausdrücklich gefiltert.
+
+### Qwen-Image und Qwen-Image-2512
+
+- Entwickler: Qwen-Team von Alibaba
+- Veröffentlicht: Qwen-Image: 4. August 2025; Qwen-Image-2512 (Dezember-Update): Dezember 2025
+- Lizenz: Apache 2.0 – auch kommerziell
+- Architektur / Grösse: MMDiT mit 20 Mrd. Parametern, Qwen2.5-VL als Text-Encoder; dazu Editiermodelle (Qwen-Image-Edit)
+- Hardware: BF16-Gewichte rund 40 GB (rechnerisch); lokal praktisch nur mit FP8-, GGUF- oder Nunchaku-Quantisierung und Offloading auf 16–24-GB-Karten
+- Zensur / Filter: Ohne Angabe zur NSFW-Filterung in der Model Card; explizite Anatomie gilt in der Community als schwach ausgeprägt, Community-LoRAs ergänzen sie.
+
+Stärken & Stile: laut Qwen ein breites Stilspektrum von Fotorealismus über impressionistische Malerei bis Anime und Minimal-Design. Das Update 2512 reduziert laut Qwen den «KI-Look» und verbessert besonders die Darstellung von Menschen (Haut, Haare, Altersmerkmale); die offiziellen Beispiele zeigen überwiegend ostasiatische Personen – ein Hinweis auf die Stärke bei ostasiatischer Ästhetik. Für einen bewusst glatten Airbrush-Look lassen sich die im Negativprompt-Beispiel genannten Begriffe («übermässig glatt», «Wachsfigur-Look») gezielt weglassen.
+
+Prompt-Treue & Text: eine der grössten Stärken: komplexe chinesische und englische Schrift, Plakate und Layouts mit hoher Genauigkeit.
+
+Offizielle Seiten / Download: https://huggingface.co/Qwen/Qwen-Image · https://huggingface.co/Qwen/Qwen-Image-2512 · https://qwenlm.github.io/blog/qwen-image/
+
+### Qwen-Image-2.1
+
+- Entwickler: Qwen-Team von Alibaba
+- Veröffentlicht: 20. September 2026
+- Lizenz: Qwen Research License – nur nicht-kommerziell; kommerzielle Nutzung erfordert eine separate Lizenz
+- Architektur / Grösse: 7 Mrd. Parameter in der Bildgenerierungs-Komponente (32 Single-Stream-DiT-Schichten); Generierung und Editierung in einem Modell, transparente Bilder (RGBA), bis zu 10 Referenzbilder, native 2K-Auflösung
+- Hardware: keine offizielle VRAM-Angabe; deutlich kleiner als der 20-Mrd.-Vorgänger
+- Zensur / Filter: Ohne Angabe in der Model Card. Wenige Tage nach Erscheinen tauchten auf Hugging Face mehrere Community-Repositories mit «Uncensored»-GGUF-Fassungen auf – deren Qualität und Herkunft sind nicht geprüft.
+
+Stärken & Stile: laut Qwen realistischere Texturen, verbesserte Porträtbeleuchtung und Typografie sowie feinere Details. Interessant für Fotorealismus, Porträts mit glatter Haut, ostasiatische Ästhetik und freigestellte Figuren (RGBA). Da es sehr neu ist, gibt es noch kaum Erfahrungswerte zu Spezialstilen.
+
+Prompt-Treue & Text: hoch, mit verbesserter Typografie.
+
+Offizielle Seiten / Download: https://huggingface.co/Qwen/Qwen-Image-2.1 · https://github.com/QwenLM/Qwen-Image-2.1
+
+### Z-Image (Turbo und Base)
+
+- Entwickler: Tongyi-MAI (Alibaba)
+- Veröffentlicht: Z-Image-Turbo: 26. November 2025; Z-Image (Base): 27. Januar 2026
+- Lizenz: Apache 2.0 – auch kommerziell
+- Architektur / Grösse: 6 Mrd. Parameter, «Scalable Single-Stream DiT» (S3-DiT); Turbo ist auf 8 Schritte destilliert und unterstützt keinen Negativprompt, Base braucht 28–50 Schritte und unterstützt Negativprompts
+- Hardware: laut Tongyi-MAI passt Turbo bequem auf Consumer-Karten mit 16 GB VRAM; quantisiert auch weniger
+- Zensur / Filter: Ohne Angabe in der Model Card. Nach Community-Berichten (keine offizielle Aussage) wird nicht aktiv zensiert, explizite Anatomie ist aber untertrainiert.
+- Unzensierte Varianten: viele Community-Finetunes und LoRAs; Zeta-Chroma von Lodestone Rock (experimentell, Basis Z-Image)
+
+Stärken & Stile: laut Tongyi-MAI starker Fotorealismus bei sehr hoher Geschwindigkeit; Base deckt von hyperrealistischer Fotografie über cineastische Digital Art bis Anime alles ab. Die offizielle Galerie zeigt u. a. Hanfu – gute ostasiatische Ästhetik. Gut für Porträts mit heller, glatter Haut und für CGI-Looks; das kleine Modell ist zudem gut finetunebar.
+
+Prompt-Treue & Text: präzise zweisprachige Textdarstellung (Chinesisch und Englisch).
+
+Offizielle Seiten / Download: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo · https://huggingface.co/Tongyi-MAI/Z-Image · https://huggingface.co/lodestones/Zeta-Chroma
+
+### HiDream-I1 (Full, Dev, Fast)
+
+- Entwickler: HiDream.ai
+- Veröffentlicht: April 2025 (Editiermodell HiDream-E1 folgte am 28. April 2025)
+- Lizenz: MIT für die Transformer-Gewichte; Text-Encoder Llama 3.1 8B unter der Llama 3.1 Community License, VAE von FLUX.1 [schnell] (Apache 2.0); Bilder laut HiDream frei kommerziell nutzbar
+- Architektur / Grösse: 17 Mrd. Parameter, Sparse Diffusion Transformer (Mixture of Experts); mehrere Text-Encoder (u. a. T5-XXL und Llama-3.1-8B-Instruct)
+- Hardware: hoher Bedarf; lokal meist mit FP8/GGUF-Quantisierung auf 16–24-GB-Karten
+- Zensur / Filter: Ohne Angabe in der Model Card.
+
+Stärken & Stile: laut HiDream hervorragende Ergebnisse in vielen Stilen – fotorealistisch, Cartoon, künstlerisch. Durch die Lizenz (MIT) attraktiv für Finetunes; das Ökosystem blieb dennoch kleiner als bei FLUX.
+
+Prompt-Treue & Text: laut HiDream bei Erscheinen bestes Prompt-Following aller offenen Modelle (Benchmarks GenEval und DPG).
+
+Offizielle Seiten / Download: https://huggingface.co/HiDream-ai/HiDream-I1-Full · https://github.com/HiDream-ai/HiDream-I1
+
+### HunyuanImage 2.1 und 3.0
+
+- Entwickler: Tencent Hunyuan
+- Veröffentlicht: 2.1: 8. September 2025; 3.0: September 2025; 3.0-Instruct und -Instruct-Distil: 26. Januar 2026
+- Lizenz: Tencent Hunyuan Community License – gilt ausdrücklich nicht in der EU, im Vereinigten Königreich und in Südkorea; dort besteht also keine Nutzungslizenz
+- Architektur / Grösse: 2.1: Diffusion Transformer mit 17 Mrd. Parametern für 2K-Bilder; 3.0: Mixture-of-Experts mit 80 Mrd. Parametern (13 Mrd. aktiv), multimodal-autoregressiv
+- Hardware: 2.1: mindestens 24 GB VRAM für 2048 × 2048 (mit FP8); 3.0: laut Tencent mindestens 3 × 80 GB, Instruct mindestens 8 × 80 GB – also nicht für Heim-PCs
+- Zensur / Filter: Ohne Angabe zur NSFW-Filterung in den Model Cards.
+
+Stärken & Stile: 2.1 erreicht laut Tencent bei der semantischen Treue den besten Wert unter offenen Modellen und liegt nahe an GPT-Image; gute Text-Darstellung durch einen zeichenbewussten Encoder. Für Nutzer in Deutschland und der Schweiz relevant: Die Lizenz schliesst die EU aus; die Schweiz ist nicht ausdrücklich genannt.
+
+Prompt-Treue & Text: sehr gut (ByT5-basierte Glyphen-Verarbeitung bei 2.1).
+
+Offizielle Seiten / Download: https://huggingface.co/tencent/HunyuanImage-2.1 · https://huggingface.co/tencent/HunyuanImage-3.0
+
+### Krea 2 (Raw und Turbo)
+
+- Entwickler: Krea
+- Veröffentlicht: 22. Juni 2026
+- Lizenz: Krea 2 Community License: kommerzielle Nutzung nur unter 1 Mio. USD Jahresumsatz; Betreiber müssen Inhaltsfilter oder gleichwertige Prüfprozesse einsetzen; Zugang auf Hugging Face erst nach Zustimmung (gated)
+- Architektur / Grösse: Diffusion Transformer mit 12 Mrd. Parametern, Qwen3-VL als Text-Encoder, VAE von Qwen-Image; Raw (für Finetuning/LoRAs) und Turbo (destilliert, 8 Schritte)
+- Hardware: keine offizielle VRAM-Angabe
+- Zensur / Filter: Gefiltert: laut Model Card wurden die Trainingsdaten vor dem Training von bestimmten schädlichen Inhalten bereinigt und das Modell gegen sexuell explizite Inhalte und NCII getestet bzw. nachtrainiert.
+- Unzensierte Varianten: Kroma von Lodestone Rock (experimentell; die Lizenzangaben im Repository sind widersprüchlich)
+
+Stärken & Stile: ästhetisch starkes Basismodell für kreative und kommerzielle Bildgestaltung, Concept Art und Design; Raw ist ausdrücklich als Grundlage für eigene LoRAs gedacht. Für freizügige Inhalte ungeeignet.
+
+Prompt-Treue & Text: hoch dank Qwen3-VL-Encoder.
+
+Offizielle Seiten / Download: https://huggingface.co/krea/Krea-2-Raw · https://huggingface.co/krea/Krea-2-Turbo
+
+### Ideogram 4
+
+- Entwickler: Ideogram
+- Veröffentlicht: 3. Juni 2026 (erstes offenes Modell von Ideogram)
+- Lizenz: Ideogram 4 Non-Commercial; Zugang gated
+- Architektur / Grösse: 9,3 Mrd. Parameter, von Grund auf trainiert (kein Finetune); strukturierte JSON-Prompts; Qwen3-VL-8B als Text-Encoder; native 2K-Auflösung; Gewichte als NF4 und FP8
+- Hardware: keine offizielle VRAM-Angabe; die NF4-Fassung zielt auf Consumer-GPUs
+- Zensur / Filter: Gefiltert: NSFW-Filterung vor dem Training, Safety-Nachtraining und Prompt-/Output-Filter (Hive), deren Beibehaltung von Betreibern erwartet wird.
+
+Stärken & Stile: Grafikdesign, Poster, Typografie und Fotografie; laut Ideogram von professionellen Designern bewertet. Für freizügige Inhalte ungeeignet.
+
+Prompt-Treue & Text: laut Ideogram die beste Textdarstellung aller offenen Modelle, mehrsprachig.
+
+Offizielle Seiten / Download: https://huggingface.co/ideogram-ai/ideogram-4-nf4 · https://huggingface.co/ideogram-ai/ideogram-4-fp8
+
+### ERNIE-Image (und Turbo)
+
+- Entwickler: Baidu (ERNIE-Image-Team)
+- Veröffentlicht: April 2026 (Hugging Face)
+- Lizenz: Apache 2.0 – auch kommerziell
+- Architektur / Grösse: Single-Stream Diffusion Transformer mit 8 Mrd. Parametern plus leichter «Prompt Enhancer», der kurze Eingaben ausformuliert; Turbo mit 8 Schritten
+- Hardware: laut Baidu auf Consumer-GPUs mit 24 GB VRAM
+- Zensur / Filter: Ohne Angabe in der Model Card.
+
+Stärken & Stile: laut Baidu besonders stark bei dichtem, langem und layoutkritischem Text (Poster, Infografiken, UI-Bilder), dazu realistische Fotografie und weichere, cineastische Bildstimmungen.
+
+Prompt-Treue & Text: sehr gut, Text ist die Kernstärke.
+
+Offizielle Seiten / Download: https://huggingface.co/baidu/ERNIE-Image · https://huggingface.co/baidu/ERNIE-Image-Turbo
+
+### GLM-Image
+
+- Entwickler: Z.ai (Zhipu)
+- Veröffentlicht: Januar 2026 (Hugging Face)
+- Lizenz: MIT
+- Architektur / Grösse: hybrid: autoregressiver Generator mit 9 Mrd. Parametern (aus GLM-4-9B) plus Diffusions-Decoder mit 7 Mrd. Parametern
+- Hardware: laut Z.ai rund 23 GB GPU-Speicher mit CPU-Offloading (langsamer)
+- Zensur / Filter: Ohne Angabe in der Model Card.
+
+Stärken & Stile: wissensintensive Bilder, Infografiken und Editierung inklusive Stilübertragung und identitätserhaltender Generierung.
+
+Prompt-Treue & Text: laut Z.ai deutliche Vorteile bei Textdarstellung (Glyph-Encoder).
+
+Offizielle Seiten / Download: https://huggingface.co/zai-org/GLM-Image
+
+## Weitere offene Modelle (kleiner oder älter)
+
+Technisch interessante Modelle, die heute vor allem als Basis für Finetunes oder für schwächere Hardware relevant sind.
+
+### Lumina-Image 2.0
+
+- Entwickler: Alpha-VLLM (Shanghai AI Laboratory)
+- Veröffentlicht: Januar 2025
+- Lizenz: Apache 2.0
+- Architektur / Grösse: flussbasierter Diffusion Transformer mit 2 Mrd. Parametern, Gemma-2B als Text-Encoder
+- Hardware: gering; läuft auf Mittelklasse-GPUs
+- Zensur / Filter: Ohne Angabe in der Model Card.
+- Unzensierte Varianten: Basis von Neta Lumina (Anime, siehe oben)
+
+Stärken & Stile: effizientes, frei lizenziertes Basismodell mit guter Prompt-Treue für seine Grösse; heute vor allem als Grundlage von Neta Lumina relevant.
+
+Offizielle Seiten / Download: https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
+
+### PixArt-Σ (Sigma)
+
+- Entwickler: PixArt-Team (Huawei Noah’s Ark Lab u. a.)
+- Veröffentlicht: April 2024
+- Lizenz: CreativeML Open RAIL++-M
+- Architektur / Grösse: Diffusion Transformer mit rund 0,6 Mrd. Parametern, T5-Text-Encoder; Bilder in 1024 px, 2K und 4K in einem Durchgang
+- Hardware: gering (der T5-Encoder braucht am meisten Speicher)
+- Zensur / Filter: Ohne Angabe zur Trainingsfilterung.
+
+Stärken & Stile: sehr klein und schnell, gute Prompt-Treue für die Grösse. Laut Model Card kein perfekter Fotorealismus und keine lesbare Schrift. Heute weitgehend von neueren Modellen überholt.
+
+Offizielle Seiten / Download: https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS
+
+### Kolors
+
+- Entwickler: Kolors-Team von Kuaishou
+- Veröffentlicht: 6. Juli 2024
+- Lizenz: Code: Apache 2.0; Modellgewichte: frei für akademische Forschung, kommerzielle Nutzung nach Registrierung per Fragebogen beim Kolors-Team
+- Architektur / Grösse: Latent Diffusion mit U-Net (SDXL-ähnlich) und ChatGLM3 als Text-Encoder; zweisprachig Chinesisch/Englisch
+- Hardware: ähnlich wie SDXL plus Speicher für ChatGLM3 (quantisierbar)
+- Zensur / Filter: Ohne konkrete Angabe zur NSFW-Filterung; die Model Card betont Bemühungen um «Sicherheit der Daten» und warnt vor Missbrauch.
+
+Stärken & Stile: laut Kuaishou fotorealistische Bildsynthese mit deutlichen Vorteilen bei Bildqualität und komplexer Semantik gegenüber damaligen Modellen; gute chinesische Textdarstellung und starke ostasiatische Ästhetik (Porträts, Mode). Ökosystem kleiner als bei SDXL.
+
+Offizielle Seiten / Download: https://huggingface.co/Kwai-Kolors/Kolors · https://github.com/Kwai-Kolors/Kolors
+
+### AuraFlow
+
+- Entwickler: fal
+- Veröffentlicht: v0.1 im Juli 2024, v0.3 im August 2024
+- Lizenz: Apache 2.0
+- Architektur / Grösse: flussbasiertes Text-zu-Bild-Modell mit rund 6,8 Mrd. Parametern; als Beta bezeichnet
+- Hardware: Grössenordnung 12–16 GB VRAM in FP16 (rechnerisch, keine offizielle Angabe)
+- Zensur / Filter: Ohne Angabe in der Model Card.
+- Unzensierte Varianten: Pony V7 (siehe oben) basiert auf AuraFlow
+
+Stärken & Stile: laut fal bei Erscheinen das grösste vollständig offene flussbasierte Modell mit guter Prompt-Treue; die Bildästhetik des Basismodells ist weniger ausgefeilt. Heute vor allem als Basis von Pony V7 relevant.
+
+Offizielle Seiten / Download: https://huggingface.co/fal/AuraFlow-v0.3
+
+## Videomodelle als Bildgenerator
+
+### Wan 2.1 und Wan 2.2
+
+- Entwickler: Wan-Team von Alibaba
+- Veröffentlicht: Wan 2.1: Februar 2025; Wan 2.2: Juli 2025
+- Lizenz: Apache 2.0
+- Architektur / Grösse: Video-Diffusion-Transformer: Wan 2.1 mit 1,3 bzw. 14 Mrd. Parametern; Wan 2.2 als Mixture-of-Experts «A14B» sowie kompaktes TI2V-5B-Modell
+- Hardware: Wan 2.1 T2V-1.3B laut Alibaba ab 8,19 GB VRAM; TI2V-5B (2.2) läuft auf einer RTX 4090; die 14B-Modelle brauchen ohne Quantisierung bis zu 80 GB
+- Zensur / Filter: Ohne Angabe zur NSFW-Filterung in den Model Cards.
+
+Als Bildmodell: Laut Alibaba beherrscht Wan 2.1 neben Video auch Text-zu-Bild; in der Praxis erzeugt man dafür ein Video mit nur einem Frame. Viele Nutzer loben den natürlichen, filmischen Fotorealismus und die gute Anatomie dieser Einzelbilder – Wan 2.1 kann laut Alibaba zudem chinesischen und englischen Text erzeugen. Für Airbrush-, CGI- oder Anime-Looks sind dedizierte Bildmodelle meist besser. Neuere Wan-Versionen sind (Stand Oktober 2026) nicht als offene Gewichte auf der offiziellen Hugging-Face-Seite verfügbar.
+
+Offizielle Seiten / Download: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B · https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B · https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+
+## Zum Vergleich: nicht lokal verfügbar
+
+Diese Modelle haben keine offenen Gewichte und laufen nur in der Cloud des Anbieters – inklusive der dortigen Inhaltsfilter. Sie sind nur zur Einordnung aufgeführt.
+
+### Grok Imagine (xAI)
+
+- Entwickler: xAI
+- Lokal nutzbar: nein – nur über grok.com, die Grok-Apps und die API; keine offenen Gewichte
+- Filter: Inhaltsrichtlinien und Moderation von xAI auf deren Servern
+
+Grok Imagine ist für seinen eigenen, oft cineastisch-glatten Look bekannt. Wer diesen Look lokal annähern möchte, findet die nächsten Verwandten bei FLUX.1 [dev] bzw. Chroma (glatte Haut, CGI-Glanz), Qwen-Image-2512 und Z-Image (Fotorealismus, ostasiatische Ästhetik) oder bei Illustrious/NoobAI-Merges mit 2,5D-Stil (Anime-nahe Figuren). Ein direkter Vergleich ist subjektiv und hier nicht getestet.
+
+Offizielle Seiten / Download: https://grok.com/imagine
+
+### FLUX 3 (Black Forest Labs)
+
+- Entwickler: Black Forest Labs
+- Stand: am 23. Juli 2026 als multimodales Modell im Early Access angekündigt; offene Bild-Gewichte gibt es (Stand Oktober 2026) nicht
+
+Ob und wann eine offene [dev]- oder [klein]-Variante folgt, ist nicht bekannt. Sobald offene Gewichte erscheinen, gelten voraussichtlich ähnliche Lizenz- und Filterbedingungen wie bei FLUX.2 – das ist eine Vermutung, keine offizielle Aussage.
+
+Offizielle Seiten / Download: https://bfl.ai/
+
+## Stil-Kompass
+
+- Airbrush-Look: glatte, weich verlaufende Haut und Flächen wie bei klassischer Airbrush-Illustration: FLUX.1 [dev] und Chroma (neigen ohnehin zu glatter Haut), SDXL-/Pony-Merges mit Airbrush-LoRAs; bei Qwen-Image-2512 die Begriffe gegen «Glätte» aus dem Negativprompt weglassen.
+- CGI- / 3D-Render-Look: FLUX.1/FLUX.2, Chroma, Qwen-Image, Z-Image und SD 3.5 (laut Stability AI stark bei 3D); im Anime-Bereich Illustrious/NoobAI mit dem Tag 3d oder entsprechenden Merges.
+- Surrealismus: Modelle mit hoher Prompt-Treue setzen ungewöhnliche Kombinationen am zuverlässigsten um: FLUX, Chroma, Qwen-Image, HiDream, SD 3.5; Anime-Modelle über den Danbooru-Tag surreal.
+- Komplett weisse Augen (weisse Sklera, keine Iris): am treffsichersten mit Danbooru-trainierten Modellen (Illustrious, NoobAI, Pony, Anima) über Tags wie white_eyes, empty_eyes, blank_eyes oder no_pupils. Fotorealistische Modelle «korrigieren» Augen gern zurück zu normaler Iris – dort helfen eine präzise Beschreibung (z. B. «completely white eyes, no iris, no pupils»), LoRAs oder Inpainting.
+- Schwarzes PVC / Lack / Latex mit Hochglanz-Reflexen: FLUX.1, Chroma und RealVisXL/Juggernaut für realistische Reflexionen; NoobAI V-Pred für sehr dunkle, kontrastreiche Bilder; Anime-Modelle über latex, latex_bodysuit, shiny_clothes. Bei den gefilterten Modellen (FLUX.2, Krea 2, Ideogram 4) funktioniert Mode in Lack und Latex grundsätzlich, freizügige Darstellungen aber kaum.
+- Makellose, helle, glatte Haut: FLUX.1/Chroma (glatt), Qwen-Image-2512 und Z-Image (Porträts), RealVisXL; Anime-Modelle über pale_skin.
+- Detaillierte feminine Hände: Hände bleiben eine Schwäche älterer Modelle (SD 1.5, teils SDXL). Deutlich besser sind FLUX, Chroma, Qwen-Image, Z-Image, HiDream und die anderen grossen Transformer-Modelle. Bei SDXL helfen Hires-Fix, Inpainting (z. B. ADetailer-Erweiterung) und Hand-LoRAs.
+- Ostasiatische Ästhetik: Qwen-Image/Qwen-Image-2512 (offizielle Beispiele überwiegend ostasiatisch), Z-Image (Hanfu im Showcase), Kolors, HunyuanImage, Neta Lumina (Guofeng) sowie SD-1.5-Finetunes wie majicMIX realistic.
+- Anime vs. Fotorealismus: Anime/Illustration: Illustrious XL, NoobAI-XL, Pony V6/V7, Anima, Neta Lumina. Fotorealismus: Juggernaut XL, RealVisXL, FLUX.1 Krea, Qwen-Image-2512, Z-Image, Chroma, Wan (Einzelbild). Allrounder: FLUX.1 [dev], Chroma, Qwen-Image, HiDream.
+
+## Software & Oberflächen
+
+- ComfyUI (https://github.com/Comfy-Org/ComfyUI): Knotenbasierte Oberfläche (Workflows als Graph), GPL-3.0, sehr aktive Entwicklung (Version 0.38.0 vom 29. September 2026). Unterstützt praktisch jedes neue Modell als Erstes – von SD 1.5 über FLUX.2, Qwen-Image und Z-Image bis Anima und Wan. Kein eingebauter NSFW-Filter. Steile Lernkurve, dafür maximale Kontrolle.
+- SwarmUI (https://github.com/mcmonkeyprojects/SwarmUI): MIT-Lizenz, nutzt ComfyUI als Backend, bietet aber eine einfache Oberfläche mit Zugriff auf den Comfy-Workflow-Editor. Laut Dokumentation gilt bei lokaler Nutzung: Für die eigenen Erzeugnisse ist man selbst verantwortlich. Kein Filter per Voreinstellung.
+- Stable Diffusion WebUI Forge / Forge Neo (https://github.com/lllyasviel/stable-diffusion-webui-forge): Schnellere, speichersparende Variante von AUTOMATIC1111 (AGPL-3.0). Das Original von lllyasviel wird kaum noch gepflegt (letzte Änderungen Juli 2025). Aktiv weiterentwickelt wird der Fork FORGE NEO (https://github.com/Haoming02/sd-webui-forge-classic) (Haoming02), der u. a. FLUX.2 [klein], Z-Image, Qwen-Image, Wan 2.2 und Anima unterstützt. Für NoobAI V-Pred empfiehlt sich auch REFORGE (https://github.com/Panchovix/stable-diffusion-webui-reForge). Kein NSFW-Filter.
+- AUTOMATIC1111 (Stable Diffusion WebUI) (https://github.com/AUTOMATIC1111/stable-diffusion-webui): Der Klassiker mit dem grössten Erweiterungs-Ökosystem (AGPL-3.0), letzte Version 1.10.1; neue Architekturen wie FLUX werden nicht offiziell unterstützt. Kein NSFW-Filter im Code.
+- Fooocus (https://github.com/lllyasviel/Fooocus): Sehr einfache, Midjourney-ähnliche Oberfläche nur für SDXL-Modelle (GPL-3.0); laut Projekt im «Limited LTS»-Modus (nur noch Bugfixes). Optionale Schwärzung von NSFW-Bildern über eine Einstellung (default_black_out_nsfw), standardmässig aus.
+- InvokeAI (https://github.com/invoke-ai/InvokeAI): Professionelle Oberfläche mit Canvas, Ebenen und Inpainting (Apache-2.0), Version 6.14.2 (September 2026); unterstützt u. a. SD/SDXL, FLUX, SD3, Anima, ERNIE-Image, Ideogram 4 und Wan. Enthält einen optionalen NSFW-Checker (CompVis Safety Checker), der standardmässig ausgeschaltet ist.
+- SD.Next (https://github.com/vladmandic/sdnext): Funktionsreiche Oberfläche mit sehr breiter Modellunterstützung (Apache-2.0). Optionale NudeNet-Erweiterung zur Erkennung bzw. Zensur, standardmässig deaktiviert.
+
+## Hardware
+
+Grafikkarte (VRAM ist entscheidend): NVIDIA-Karten mit CUDA sind am besten unterstützt. Grobe Orientierung: 6–8 GB für SD 1.5 und SDXL-Modelle (Pony, Illustrious, NoobAI, Juggernaut, RealVisXL); 12–16 GB für Z-Image, Anima, FLUX.2 [klein] 4B und quantisiertes FLUX.1/Chroma; 24 GB (z. B. RTX 3090/4090) für FLUX.1/Chroma in voller Präzision, ERNIE-Image, HunyuanImage 2.1 und quantisiertes Qwen-Image oder HiDream; 32 GB (RTX 5090) für FLUX.2 [dev] mit 4-Bit-Quantisierung. HunyuanImage 3.0 braucht Rechenzentrums-Hardware.
+
+Quantisierung: FP8-, NF4- und GGUF-Fassungen (Q8 bis Q4) reduzieren den Speicherbedarf grosser Modelle stark, kosten aber etwas Qualität und oft Geschwindigkeit. Offloading auf den Arbeitsspeicher funktioniert, ist aber langsam – 32–64 GB RAM sind für grosse Modelle sinnvoll.
+
+AMD und Apple: AMD-Karten laufen unter Linux mit ROCm, Apple-Silicon-Macs über PyTorch MPS – beides langsamer und mit weniger Modellunterstützung als NVIDIA.
+
+Speicherplatz: Ein SDXL-Checkpoint hat rund 6–7 GB, FLUX.1 [dev] rund 24 GB, dazu Text-Encoder (T5-XXL fp16 rund 10 GB) – eine schnelle SSD mit mehreren hundert GB ist empfehlenswert.
+
+## Quellen
+
+### Stable-Diffusion-Familie und fotorealistische SDXL-Finetunes
+- https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
+- https://civitai.com/models/4201
+- https://civitai.com/models/43331
+- https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
+- https://stability.ai/news/stable-diffusion-sdxl-1-announcement
+- https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+- https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
+- https://stability.ai/news/introducing-stable-diffusion-3-5
+- https://stability.ai/license
+- https://huggingface.co/RunDiffusion/Juggernaut-XL-v9
+- https://civitai.com/models/133005
+- https://huggingface.co/SG161222/RealVisXL_V5.0
+- https://civitai.com/models/139562
+
+### Anime- und Illustrationsmodelle
+- https://civitai.com/models/257749
+- https://huggingface.co/purplesmartai/pony-v7-base
+- https://civitai.com/models/1901521
+- https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
+- https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0
+- https://arxiv.org/abs/2409.19946
+- https://huggingface.co/Laxhar/noobai-XL-1.1
+- https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0
+- https://huggingface.co/circlestone-labs/Anima
+- https://huggingface.co/Gazingstars123/Anima-2.9B
+- https://huggingface.co/neta-art/Neta-Lumina
+- https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
+
+### FLUX-Familie und Chroma
+- https://huggingface.co/black-forest-labs/FLUX.1-dev
+- https://huggingface.co/black-forest-labs/FLUX.1-schnell
+- https://github.com/black-forest-labs/flux
+- https://huggingface.co/city96/FLUX.1-dev-gguf
+- https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev
+- https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
+- https://huggingface.co/black-forest-labs/FLUX.2-dev
+- https://github.com/black-forest-labs/flux2
+- https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+- https://huggingface.co/lodestones/Chroma1-HD
+- https://huggingface.co/lodestones/Chroma1-Base
+- https://huggingface.co/lodestones/Chroma1-Flash
+- https://huggingface.co/lodestones/Chroma
+- https://huggingface.co/silveroxides/Chroma-GGUF
+
+### Neue Generation 2025–2026: grosse Transformer-Modelle
+- https://huggingface.co/Qwen/Qwen-Image
+- https://huggingface.co/Qwen/Qwen-Image-2512
+- https://qwenlm.github.io/blog/qwen-image/
+- https://huggingface.co/Qwen/Qwen-Image-2.1
+- https://github.com/QwenLM/Qwen-Image-2.1
+- https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- https://huggingface.co/Tongyi-MAI/Z-Image
+- https://huggingface.co/lodestones/Zeta-Chroma
+- https://huggingface.co/HiDream-ai/HiDream-I1-Full
+- https://github.com/HiDream-ai/HiDream-I1
+- https://huggingface.co/tencent/HunyuanImage-2.1
+- https://huggingface.co/tencent/HunyuanImage-3.0
+- https://huggingface.co/krea/Krea-2-Raw
+- https://huggingface.co/krea/Krea-2-Turbo
+- https://huggingface.co/ideogram-ai/ideogram-4-nf4
+- https://huggingface.co/ideogram-ai/ideogram-4-fp8
+- https://huggingface.co/baidu/ERNIE-Image
+- https://huggingface.co/baidu/ERNIE-Image-Turbo
+- https://huggingface.co/zai-org/GLM-Image
+
+### Weitere offene Modelle (kleiner oder älter)
+- https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
+- https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS
+- https://huggingface.co/Kwai-Kolors/Kolors
+- https://github.com/Kwai-Kolors/Kolors
+- https://huggingface.co/fal/AuraFlow-v0.3
+
+### Videomodelle als Bildgenerator
+- https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
+- https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+- https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+
+### Zum Vergleich: nicht lokal verfügbar
+- https://grok.com/imagine
+- https://bfl.ai/
+
+### Software
+- https://github.com/Comfy-Org/ComfyUI
+- https://github.com/mcmonkeyprojects/SwarmUI
+- https://github.com/lllyasviel/stable-diffusion-webui-forge
+- https://github.com/Haoming02/sd-webui-forge-classic
+- https://github.com/Panchovix/stable-diffusion-webui-reForge
+- https://github.com/AUTOMATIC1111/stable-diffusion-webui
+- https://github.com/lllyasviel/Fooocus
+- https://github.com/invoke-ai/InvokeAI
+- https://github.com/vladmandic/sdnext
+
+### Stable Diffusion & Stability AI
+- https://huggingface.co/spaces/CompVis/stable-diffusion-license
+
+### Black Forest Labs
+- https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev
+
+### Recht
+- https://www.gesetze-im-internet.de/stgb/__184b.html
+- https://www.gesetze-im-internet.de/stgb/__184c.html
+- https://www.gesetze-im-internet.de/stgb/__184.html
+- https://www.gesetze-im-internet.de/stgb/__201a.html
+- https://www.gesetze-im-internet.de/kunsturhg/__22.html
+- https://www.gesetze-im-internet.de/kunsturhg/__33.html
+- https://www.fsm.de/en/wissen/a-bis-z/kinder-und-jugendpornografie/
+- https://www.fedlex.admin.ch/eli/cc/54/757_781_799/de
+- https://www.bmjv.de/SharedDocs/Pressemitteilungen/DE/2026/0417_Gesetz_gegen_digitale_Gewalt.html
+- https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act
+
+## Siehe auch
+- ARTIFICIAL INTELLIGENCE: https://zagathou.github.io/artificial_intelligence/
+
+## Autor & Kontakt
+- Autor: Christian Grigoriadis (Zagathou)
+- Session-ID: 055065749fb6c6c2f07cb2ed15021b88eed3fc480e87215cca925ede91454e7173
+- About: https://zagathou.github.io/zagathou/
+- GitHub: https://github.com/Zagathou
+
+These webpages are optimized for simple Non-Agentic Artificial Intelligence and easy to read.
+Last Updated: 03.10.2026
+Coded by GrokBot (https://x.ai/bot) / SpaceXAI (https://x.ai/)!
